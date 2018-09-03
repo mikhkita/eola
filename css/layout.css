@@ -304,11 +304,42 @@ input:-moz-placeholder {
 		background-position: 50% 0%;
 	    background-repeat: no-repeat;
 	    background-image: url(../i/2/back.jpg);
+	    padding-bottom: 180px;
 	}
 
 	.b-2 h2{
 		padding-top: 95px;
 	}
+
+	.b-2-list{
+
+	}
+		.b-2-item{
+			position: relative;
+			width: 500px;
+			border-radius: 5px;
+			margin-bottom: 30px;
+		}
+			.b-2-item-blur{
+				position: absolute; 
+				left:0;
+				right:0;
+				top:0;
+				bottom:0;
+				-webkit-filter: blur(5px);
+		    	-moz-filter: blur(5px);
+		    	filter: blur(5px);
+		    	opacity: 0.9;
+		    	background-color: #FFF;
+			}
+			.b-2-item img{
+				display: inline-block;
+				width: 170px;
+			}
+			.b-2-item p{
+				display: inline-block;
+				width: calc(100% - 170px);
+			}
 
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
