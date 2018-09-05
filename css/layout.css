@@ -352,7 +352,7 @@ input:-moz-placeholder {
 			    height: 82px;
 			    background-position: 50% 50%;
 			    background-repeat: no-repeat;
-			    background-image: url(../i/1/logo.png);
+			    background-image: url(../i/1/logo.jpg);
 			    background-size: 180px;
 			}
 		.b-header-right{
@@ -688,7 +688,7 @@ input:-moz-placeholder {
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-header-logo{
-	    background-image: url(../i/1/logo@2x.png);
+	    background-image: url(../i/1/logo@2x.jpg);
 	}
 }	
 @media screen and (max-width: 1250px){
