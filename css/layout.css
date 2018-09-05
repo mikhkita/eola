@@ -121,7 +121,7 @@ body {
 	font-family: 'MuseoSansCyrl-300', Sans-serif;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: none;
-	color: #434343;
+	color: #1a1a1f;
 }
 a{
 	text-decoration: none;
@@ -162,6 +162,7 @@ input.error,textarea.error{
 	max-width: 1880px;
 	width: 100%;
 	margin: 0px auto;
+	border-radius: 10px;
 }
 .b-center{
 	text-align: center;
@@ -240,40 +241,50 @@ input:-moz-placeholder {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+.b-soc-call{
+	z-index: 2;
+}
 .icon-call{
 	background-color: #dddbd9;
 }
 .icon-call:before{
 	content: "\e900";
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	padding-left: 8px;
-    line-height: 24px;
+    line-height: 25px;
     font-size: 9px;
     color: #FFF;
 }
 
+.b-soc-whatsapp{
+	z-index: 1;
+}
 .icon-whatsapp{
 	background-color: #1ae246;
 }
 .icon-whatsapp:before{
 	content: "\e901";
     display: inline-block;
-    vertical-align: middle;
-    line-height: 24px;
+    vertical-align: top;
+    line-height: 25px;
     font-size: 13px;
     padding-left: 7px;
     color: #FFF;
 }
 
+.b-soc-telegram{
+	z-index: 0;
+}
 .icon-telegram{
 	background-color: #26baf1;
 }
 .icon-telegram:before{
 	content: "\e902";
     display: inline-block;
-    vertical-align: middle;
-    line-height: 24px;
+    vertical-align: top;
+    line-height: 25px;
     padding-left: 6px;
     font-size: 12px;
     color: #FFF;
@@ -362,11 +373,12 @@ input:-moz-placeholder {
 			.b-header-social{
 				display: inline-block;
 				vertical-align: top;
+				margin-top: -5px;
 			}
 				.b-header-social li{
 					display: inline-block;
-					/*margin-left: -13px;
-    				position: relative;*/
+					margin-left: -13px;
+    				position: relative;
 				}
 					.b-header-social li a{
 						vertical-align: top;
@@ -455,6 +467,7 @@ input:-moz-placeholder {
 		background-position: 50% 0%;
 	    background-repeat: no-repeat;
 	    background-image: url(../i/2/back.jpg);
+	    background-size: cover;
 	    padding-bottom: 150px;
 	}
 
@@ -516,9 +529,11 @@ input:-moz-placeholder {
 					height: 100%;
 				}
 .b-3{
-	padding-top: 100px;
 	padding-bottom: 137px;
 }
+	.b-3 .b-title{
+		padding-top: 100px;
+	}
 	.b-3-content{
 		margin-top: 80px;
 	}
@@ -615,6 +630,7 @@ input:-moz-placeholder {
 		background-position: 50% 0%;
 	    background-repeat: no-repeat;
 	    background-image: url(../i/4/back.jpg);
+	    background-size: cover;
 	    padding-bottom: 150px;
 	}
 
@@ -674,6 +690,7 @@ input:-moz-placeholder {
 		background-position: 50% 0%;
 	    background-repeat: no-repeat;
 	    background-image: url(../i/6/back.jpg);
+	    background-size: cover;
 	    padding-bottom: 150px;
 	    background-color: #f7f5f4;
 	}
