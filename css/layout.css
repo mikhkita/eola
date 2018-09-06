@@ -114,7 +114,7 @@ body {
 	position: relative;
 }
 body {
-	min-width: 1152px;
+	min-width: 1140px;
 	text-align: left;
 	font-size: 18px;
 	line-height: 25px;
@@ -125,7 +125,7 @@ body {
 }
 a{
 	text-decoration: none;
-	color: #472275;
+	color: #0099ff;
 }
 label.error{
 	display: none !important;
@@ -154,7 +154,7 @@ input.error,textarea.error{
 }
 .b-block{
 	position: relative;
-	width: 1152px;
+	width: 1140px;
 	margin: 0px auto;
 }
 .b-block-wide{
@@ -163,6 +163,9 @@ input.error,textarea.error{
 	width: 100%;
 	margin: 0px auto;
 	border-radius: 10px;
+}
+.b-block-gray{
+	background-color: #f7f5f4;
 }
 .b-center{
 	text-align: center;
@@ -194,7 +197,8 @@ h2{
 }
 
 h3{
-
+	font-size: 32px;
+	line-height: 38px;
 }
 
 h4{
@@ -206,13 +210,15 @@ h1 b{
 	font-size: 70px;
 	letter-spacing: -2px;
 	font-family: 'Spectral-BoldItalic';
-	color: #1a1a1f;
 }
 
 h2 b{
 	font-size: 56px;
 	font-family: 'Spectral-BoldItalic';
-	color: #1a1a1f;
+}
+
+h3 b{
+	font-family: 'Spectral-BoldItalic';
 }
 
 .b-title{
@@ -290,10 +296,21 @@ input:-moz-placeholder {
     color: #FFF;
 }
 
+.icon-minus:before{
+	content: "\e903";
+	font-size: 3px;
+	color: #dbdbdb;
+}
+.icon-plus:before{
+	content: "\e904";
+	font-size: 19px;
+	color: #dbdbdb;
+}
+
 .b-btn{
 	display: inline-block;
 	text-align: center;
-    padding: 35px 40px;
+    padding: 35px 38px;
     font-size: 15px;
     line-height: 20px;
     font-family: 'MuseoSansCyrl-700';
@@ -654,10 +671,13 @@ input:-moz-placeholder {
 		position: relative;
 		z-index: 1;
 	}
+	.b-5 h4{
+		padding-top: 10px;
+	}
 	.b-5-content{
 		position: relative;
-		padding-top: 50px;
-		padding-bottom: 130px;
+		padding-top: 45px;
+		padding-bottom: 100px;
 	}
 		.b-5-content img{
 			position: absolute;
@@ -669,8 +689,8 @@ input:-moz-placeholder {
 			left: -160px;
 		}
 		.b-5-img-right{
-			top: -30px;
-			right: -150px;
+			top: -125px;
+    		right: -164px;
 		}
 
 		.b-5-text{
@@ -695,25 +715,184 @@ input:-moz-placeholder {
 		background-position: 50% 0%;
 	    background-repeat: no-repeat;
 	    background-image: url(../i/6/back.jpg);
-	    background-size: cover;
-	    padding-bottom: 150px;
-	    background-color: #f7f5f4;
 	}
 
 	.b-6-video{
 		position: relative;
 		width: 1140px;
 		height: 650px;
-		margin-top: 48px;
+		margin-top: 36px;
 		border-radius: 15px;
 		background-color: #000;
 	}
 
 		.b-6-video .b-btn{
 			position: absolute;
-			top: 286px;
-			left: 405px;
+			top: 290px;
+			left: 406px;
 		}
+
+.b-7{
+
+}
+	.b-7-content{
+		padding-top: 40px;
+		padding-bottom: 110px;
+	}
+		.b-form-left{
+			width: 640px;
+			padding: 60px;
+			background-color: #FFF;
+			border-radius: 10px;
+		}
+			.b-counter{
+				position: relative;
+				width: 260px;
+				height: 80px;
+				background-color: #f6f6f6;
+				border-radius: 100px;
+				margin: 20px 0 45px 0;
+			}
+				.icon-minus{
+					position: absolute;
+					top: 20px;
+					left: 22px;
+					width: 40px;
+					height: 40px;
+					text-align: center;
+    				line-height: 30px;
+    				border-radius: 100px;
+				}
+				.icon-plus{
+					position: absolute;
+					top: 20px;
+					right: 22px;
+					width: 40px;
+					height: 40px;
+					text-align: center;
+    				line-height: 44px;
+    				border-radius: 100px;
+				}
+				.b-count{
+					text-align: center;
+					padding-top: 17px;
+				}
+					.b-count-current{
+						font-size: 35px;
+						line-height: 35px;
+						font-family: 'MuseoSansCyrl-700';
+					}
+					.b-count p{
+						font-size: 14px;
+						line-height: 18px;
+						color: rgba(26, 26, 31, 0.502);
+					}
+
+			.b-price{
+				margin-bottom: 50px;
+			}
+				.b-price span{
+					display: inline-block;
+					vertical-align: middle;
+				}
+				.b-price p{
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 25px;
+					margin-right: 6px;
+				}
+				.new-price{
+					font-size: 48px;
+					font-family: 'MuseoSansCyrl-700';
+					margin-right: 15px;
+				}
+					.new-price .price-rub{
+						font-size: 30px;
+						vertical-align: top;
+    					padding: 2px 0 0 3px;
+					}
+				.old-price{
+					position: relative;
+					font-size: 27px;
+				}
+					.old-price .price-rub{
+						vertical-align: top;
+						font-size: 16px;
+						line-height: 18px;
+						padding-left: 5px;
+					}
+					.old-price img{
+						position: absolute;
+						top: 6px;
+						left: -8px;
+					}
+
+				.b-bonus-item{
+					position: relative;
+					display: inline-block;
+					padding: 12px 34px 12px 50px;
+					background-color: #dbdbdb;
+					border-radius: 100px;
+					color: #FFF;
+					margin-bottom: 25px;
+				}
+					.b-bonus-item:before{
+						position: absolute;
+						top: 11px;
+						left: 11px;
+						display: inline-block;
+						content: " ";
+						width: 23px;
+						height: 23px;
+						border-radius: 100px;
+						color: #FFF;
+						border: 2px solid #ededed;
+					}
+
+		.b-form{
+			width: 499px;
+			padding: 60px 50px;
+			background-color: #FFF;
+			border-radius: 10px;
+		}
+
+			.b-form h3{
+				margin-bottom: 16px;
+			}
+
+			.b-form input[type="text"],
+			.b-form input[type="tel"]{
+				width: 100%;
+			    padding: 26px 63px;
+			    margin-bottom: 20px;
+			}
+
+			.b-name-input {
+			    background-position: 27px 50%;
+			    background-repeat: no-repeat;
+			    background-image: url(../i/icons/icon-man.svg);
+			}
+
+			.b-phone-input{
+				background-position: 27px 50%;
+			    background-repeat: no-repeat;
+			    background-image: url(../i/icons/icon-phone.svg);
+			}
+
+			input[type="text"],
+			input[type="tel"]{
+			    border: 1.3px solid rgb(219, 219, 219);
+			    background-color: rgb(249, 247, 244);
+			    box-shadow: inset 1.414px 1.414px 6px 0px rgba(30, 30, 30, 0.1);
+			    border-radius: 100px;
+			    width: 370px;
+			    padding: 28px 63px;
+			    font-family: "MuseoSansCyrl-300";
+			    font-size: 15px;
+			    line-height: 20px;
+			}
+
+/*------------------------------*/
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-header-logo{
