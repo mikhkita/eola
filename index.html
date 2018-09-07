@@ -222,7 +222,7 @@
 						</span>
 					</div>
 					<div class="b-bonus">
-						<span>Бонус:&nbsp;&nbsp;</span>
+						<span>Бонусы:&nbsp;&nbsp;</span>
 						<div class="b-bonus-item">Бесплатная доставка</div><br>
 						<div class="b-bonus-item">1 упаковка сока в подарок</div>
 					</div>
@@ -232,9 +232,15 @@
 						<h3><b>Заказать</b> 2 упаковки<br>сока алоэ по спец. цене</h3>
 						<p>Менеджер позвонит вам в течение 15 минут<br>для уточнения адреса и времени доставки</p>
 					</div>
-					<input type="text" name="name" class="b-name-input" placeholder="Имя" required>
-					<input type="tel" name="phone" class="b-phone-input" placeholder="Номер телефона" required>
-					<a href="#" class="b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
+					<form class="b-form-order" method="post" action="kitsend.php">
+						<input type="text" name="name" class="b-name-input" placeholder="Имя" required>
+						<input type="tel" name="phone" class="b-phone-input" placeholder="Номер телефона" required>
+						<a href="#" class="b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
+						<div class="b-checkbox b-center">
+							<input id="b-7-accept" type="checkbox" name="accept" required checked>
+							<label for="b-7-accept">Я принимаю <a href="#">условия передачи информации</a></label>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -246,9 +252,25 @@
 				<h2 class="b-center">100%-ную натуральность нашего сока<br>подтверждает <b>3 неоспоримых факта:</b></h2>
 			</div>
 			<div class="b-facts">
-				<div class="b-fact-item">
+				<div class="b-fact-item b-fact-1">
 					<div class="b-fact-left">
 						<p>Факт 1</p>
+					</div>
+					<div class="b-fact-right">
+						
+					</div>
+				</div>
+				<div class="b-fact-item b-fact-2">
+					<div class="b-fact-left">
+						<p>Факт 2</p>
+					</div>
+					<div class="b-fact-right">
+						
+					</div>
+				</div>
+				<div class="b-fact-item b-fact-3">
+					<div class="b-fact-left">
+						<p>Факт 3</p>
 					</div>
 					<div class="b-fact-right">
 						
