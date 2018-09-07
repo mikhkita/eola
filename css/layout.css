@@ -163,6 +163,7 @@ input.error,textarea.error{
 	width: 100%;
 	margin: 0px auto;
 	border-radius: 10px;
+	overflow: hidden;
 }
 .b-block-gray{
 	background-color: #f7f5f4;
@@ -240,10 +241,10 @@ p b{
 }
 
 input::-webkit-input-placeholder {
-	color: #777;
+	color: #666;
 }
 input:-moz-placeholder {
-	color: #777;
+	color: #666;
 }
 
 [class^="icon-"]:before, 
@@ -694,6 +695,25 @@ input[type="checkbox"].error + span + label:before{
 				.b-3-item-content p{
 
 				}
+				.b-3-item ul{
+					margin-top: 5px;
+				}
+					.b-3-item ul li{
+						position: relative;
+						margin-bottom: 5px;
+						padding-left: 10px;
+					}
+					.b-3-item ul li:before{
+						content: " ";
+						display: block;
+						position: absolute;
+						top: 11px;
+						left: 0;
+						height: 4px;
+						width: 4px;
+						background-color: #1a1a1f;
+						border-radius: 100px;
+					}
 				.b-3-item img{
 					position: absolute;
 					top: 0;
@@ -714,14 +734,6 @@ input[type="checkbox"].error + span + label:before{
 					vertical-align: top;
 					width: 100%;
 				}
-				.b-3-item ul{
-					margin-top: 5px;
-				}
-					.b-3-item ul li{
-						margin-bottom: 5px;
-						list-style: disc;
-					}
-
 				.b-3-item.left{
 					width: 645px;
 				}
@@ -822,16 +834,13 @@ input[type="checkbox"].error + span + label:before{
 			.b-5-text p{
 				margin-bottom: 16px;
 			}
-				
+		
 .b-6{
-
+	width: 100%;
+	background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-image: url(../i/6/back.jpg);
 }
-	.b-6 .b-block-wide{
-		background-position: 50% 0%;
-	    background-repeat: no-repeat;
-	    background-image: url(../i/6/back.jpg);
-	}
-
 	.b-6-video{
 		position: relative;
 		width: 1140px;
@@ -1021,13 +1030,13 @@ input[type="checkbox"].error + span + label:before{
 			input[type="text"],
 			input[type="tel"]{
 			    border: 1.3px solid rgb(219, 219, 219);
-			    background-color: rgb(249, 247, 244);
+			    background-color: #fcfbfa;
 			    box-shadow: inset 1.414px 1.414px 6px 0px rgba(30, 30, 30, 0.1);
 			    border-radius: 100px;
 			    width: 370px;
 			    padding: 28px 63px;
 			    font-family: "MuseoSansCyrl-300";
-			    font-size: 15px;
+			    font-size: 16px;
 			    line-height: 20px;
 			}
 
@@ -1089,13 +1098,18 @@ input[type="checkbox"].error + span + label:before{
 						.b-fact-right h3{
 							font-family: 'MuseoSansCyrl-900';
 						}
-
 						.b-fact-right h4{
 							letter-spacing: -1px;
 							line-height: 35px;
 						}
+						.b-fact-right .b-text h4{
+							margin-bottom: 6px;
+						}
+						.b-fact-right .b-text p{
+							margin-bottom: 15px;
+						}
 			.b-fact-advantages{
-				margin: 14px 0 18px 0;
+				margin: 8px 0 18px 0;
 			}
 
 				.b-facts-advantages-item{
@@ -1152,6 +1166,13 @@ input[type="checkbox"].error + span + label:before{
 			display: block;
 			height: 40px;
 		}
+			.b-fact-2 .img-flow{
+				height: 45px;
+				margin: 16px 0 8px 0;
+			}
+			.b-fact-3 .img-flow{
+				margin-bottom: 15px;
+			}
 
 .b-9{
 
