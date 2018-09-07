@@ -176,6 +176,10 @@ input.error,textarea.error{
 	color: #FFF !important;
 }
 
+.orange{
+	color: #f6652c !important;
+}
+
 b{
 	font-family: "MuseoSansCyrl-500";
 }
@@ -217,8 +221,18 @@ h2 b{
 	font-family: 'Spectral-BoldItalic';
 }
 
+h2 a{
+	color: #85b30b;
+	border-bottom: 1px dotted #85b30b;
+}
+
 h3 b{
 	font-family: 'Spectral-BoldItalic';
+}
+
+h4 b,
+p b{
+	font-family: 'MuseoSansCyrl-900';
 }
 
 .b-title{
@@ -604,7 +618,7 @@ input[type="checkbox"].error + span + label:before{
 			border-radius: 5px;
 			margin-bottom: 30px;
 			background-color: #FFF;
-			opacity: 0.95;
+			opacity: 0.98;
 		}
 			.b-2-item-blur{
 				position: absolute; 
@@ -976,6 +990,8 @@ input[type="checkbox"].error + span + label:before{
 				margin-bottom: 9px;
 			}
 			.b-form .b-btn{
+				width: 100%;
+				font-size: 15px;
 				margin-bottom: 26px;
 			}
 			.b-form a{
@@ -1018,42 +1034,143 @@ input[type="checkbox"].error + span + label:before{
 .b-8{
 
 }
-	.b-facts{
-
+	.b-8 .b-title{
+		padding-top: 80px;
 	}
-		.b-fact-item{
-			width: 100%;
-			height: 700px;
-			position: relative;
-			border-radius: 10px;
-		}
-			.b-fact-1 .b-fact-left{
-				background-image: url(../i/8/fact-1.jpg);
+	.b-facts{
+		margin-top: 42px;
+		margin-bottom: 120px;
+	}
+			.b-fact-item{
+				width: 100%;
+				height: 700px;
+				position: relative;
+				overflow: hidden;
+				border-radius: 10px;
+				margin-bottom: 50px;
 			}
-			.b-fact-2 .b-fact-left{
-				background-image: url(../i/8/fact-2.jpg);
+			.b-fact-item:last-child{
+				margin-bottom: 0;
 			}
-			.b-fact-3 .b-fact-left{
-				background-image: url(../i/8/fact-3.jpg);
-			}
-			.b-fact-left{
-				background-position: 50% 0%;
-				background-repeat: no-repeat;
-				background-size: cover;
-				float: left;
-				width: 50%;
-				height: 100%;
-
-			}
-				.b-fact-left p{
+				.b-fact-1 .b-fact-left{
+					background-image: url(../i/8/fact-1.jpg);
+				}
+				.b-fact-2 .b-fact-left{
+					background-image: url(../i/8/fact-2.jpg);
+				}
+				.b-fact-3 .b-fact-left{
+					background-image: url(../i/8/fact-3.jpg);
+				}
+				.b-fact-left{
+					background-position: 50% 0%;
+					background-repeat: no-repeat;
+					background-size: cover;
+					float: left;
+					width: 50%;
+					height: 100%;
 
 				}
-			.b-fact-right{
-				float: right;
-				width: 50%;
-				height: 100%;
-				background-color: #f6f5f3;
+					.b-fact-left h2{
+						color: #FFF;
+						position: absolute;
+						top: 62px;
+						left: 62px;
+					}
+				.b-fact-right{
+					float: right;
+					width: 50%;
+					height: 100%;
+					background-color: #f6f5f3;
+					padding: 45px 35px 45px 50px;
+				}
+					.b-fact-header{
+						margin-bottom: 26px;
+					}
+						.b-fact-right h3{
+							font-family: 'MuseoSansCyrl-900';
+						}
+
+						.b-fact-right h4{
+							letter-spacing: -1px;
+							line-height: 35px;
+						}
+			.b-fact-advantages{
+				margin: 14px 0 18px 0;
 			}
+
+				.b-facts-advantages-item{
+					position: relative;
+					display: inline-block;
+					vertical-align: top;
+					position: relative;
+					padding-left: 38px;
+				}
+					.b-facts-advantages-item img{
+						position: absolute;
+						top: 4px;
+						left: 5px;
+						height: 44px;
+					}
+					.b-facts-advantages-item p{
+						letter-spacing: -0.5px;
+					}
+					.b-facts-advantages-item small{
+						font-size: 14px;
+						color: rgba(26, 26, 31, 0.502);
+					}
+				.b-facts-advantages-1{
+					width: 100%;
+					margin-bottom: 19px;
+				}
+					.b-facts-advantages-1 p{
+						line-height: 20px;
+					}
+					.b-facts-advantages-1 img{
+						top: 0;
+						left: -3px;
+					}
+				.b-facts-advantages-2{
+					width: 214px;
+				}
+				.b-facts-advantages-3{
+					width: 265px;
+				}
+
+		.b-fact-more{
+			display: inline-block;
+		    text-transform: uppercase;
+		    color: #0096ff;
+		    letter-spacing: 1.5px;
+		    font-family: 'MuseoSansCyrl-700';
+		    font-size: 12px;
+		    line-height: 16px;
+		    border-bottom: 1px dotted;
+		    margin-bottom: 42px;
+		}
+
+		.b-facts .img-flow{
+			display: block;
+			height: 40px;
+		}
+
+.b-9{
+
+}
+	.b-9-content{
+		position: relative;
+	}
+		.b-9-content .b-form-left{
+			position: relative;
+			z-index: 0;
+			padding: 0;
+		}
+
+		.b-9-content .b-form{
+			position: relative;
+			z-index: 1;
+		}
+
+
 
 /*------------------------------*/
 
