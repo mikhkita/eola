@@ -397,11 +397,11 @@ input[type="checkbox"] + label:before{
 	content: "s";
 	font-size: 0px;
 	left: 0px;
-	top: 2px;
-	border-radius: 2px;
+	top: 3px;
+	border-radius: 4px;
     background: #FFF;
-	width: 20px;
-	height: 20px;
+	width: 18px;
+	height: 18px;
 	border: 1px solid #d4d4d4;
 }
 
@@ -437,10 +437,10 @@ input[type="checkbox"]:checked + span + label:after,
 input[type="checkbox"]:checked + label:after{
 	content: '';
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 7px;
-    width: 5px;
-    height: 9px;
+    width: 4px;
+    height: 8px;
     background-color: transparent;
     border-bottom: 3px solid #FFF;
     border-right: 3px solid #FFF;
@@ -870,8 +870,10 @@ input[type="checkbox"].error + span + label:before{
 			width: 640px;
 			height: 650px;
 			padding: 60px 60px 120px 60px;
-			background-color: #FFF;
 			border-radius: 10px;
+		}
+		.b-7 .b-form-left{
+			background-color: #FFF;
 		}
 			.b-counter{
 				position: relative;
@@ -1020,11 +1022,15 @@ input[type="checkbox"].error + span + label:before{
 			    background-repeat: no-repeat;
 			    background-image: url(../i/icons/icon-man.svg);
 			}
-
 			.b-phone-input{
 				background-position: 27px 50%;
 			    background-repeat: no-repeat;
 			    background-image: url(../i/icons/icon-phone.svg);
+			}
+			.b-email-input{
+				background-position: 25px 50%;
+				background-repeat: no-repeat;
+				background-image: url(../i/icons/icon-mail.svg);
 			}
 
 			input[type="text"],
@@ -1179,16 +1185,59 @@ input[type="checkbox"].error + span + label:before{
 }
 	.b-9-content{
 		position: relative;
+		margin-top: 60px;
+		padding-bottom: 110px;
 	}
 		.b-9-content .b-form-left{
 			position: relative;
 			z-index: 0;
 			padding: 0;
 		}
+			.b-9-content .b-form-left img{
+				position: absolute;
+				top: 15px;
+				left: -60px;
+			}
 
 		.b-9-content .b-form{
 			position: relative;
 			z-index: 1;
+		}
+
+		.b-9 .b-form{
+			height: 670px;
+		}
+
+.b-10{
+	position: relative;
+    width: 100%;
+    height: 950px;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-image: url(../i/10/back.jpg);
+}
+	.b-10-list{
+
+	}
+		.b-10-item{
+			position: absolute;
+			padding: 20px 22px;
+		    width: 372px;
+		    border-radius: 5px;
+		    background-color: #FFF;
+		    opacity: 0.98;
+		}
+		.b-10-item-1{
+			top: 360px;
+			left: 0;
+		}
+		.b-10-item-2{
+			top: 440px;
+			left: 770px;
+		}
+		.b-10-item-3{
+			top: 694px;
+			left: 385px;
 		}
 
 
