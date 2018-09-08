@@ -120,6 +120,7 @@ body {
 	line-height: 25px;
 	font-family: 'MuseoSansCyrl-300', Sans-serif;
 	overflow-x: hidden;
+	background-color: #FFF;
 	-webkit-text-size-adjust: none;
 	color: #1a1a1f;
 }
@@ -352,6 +353,8 @@ input:-moz-placeholder {
 	.b-btn-yellow:before{
 		content: " ";
 		display: inline-block;
+		vertical-align: top;
+   		margin-top: 2px;
 		margin-right: 46px;
 		border: 7px solid transparent;
 		border-left: 12px solid #1a1a1f;
@@ -478,9 +481,9 @@ input[type="checkbox"].error + span + label:before{
 }
 	.b-header{
 		padding-top: 40px;
-		background-position: 50% 0%;
+		/*background-position: 50% 0%;
 		background-repeat: no-repeat;
-		background-image: url(../i/1/header-back.png);
+		background-image: url(../i/1/header-back.png);*/
 		margin-bottom: 80px;
 	}
 		.b-header-left{
@@ -1240,7 +1243,90 @@ input[type="checkbox"].error + span + label:before{
 			left: 385px;
 		}
 
+.b-11{
 
+}
+	.b-11-content{
+		padding-top: 46px;
+		margin-bottom: 100px;
+		width: 100%;
+		height: 710px;
+	}
+		.b-slider-left{
+			width: 610px;
+			height: 100%;
+		}
+			.b-slider-doc{
+				padding: 0 50px;
+			}
+
+		.b-slider-right{
+			width: 530px;
+			height: 100%;
+		}
+			.b-slider-doc-list{
+				padding-top: 15px;
+				margin-left: 80px;
+			}
+				.b-slider-doc-item{
+					display: inline-block;
+					vertical-align: top;
+					width: 200px;
+					margin-bottom: 40px;
+					margin-right: 30px;
+				}
+				.b-slider-doc-item:nth-child(2n){
+					margin-right: 10px;
+				}
+					.b-slider-doc-item img{
+						display: block;
+						width: 200px;
+						height: 270px;
+						border: 10px solid #a4c648;
+						margin-bottom: 10px;
+					}
+					.b-slider-doc-item p{
+						font-size: 16px;
+						line-height: 20px;
+						text-align: center;
+					}
+
+		.icon-arrow-left:before{
+			content: "\e905";
+		}
+		.icon-arrow-right:before{
+			content: "\e906";
+		}
+
+		/*.b-slider-left-arrows:hover.icon-arrow-right,
+		.b-slider-left-arrows:hover.icon-arrow-left{
+			color: #1b81c5;
+		}*/
+
+		.b-slider-left-arrows.icon-arrow-right:before,
+		.b-slider-left-arrows.icon-arrow-left:before{
+			font-size: 35px;
+		}
+
+		.b-slider-left-arrows.icon-arrow-right{
+			position: absolute;
+		    right: -10px;
+		    top: 325px;
+		    padding: 10px;
+		    cursor: pointer;
+		    z-index: 1;
+		    color: #1a1a1f;
+		}
+
+		.b-slider-left-arrows.icon-arrow-left{
+			position: absolute;
+		    left: -14px;
+		    top: 325px;
+		    padding: 10px;
+		    cursor: pointer;
+		    z-index: 1;
+		    color: #1a1a1f;
+		}
 
 /*------------------------------*/
 

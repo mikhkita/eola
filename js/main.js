@@ -41,18 +41,20 @@ $(document).ready(function(){
     }
     $.fn.placeholder();
 
-    // $(".b-step-slider").slick({
-    //     dots: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     infinite: true,
-    //     cssEase: 'ease', 
-    //     speed: 500,
-    //     arrows: true,
-    //     prevArrow: '<button type="button" class="slick-prev slick-arrow icon-arrow-left"></button>',
-    //     nextArrow: '<button type="button" class="slick-next slick-arrow icon-arrow-right"></button>',
-    //     touchThreshold: 100
-    // });
+    $(".b-slider-left").slick({
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        // centerMode: true,
+        // centerPadding: '50px',
+        arrows: true,
+        nextArrow: '<div class="b-slider-left-arrows icon-arrow-right" aria-hidden="true"></div>',
+        prevArrow: '<div class="b-slider-left-arrows icon-arrow-left" aria-hidden="true"></div>', 
+    });
+
+    //asNavFor: '.b-slider-left',
 
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");
