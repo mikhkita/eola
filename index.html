@@ -16,7 +16,7 @@
 	<!-- <link rel="stylesheet" href="css/slick-theme.css" type="text/css"> -->
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 
-	<<!-- link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css">
+	<!-- link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css">
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"> -->
 
 	<!--<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">-->
@@ -55,20 +55,18 @@
 				<div class="b-1-front">
 					<h1>Продажа свежевыжатого <br><b><span class="percent">100</span> сока алоэ</b> в Москве</h1>
 					<div class="b-1-advantages">
-						<ul>
-							<li class="b-1-advantages-1">
-								<img src="i/icons/icon-plant.svg">
-								<p>Наш сок выжат из<br><b>экологически чистых листьев</b><br>(их возраст более 3-х лет)</p>
-							</li>
-							<li class="b-1-advantages-2">
-								<img src="i/icons/icon-vial.svg">
-								<p><b>Без консервантов, химии</b><br>и любых иных добавок</p>
-							</li>
-							<li class="b-1-advantages-3">
-								<img src="i/icons/icon-water.svg">
-								<p><b>Отжимаем сок в день вашего<br>обращения</b> и сразу доставляем<br>его вам</p>
-							</li>
-						</ul>
+						<div class="b-1-advantage-item b-1-advantages-1">
+							<img src="i/icons/icon-plant.svg">
+							<p>Наш сок выжат из<br><b>экологически чистых листьев</b><br>(их возраст более 3-х лет)</p>
+						</div>
+						<div class="b-1-advantage-item b-1-advantages-2">
+							<img src="i/icons/icon-vial.svg">
+							<p><b>Без консервантов, химии</b><br>и любых иных добавок</p>
+						</div>
+						<div class="b-1-advantage-item b-1-advantages-3">
+							<img src="i/icons/icon-water.svg">
+							<p><b>Отжимаем сок в день вашего<br>обращения</b> и сразу доставляем<br>его вам</p>
+						</div>
 					</div>
 					<a href="#" class="b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
 				</div>
@@ -130,7 +128,7 @@
 						<div class="b-3-item-content">
 							<h2><b>За 14 дней<br>в тканях листа</b></h2>
 							<p>накапливается достаточное количество<br>биогенных стимуляторов, которые:</p>
-							<ul>
+							<ul class="b-list">
 								<li>оказывают мощное лечебное действие<br>на организм человека</li>
 								<li>усиливают действие всех полезных<br>микроэлементов алоэ до 3-х раз</li>
 							</ul>
@@ -269,7 +267,7 @@
 						<div class="b-fact-advantages">
 							<div class="b-facts-advantages-item b-facts-advantages-1">
 								<img src="i/icons/icon-temperature.svg">
-								<p>пастеризации, при которой сок нагревается до 70 Со</p>
+								<p>пастеризации, при которой сок нагревается до 70 С<sup>о</sup></p>
 								<small>(меняются органолептические свойства сока)</small>
 							</div>
 							<div class="b-facts-advantages-item b-facts-advantages-2">
@@ -341,7 +339,7 @@
 						<form class="b-form-order" method="post" action="kitsend.php">
 							<input type="tel" name="phone" class="b-phone-input" placeholder="Номер телефона" required>
 							<input type="text" name="email" class="b-email-input" placeholder="E-mail" required>
-							<a href="#" class="b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
+							<a href="#" class="b-btn b-btn-green">Получить бесплатное руководство</a>
 							<div class="b-checkbox b-center">
 								<input id="b-9-accept" type="checkbox" name="accept" required checked>
 								<label for="b-9-accept">Я принимаю <a href="#">условия передачи информации</a></label>
@@ -375,36 +373,168 @@
 			</div>
 			<div class="b-11-content">
 				<div class="b-slider-left left">
-					<div class="b-slider-doc">
+					<div class="b-slider-doc" data-id="0">
 						<img src="i/11/doc-1.jpg">
 					</div>
-					<div class="b-slider-doc">
+					<div class="b-slider-doc" data-id="1">
 						<img src="i/11/doc-1.jpg">
 					</div>
-					<div class="b-slider-doc">
+					<div class="b-slider-doc" data-id="2">
 						<img src="i/11/doc-1.jpg">
 					</div>
-					<div class="b-slider-doc">
+					<div class="b-slider-doc" data-id="3">
 						<img src="i/11/doc-1.jpg">
 					</div>
 				</div>
 				<div class="b-slider-right right">
 					<div class="b-slider-doc-list">
-						<div class="b-slider-doc-item">
+						<div class="b-slider-doc-item slide-active" data-id="0">
 							<img src="i/11/doc-1.jpg">
 							<p>Протокол<br>испытаний ч. 1</p>
 						</div>
-						<div class="b-slider-doc-item">
+						<div class="b-slider-doc-item" data-id="1">
 							<img src="i/11/doc-1.jpg">
 							<p>Протокол<br>испытаний ч. 2</p>
 						</div>
-						<div class="b-slider-doc-item">
+						<div class="b-slider-doc-item" data-id="2">
 							<img src="i/11/doc-1.jpg">
 							<p>Протокол<br>испытаний ч. 3</p>
 						</div>
-						<div class="b-slider-doc-item">
+						<div class="b-slider-doc-item" data-id="3">
 							<img src="i/11/doc-1.jpg">
 							<p>Таможенный союз<br>декларации соотвествия</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-12">
+		<div class="b-block-wide">
+			<div class="b-12-header">
+				<div class="b-block-wide">
+					<div class="b-block">
+						<div class="b-title b-center">
+							<h2>Сок алоэ <b>полезен</b> для всей семьи</h2>
+							<h4>Как регулярный прием сока алоэ повлияет на ваше здоровье и здоровье ваших близких?</h4>
+						</div>
+						<div class="b-nav">
+							<a href="#" class="nav-active" data-block="b-tab-1" onclick="return false;"><span>1</span>Здоровье детей</a>
+							<a href="#" data-block="b-tab-2" onclick="return false;"><span>2</span>Здоровье женщин</a>
+							<a href="#" data-block="b-tab-3" onclick="return false;"><span>3</span>Здоровье мужчин</a>
+							<a href="#" data-block="b-tab-4" onclick="return false;"><span>4</span>Здоровье пожилых людей</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="b-tabs">
+				<div class="b-tab-item b-tab-1 tab-active">
+					<div class="b-block">
+						<img src="i/12/tab-1.jpg">
+						<div class="b-tab-item-text">
+							<div class="text-block">
+								<h4><b>Здоровье детей</b> в ваших руках:</h4>
+								<ul class="b-list">
+									<li>превосходно лечит от насморка
+									<li>повышает иммунитет при эпидемиях</li>
+									<li>заживляет любые ранки, ушибы и порезы</li>
+									<li>нормализует пищеварение</li>
+									<li>улучшает состояние десен и зубов</li>
+									<li>оказывает общеукрепляющий<br>эффект на организм</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="b-tab-item b-tab-2">
+					<div class="b-block">
+						<img src="i/12/tab-2.jpg">
+						<div class="b-tab-item-text">
+							<div class="text-block">
+								<h4><b>Общеукрепляющий эффект</b> для организма:</h4>
+								<ul class="b-list">
+									<li>укрепляет иммунитет</li>
+									<li>нормализует пищеварение</li>
+									<li>улучшает состояние десен и зубов</li>
+									<li>укрепляет нервную систему</li>
+									<li>помогает при гинекологических проблемах</li>
+									<li>выводит шлаки и токсины из организма</li>
+								</ul>
+							</div>
+							<div class="text-block">
+								<h4><b>Улучшает</b> состояние кожи лица и тела:</h4>
+								<ul class="b-list">
+									<li>избавляет от возрастных морщин, омолаживает кожу</li>
+									<li>избавляет от прыщей, угрей и черных точек</li>
+									<li>смягчает и тонизирует кожу, подтягивает овал лица</li>
+									<li>суживает поры и подсушивает жирную кожу</li>
+								</ul>
+							</div>
+							<div class="text-block">
+								<h4><b>Ухаживает</b> за волосами:</h4>
+								<ul class="b-list b-list-half">
+									<li>укрепляет корни</li>
+									<li>способствует более<br>активному росту</li>
+								</ul>
+								<ul class="b-list b-list-half">
+									<li>снижает ломкость</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="b-tab-item b-tab-3">
+					<div class="b-block">
+						<img src="i/12/tab-3.jpg">
+						<div class="b-tab-item-text">
+							<div class="text-block">
+								<h4><b>Позитивно влияет на организм:</b></h4>
+								<ul class="b-list">
+									<li>избавляет от астении, невроза и головных болей</li>
+									<li>улучшает потенцию, содействует выработке большего<br>количества активных сперматозоидов</li>
+									<li>помогает при гастрите и язве желудка</li>
+									<li>тонизирует и повышает выносливость нервной системы</li>
+									<li>улучшает состояние десен и зубов</li>
+									<li>помогает при ожогах и многих кожных заболеванях</li>
+									<li>укрепляет иммунную систему организма</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="b-tab-item b-tab-4">
+					<div class="b-block">
+						<img src="i/12/tab-4.jpg">
+						<div class="b-tab-item-text">
+							<div class="text-block">
+								<h4><b>Позитивно влияет на организм</b><br>при таких болезнях, как:</h4>
+								<ul class="b-list b-list-half">
+									<li>простуда и насморк</li>
+									<li>гайморит и фарингит</li>
+									<li>кашель и астма</li>
+								</ul>
+								<ul class="b-list b-list-half">
+									<li>изжога и колит</li>
+									<li>сердечные боли и невроз</li>
+									<li>зубная боль и мозоли</li>
+								</ul>
+							</div>
+							<div class="text-block">
+								<h4><b>А так же:</b></h4>
+								<ul class="b-list">
+									<li>выводит шлаки и токсины из организма</li>
+									<li>питает кожу рук и заживляет ранки</li>
+									<li>способствует улучшению зрения</li>
+									<li>благоприятствует нормализации пищеварения</li>
+									<li>способствует избавлению от астении, невроза,<br>головных болей</li>
+									<li>восстанавливает кожный покров после ожога,<br>при кожных раздражениях и болезнях</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -54,6 +54,34 @@ $(document).ready(function(){
         prevArrow: '<div class="b-slider-left-arrows icon-arrow-left" aria-hidden="true"></div>', 
     });
 
+    var sliderBlock = false;
+    $(".b-slider-left").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $(".b-slider-doc-item[data-id='"+nextSlide+"']").click();
+        sliderBlock = true;
+        console.log("beforeChange");
+    });
+    $(".b-slider-left").on('afterChange', function(event, slick, currentSlide, nextSlide){
+        sliderBlock = false;
+        console.log("afterChange");
+    });
+
+    $(".b-slider-doc-item").click(function(){
+        if(!sliderBlock){
+            $('.b-slider-left').slick('slickGoTo', $(this).attr("data-id"), false);
+            $(".b-slider-doc-item").each(function(index, el) {
+                $(this).removeClass("slide-active");
+            });
+            $(this).addClass("slide-active");
+        }
+    });
+
+    $(".b-nav a").on('click', function(){
+        $(".nav-active").removeClass("nav-active");
+        $(this).addClass("nav-active");
+        $(".tab-active").removeClass("tab-active");
+        $("."+$(this).attr("data-block")).addClass("tab-active");
+    });
+
     //asNavFor: '.b-slider-left',
 
     // // Первая анимация элементов в слайде
