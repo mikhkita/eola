@@ -198,7 +198,7 @@ h1{
 }
 
 h2{
-	line-height: 64px;
+	line-height: 62px;
 	margin-bottom: 5px;
 }
 
@@ -265,6 +265,12 @@ ul.b-list{
 		border-radius: 100px;
 	}
 
+small{
+	font-size: 14px;
+	line-height: 20px;
+	color: rgba(26, 26, 31, 0.502);
+}
+
 .b-tip-cont{
 	display: inline-block;
 	position: relative;
@@ -318,6 +324,13 @@ ul.b-list{
 	    -ms-transform: translateY(0px);
 	    -o-transform: translateY(0px);
 	    transform: translateY(0px);
+	}
+
+	.b-tip ul.b-list{
+		margin-top: 0px;
+	}
+	.b-tip ul.b-list li:before {
+	    top: 9px;
 	}
 
 input::-webkit-input-placeholder {
@@ -947,6 +960,26 @@ input[type="checkbox"].error + span + label:before{
 			.b-5-text p{
 				margin-bottom: 16px;
 			}
+
+.b-video-block{
+	position: relative;
+	margin-top: 36px;
+	border-radius: 15px;
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+	.b-video-block iframe {
+	    width: 100%;
+	    height: 100%;
+	    display: none;
+	}
+	.b-video-block.play iframe {
+	    display: block;
+	}
+	.play .b-btn-play{
+		display: none;
+	}
 		
 .b-6{
 	width: 100%;
@@ -955,14 +988,9 @@ input[type="checkbox"].error + span + label:before{
     background-image: url(../i/6/back.jpg);
 }
 	.b-6-video{
-		position: relative;
 		width: 1140px;
 		height: 650px;
-		margin-top: 36px;
-		border-radius: 15px;
-		background-color: #000;
 	}
-
 		.b-6-video .b-btn{
 			position: absolute;
 			top: 290px;
@@ -985,7 +1013,7 @@ input[type="checkbox"].error + span + label:before{
 			padding: 60px 60px 120px 60px;
 			border-radius: 10px;
 		}
-		.b-7 .b-form-left{
+		.b-form-left{
 			background-color: #FFF;
 		}
 			.b-counter{
@@ -1026,12 +1054,18 @@ input[type="checkbox"].error + span + label:before{
 				}
 				.b-count{
 					text-align: center;
-					padding-top: 17px;
+					padding-top: 12px;
 				}
 					.b-count-current{
-						font-size: 35px;
-						line-height: 35px;
-						font-family: 'MuseoSansCyrl-700';
+						display: block;
+					    text-align: center;
+					    margin: 0 auto;
+					    font-size: 35px;
+					    line-height: 35px;
+					    font-family: 'MuseoSansCyrl-700';
+					    border: 0;
+					    background-color: transparent;
+					    width: 50px;
 					}
 					.b-count p{
 						font-size: 14px;
@@ -1114,13 +1148,12 @@ input[type="checkbox"].error + span + label:before{
 			background-color: #FFF;
 			border-radius: 10px;
 		}
-
-			.b-form-order{
-				margin-top: 18px;
+			.b-form-title{
+				margin-bottom: 18px;
 			}
-			.b-form h3{
-				margin-bottom: 9px;
-			}
+				.b-form-title h3{
+					margin-bottom: 8px;
+				}
 			.b-form .b-btn{
 				padding: 35px 0;
 				width: 100%;
@@ -1132,8 +1165,8 @@ input[type="checkbox"].error + span + label:before{
 				font-family: 'MuseoSansCyrl-700';
 			}
 
-			.b-form input[type="text"],
-			.b-form input[type="tel"]{
+			.b-form .b-input,
+			.b-form .b-input{
 				width: 100%;
 			    padding: 29px 63px;
 			    margin-bottom: 20px;
@@ -1155,8 +1188,7 @@ input[type="checkbox"].error + span + label:before{
 				background-image: url(../i/icons/icon-mail.svg);
 			}
 
-			input[type="text"],
-			input[type="tel"]{
+			.b-input{
 			    border: 1.3px solid rgb(219, 219, 219);
 			    background-color: #fcfbfa;
 			    box-shadow: inset 1.414px 1.414px 6px 0px rgba(30, 30, 30, 0.1);
@@ -1256,10 +1288,7 @@ input[type="checkbox"].error + span + label:before{
 					.b-facts-advantages-item p{
 						letter-spacing: -0.5px;
 					}
-					.b-facts-advantages-item small{
-						font-size: 14px;
-						color: rgba(26, 26, 31, 0.502);
-					}
+					
 				.b-facts-advantages-1{
 					width: 100%;
 					margin-bottom: 19px;
@@ -1572,6 +1601,18 @@ input[type="checkbox"].error + span + label:before{
 				left: 0;
 				bottom: 0;
 			}
+			.b-tab-1 img{
+				left: -400px;
+			}
+			.b-tab-2 img{
+				left: -195px;
+			}
+			.b-tab-3 img{
+				left: -40px;
+			}
+			.b-tab-4 img{
+				left: -206px;
+			}
 			.b-tab-item-text{
 				position: absolute;
 				top: 360px;
@@ -1588,6 +1629,115 @@ input[type="checkbox"].error + span + label:before{
 						vertical-align: top;
 						width: 240px;
 					}
+
+.b-13{
+
+}
+
+.b-14{
+
+}
+
+.b-15{
+
+}
+
+.b-16{
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-image: url(../i/16/back.jpg);
+    background-size: cover;
+}
+	.b-16-content{
+		width: 612px;
+		padding-bottom: 84px;
+	}
+		.b-16-advantages{
+			margin: 54px 0 7px 0;
+		}
+			.b-16-advantages img{
+				position: absolute;
+				top: 0;
+				left: 4px;
+				height: 42px;
+			}
+			.b-16-advantages{
+
+			}
+				.b-16-advantage-item{
+					display: inline-block;
+					vertical-align: top;
+					width: 100%;
+					position: relative;
+					padding-left: 54px;
+					margin-bottom: 26px;
+				}
+				.b-16-advantage-item:last-child{
+					margin-bottom: 0;
+				}
+				.b-16-advantage-item b{
+					font-family: 'MuseoSansCyrl-900';
+				}
+
+				.b-16-advantages-1 img{
+					height: 50px;
+				}
+				.b-16-advantages-2 img{
+				}
+				.b-16-advantages-3 img{
+				}
+
+				.b-16-advantage-note{
+					margin-top: 15px;
+				}
+
+	.b-16 small{
+		display: inline-block;
+    	margin-top: 12px;
+	}
+
+.b-17{
+	overflow: hidden;
+}
+	.b-17-back{
+		position: absolute;
+		top: 0;
+		left: -315px;
+	}
+	.b-17-content{
+		position: relative;
+		z-index: 1;
+		width: 650px;
+		padding-bottom: 90px;
+	}
+		.b-17-text{
+			padding: 45px 0 0 30px;
+		}
+			.b-17-text p{
+				font-size: 20px;
+				line-height: 28px;
+			}
+			.show-more{
+				color: #85b30b;
+				display: inline-block;
+				margin-top: 30px;
+				border-bottom: 1px dotted #85b30b;
+			}
+			.b-17-sign{
+
+			}
+				.b-17-sign p{
+					display: inline-block;
+					vertical-align: top;
+					font-size: 18px;
+					padding-top: 70px;
+				}
+				.b-17-sign img{
+					display: inline-block;
+					vertical-align: top;
+					width: 180px;
+					height: 120px;
+				}
 
 
 /*------------------------------*/

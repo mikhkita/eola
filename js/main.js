@@ -82,6 +82,41 @@ $(document).ready(function(){
         $("."+$(this).attr("data-block")).addClass("tab-active");
     });
 
+    function declOfNum(number)  
+    {
+        var titles = ['упаковка','упаковки','упаковок'];
+        cases = [2, 0, 1, 1, 1, 2];  
+        return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
+    }
+
+    $(".b-counter .icon-minus").click(function(){
+        var $cont = $(this).siblings(".b-count"),
+            $input = $cont.children("input"),
+            count = parseInt($input.val()) - 1;
+        count = count < 1 || isNaN(count) === true ? 1 : count;
+        $input.val(count).change();
+        $cont.children("p").text(declOfNum(count));
+    });
+
+    $(".b-counter .icon-plus").click(function(){
+        var $cont = $(this).siblings(".b-count"),
+            $input = $cont.children("input"),
+            count = parseInt($input.val()) + 1;
+        count = count > 99 || isNaN(count) === true ? 99 : count;
+        $input.val(count).change();
+        $cont.children("p").text(declOfNum(count));
+    });
+
+    $(".b-video-block .b-btn-play").click(function(){
+        var $cont = $(this).parents(".b-video-block");
+        $cont.addClass("play");
+        $cont.find("iframe").attr("src", $cont.find("iframe").attr("src")+"&autoplay=1"); 
+        if( $(".b-audio-butt").hasClass("play") ){
+            $(".b-audio-butt").click();
+        }
+        return false;
+    });
+
     //asNavFor: '.b-slider-left',
 
     // // Первая анимация элементов в слайде

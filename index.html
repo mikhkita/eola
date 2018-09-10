@@ -188,8 +188,9 @@
 					<h2 class="white"><b>Уделите всего 3 минуты</b> и вы убедитесь,<br>что мы — единственная в России компания,</h2>
 					<h4 class="white">которая производит 100%-ный сок алоэ без примесей!</h4>
 				</div>
-				<div class="b-6-video">
-					<a href="#" class="b-btn b-btn-yellow">Смотреть видео</a>
+				<div class="b-6-video b-video-block" style="background-image: url('i/10/back.jpg');">
+					<a href="#" class="b-btn b-btn-yellow b-btn-play">Смотреть видео</a>
+					<iframe src="https://www.youtube.com/embed/GmbyKuzOnLw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -200,47 +201,47 @@
 					<h2 class="b-center">Закажите <b>свежевыжатый сок алоэ</b><br>с доставкой в день отжима!</h2>
 				</div>
 				<div class="b-7-content clearfix">
-					<div class="b-form-left left">
-						<h3><b>Выберите</b> количество<br>упаковок свежевыжатого<br>сока алоэ:</h3>
-						<div class="b-counter">
-							<a href="#" class="icon-minus" onclick="return false;"></a>
-							<a href="#" class="icon-plus" onclick="return false;"></a>
-							<div class="b-count">
-								<div class="b-count-current">2</div>
-								<p>упаковки</p>
+					<form class="b-form-order" method="post" action="kitsend.php">
+						<div class="b-form-left left">
+							<h3><b>Выберите</b> количество<br>упаковок свежевыжатого<br>сока алоэ:</h3>
+							<div class="b-counter">
+								<a href="#" class="icon-minus b-btn-count" onclick="return false;"></a>
+								<a href="#" class="icon-plus b-btn-count" onclick="return false;"></a>
+								<div class="b-count">
+									<input type="text" name="count" class="b-count-current" value="2" maxlength="2" oninput="this.value = this.value.replace(/\D/g, '')">
+									<p>упаковки</p>
+								</div>
+							</div>
+							<div class="b-price">
+								<p>Цена за 1 упаковку:</p>
+								<span class="new-price">
+									<span class="price-value">490</span><span class="price-rub">руб</span>
+								</span>
+								<span class="old-price">
+									<span class="rice-value">600</span><span class="price-rub">руб</span>
+									<img src="i/7/red-line.svg">
+								</span>
+							</div>
+							<div class="b-bonus">
+								<span>Бонусы:&nbsp;&nbsp;</span>
+								<div class="b-bonus-item">Бесплатная доставка</div><br>
+								<div class="b-bonus-item">1 упаковка сока в подарок</div>
 							</div>
 						</div>
-						<div class="b-price">
-							<p>Цена за 1 упаковку:</p>
-							<span class="new-price">
-								<span class="price-value">490</span><span class="price-rub">руб</span>
-							</span>
-							<span class="old-price">
-								<span class="rice-value">600</span><span class="price-rub">руб</span>
-								<img src="i/7/red-line.svg">
-							</span>
-						</div>
-						<div class="b-bonus">
-							<span>Бонусы:&nbsp;&nbsp;</span>
-							<div class="b-bonus-item">Бесплатная доставка</div><br>
-							<div class="b-bonus-item">1 упаковка сока в подарок</div>
-						</div>
-					</div>
-					<div class="b-form right">
-						<div class="b-center">
-							<h3><b>Заказать</b> 2 упаковки<br>сока алоэ по спец. цене</h3>
-							<p>Менеджер позвонит вам в течение 15 минут<br>для уточнения адреса и времени доставки</p>
-						</div>
-						<form class="b-form-order" method="post" action="kitsend.php">
-							<input type="text" name="name" class="b-name-input" placeholder="Имя" required>
-							<input type="tel" name="phone" class="b-phone-input" placeholder="Номер телефона" required>
+						<div class="b-form right">
+							<div class="b-center b-form-title">
+								<h3><b>Заказать</b> 2 упаковки<br>сока алоэ по спец. цене</h3>
+								<p>Менеджер позвонит вам в течение 15 минут<br>для уточнения адреса и времени доставки</p>
+							</div>
+							<input type="text" name="name" class="b-input b-name-input" placeholder="Имя" required>
+							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
 							<a href="#" class="b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
 							<div class="b-checkbox b-center">
 								<input id="b-7-accept" type="checkbox" name="accept" required checked>
 								<label for="b-7-accept">Я принимаю <a href="#">условия передачи информации</a></label>
 							</div>
-						</form>
-					</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -349,12 +350,12 @@
 						<img src="i/9/left.jpg">
 					</div>
 					<div class="b-form right">
-						<div class="b-center">
+						<div class="b-center b-form-title">
 							<h3><b>Заполните короткую<br>форму</b> и в ту же минуту<br>получите бесплатное<br>руководство!</h3>
 						</div>
 						<form class="b-form-order" method="post" action="kitsend.php">
-							<input type="tel" name="phone" class="b-phone-input" placeholder="Номер телефона" required>
-							<input type="text" name="email" class="b-email-input" placeholder="E-mail" required>
+							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+							<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
 							<a href="#" class="b-btn b-btn-green">Получить бесплатное руководство</a>
 							<div class="b-checkbox b-center">
 								<input id="b-9-accept" type="checkbox" name="accept" required checked>
@@ -553,6 +554,156 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-13">
+		<div class="b-block-wide b-block-gray">
+			<div class="b-block">
+				<div class="b-center b-title">
+					<h2>Получите <b>15 самых эффективных<br>рецептов</b> с добавлением сока алоэ,</h2>
+					<h4>которые идеально подойдут для всей семьи!</h4>
+				</div>
+				<div class="b-13-content clearfix">
+					<div class="b-form-left left">
+						<img src="i/13/left.jpg">
+					</div>
+					<div class="b-form right">
+						<div class="b-center b-form-title">
+							<h3><b>Заполните короткую<br>форму</b> и в ту же минуту<br>получите бесплатное<br>руководство!</h3>
+						</div>
+						<form class="b-form-order" method="post" action="kitsend.php">
+							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+							<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
+							<a href="#" class="b-btn b-btn-green">Получить бесплатное руководство</a>
+							<div class="b-checkbox b-center">
+								<input id="b-9-accept" type="checkbox" name="accept" required checked>
+								<label for="b-9-accept">Я принимаю <a href="#">условия передачи информации</a></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-14">
+		<div class="b-block">
+			<div class="b-title">
+				<h2><b>Посмотрите на отзывы</b><br>тех, кто уже начал регулярно принимать<br>наш свежевыжатый сок алоэ</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-15">
+		<div class="b-block-wide b-block-gray">
+			<div class="b-block">
+				<div class="b-title">
+					<h2 class="b-center">Закажите <b>свежевыжатый сок алоэ</b><br>с доставкой в день отжима!</h2>
+				</div>
+				<div class="b-7-content clearfix">
+					<form class="b-form-order" method="post" action="kitsend.php">
+						<div class="b-form-left left">
+							<h3><b>Выберите</b> количество<br>упаковок свежевыжатого<br>сока алоэ:</h3>
+							<div class="b-counter">
+								<a href="#" class="icon-minus b-btn-count" onclick="return false;"></a>
+								<a href="#" class="icon-plus b-btn-count" onclick="return false;"></a>
+								<div class="b-count">
+									<input type="text" name="count" class="b-count-current" value="2" maxlength="2" oninput="this.value = this.value.replace(/\D/g, '')">
+									<p>упаковки</p>
+								</div>
+							</div>
+							<div class="b-price">
+								<p>Цена за 1 упаковку:</p>
+								<span class="new-price">
+									<span class="price-value">490</span><span class="price-rub">руб</span>
+								</span>
+								<span class="old-price">
+									<span class="rice-value">600</span><span class="price-rub">руб</span>
+									<img src="i/7/red-line.svg">
+								</span>
+							</div>
+							<div class="b-bonus">
+								<span>Бонусы:&nbsp;&nbsp;</span>
+								<div class="b-bonus-item">Бесплатная доставка</div><br>
+								<div class="b-bonus-item">1 упаковка сока в подарок</div>
+							</div>
+						</div>
+						<div class="b-form right">
+							<div class="b-center b-form-title">
+								<h3><b>Заказать</b> 2 упаковки<br>сока алоэ по спец. цене</h3>
+								<p>Менеджер позвонит вам в течение 15 минут<br>для уточнения адреса и времени доставки</p>
+							</div>
+							<input type="text" name="name" class="b-input b-name-input" placeholder="Имя" required>
+							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+							<a href="#" class="b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
+							<div class="b-checkbox b-center">
+								<input id="b-7-accept" type="checkbox" name="accept" required checked>
+								<label for="b-7-accept">Я принимаю <a href="#">условия передачи информации</a></label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-16">
+		<div class="b-block">
+			<div class="b-16-content">
+				<div class="b-title">
+					<h2>Сок алоэ вы можете<br>запросто <b>хранить дома</b><br>в обычном морозильнике</h2>
+					<h4>Заморозка — это идеальный способ консервации<sup>*</sup>,<br>при котором обеспечивается сохранность 100%<br>витаминов и полезных свойств сока</h4>
+					<small>* Заморозке подвергаются даже редкие группы крови для последующего переливания</small>
+				</div>
+				<div class="b-16-advantages">
+					<div class="b-16-advantage-item b-16-advantages-1">
+						<img src="i/icons/icon-temperature.svg">
+						<p>Хранить в замороженном виде сок можно до 1 года<br>и подвергать разморозке не более 3-х раз</p>
+					</div>
+					<div class="b-16-advantage-item b-16-advantages-2">
+						<img src="i/icons/icon-temperature.svg">
+						<p>Для употребления замороженного сока возьмите <br>1 баночку и дождитесь её оттаивания. Это займет 10 минут</p>
+						<p class="b-16-advantage-note">Не подвергайте сок принудительному нагреванию</p>
+					</div>
+					<div class="b-16-advantage-item b-16-advantages-3">
+						<img src="i/icons/icon-temperature.svg">
+						<p>Перед вскрытием взболтайте баночку: содержимое<br>в силу натуральности может содержать небольшой<br>осадок</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-17">
+		<div class="b-block">
+			<img class="b-17-back" src="i/17/fateev.jpg">
+			<div class="b-17-content right">
+				<div class="b-title">
+					<h2>Делаю каждую порцию сока,<br><b>как для своей семьи</b></h2>
+				</div>
+				<div class="b-17-text">
+					<p>Думаю, что не один я в курсе того, что сок алоэ является<br>прекрасным лечебным средством, с очень широким<br>спектром применения.</p><br>
+					<p>И мне захотелось купить чистый сок для себя и своей<br>семьи, но я просто физически не смог этого сделать!</p><br>
+					<p>Его просто нигде не было...</p>	
+					<a href="#" class="show-more">Читать полностью</a>
+					<div class="b-17-sign">
+						<p><b>Алексей Фатеев</b></p>
+						<img src="i/17/sign.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-18">
+		<div class="b-block-wide b-block-gray">
+			<div class="b-block">
+				<div class="b-center b-title">
+					<h2>Получите <b>15 самых эффективных<br>рецептов</b> с добавлением сока алоэ,</h2>
+					<h4>которые идеально подойдут для всей семьи!</h4>
 				</div>
 			</div>
 		</div>
