@@ -95,7 +95,6 @@ $(document).ready(function(){
             count = parseInt($input.val()) - 1;
         count = count < 1 || isNaN(count) === true ? 1 : count;
         $input.val(count).change();
-        $cont.children("p").text(declOfNum(count));
     });
 
     $(".b-counter .icon-plus").click(function(){
@@ -104,7 +103,10 @@ $(document).ready(function(){
             count = parseInt($input.val()) + 1;
         count = count > 99 || isNaN(count) === true ? 99 : count;
         $input.val(count).change();
-        $cont.children("p").text(declOfNum(count));
+    });
+
+    $(".b-count-current").on("input change", function() {
+        $(this).siblings("p").text(declOfNum($(this).val()));
     });
 
     $(".b-video-block .b-btn-play").click(function(){

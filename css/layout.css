@@ -711,19 +711,16 @@ input[type="checkbox"].error + span + label:before{
 			z-index: 0;
 		}
 
-	.b-1-advantages{
+	.b-advantages{
 		margin-bottom: 7px;
 	}
-		.b-1-advantages img{
+		.b-advantages img{
 			position: absolute;
 			top: 4px;
 			left: 0;
 			height: 44px;
 		}
-		.b-1-advantages{
-
-		}
-			.b-1-advantage-item{
+			.b-advantage-item{
 				display: inline-block;
 				vertical-align: top;
 				width: 345px;
@@ -731,7 +728,7 @@ input[type="checkbox"].error + span + label:before{
 				padding-left: 60px;
 				margin-bottom: 34px;
 			}
-			.b-1-advantage-item b{
+			.b-advantage-item b{
 				font-family: 'MuseoSansCyrl-900';
 			}
 
@@ -1008,12 +1005,14 @@ input[type="checkbox"].error + span + label:before{
 		padding-bottom: 110px;
 	}
 		.b-form-left{
+			position: relative;
+			z-index: 1;
 			width: 640px;
 			height: 650px;
 			padding: 60px 60px 120px 60px;
 			border-radius: 10px;
 		}
-		.b-form-left{
+		.b-form-left-back{
 			background-color: #FFF;
 		}
 			.b-counter{
@@ -1142,6 +1141,8 @@ input[type="checkbox"].error + span + label:before{
 					}
 
 		.b-form{
+			position: relative;
+    		z-index: 2;
 			width: 499px;
 			height: 650px;
 			padding: 60px 50px 76px 50px;
@@ -1633,6 +1634,14 @@ input[type="checkbox"].error + span + label:before{
 .b-13{
 
 }
+	.b-13 .b-form-left img{
+		position: absolute;
+		top: 20px;
+		left: -60px;
+	}
+	.b-13-content{
+		padding-bottom: 110px;
+	}
 
 .b-14{
 
@@ -1739,6 +1748,82 @@ input[type="checkbox"].error + span + label:before{
 					height: 120px;
 				}
 
+.b-18{
+
+}
+	.b-18 .b-form .b-btn{
+		padding: 25px 0;
+	}
+
+	.b-18 .b-advantages{
+		margin-top: 50px;
+	}
+	.b-18-advantages-1{
+		width: 400px;
+	}
+	.b-18-advantages-2{
+		width: 470px;
+	}
+	.b-18-advantages-3{
+		width: 250px;
+	}
+
+	.b-gift-item{
+		height: 160px;
+		margin-bottom: 65px;
+	}
+		.b-gift-item-left{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 210px;
+			height: 100%;
+			margin-right: 40px;
+		}
+			.b-gift-count{
+				position: absolute;
+				top: 30px;
+				left: 18px;
+				z-index: 1;
+				font-size: 70px;
+				line-height: 75px;
+			}
+			.b-gift-item-left img{
+				position: absolute;
+				top: 0;
+				left: 50px;
+				z-index: 2;
+				width: 150px;
+			}
+			.b-gift-item-left .b-gift-bottom{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+			.b-gift-plus{
+				position: absolute;
+				top: 28px;
+				left: 180px;
+				z-index: 2;
+				font-size: 70px;
+				line-height: 75px;
+			}
+		.b-gift-item-right{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 210px;
+			height: 100%;
+		}
+			.b-gift-item-right img{
+				width: 175px;
+			}
+			.b-gift-item-right .b-gift-bottom{
+				position: absolute;
+				bottom: 0;
+				left: 50px;
+
+			}
 
 /*------------------------------*/
 
