@@ -227,6 +227,10 @@ h2 a{
 	color: #85b30b;
 	border-bottom: 1px dotted #85b30b;
 }
+h2 a:hover{
+	color: #865adf;
+	border-bottom: 1px dotted #865adf;
+}
 
 h3 b{
 	font-family: 'Spectral-BoldItalic';
@@ -259,6 +263,61 @@ ul.b-list{
 		width: 4px;
 		background-color: #1a1a1f;
 		border-radius: 100px;
+	}
+
+.b-tip-cont{
+	display: inline-block;
+	position: relative;
+}
+
+	.b-tip{
+		position: absolute;
+	    left: 160px;
+	    top: 100px;
+	    background-color: #FFF;
+	    z-index: 5;
+	    padding: 22px 30px;
+	    border-radius: 10px;
+	    font-size: 16px;
+	    line-height: 20px;
+	    text-align: left;
+	    -webkit-box-shadow: 0px 50px 100px 0px rgba(26, 26, 31, 0.2);
+	    -moz-box-shadow: 0px 50px 100px 0px rgba(26, 26, 31, 0.2);
+	    box-shadow: 0px 50px 100px 0px rgba(26, 26, 31, 0.2);
+	    visibility: hidden;
+	    opacity: 0;
+	    -webkit-transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    -moz-transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    -ms-transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    -o-transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    -webkit-transform: translateY(-10px);
+	    -moz-transform: translateY(-10px);
+	    -ms-transform: translateY(-10px);
+	    -o-transform: translateY(-10px);
+	    transform: translateY(-10px);
+	}
+	.b-tip:before {
+        position: absolute;
+	    content: "s";
+	    font-size: 0px;
+	    width: 0px;
+	    height: 0px;
+	    left: 125px;
+	    top: -18px;
+	    border-top: 0px solid transparent;
+	    border-right: 10px solid transparent;
+	    border-bottom: 18px solid #FFF;
+	    border-left: 10px solid transparent;
+	}
+	.b-tip-cont a:hover + .b-tip{
+		visibility: visible;
+	    opacity: 1;
+	    -webkit-transform: translateY(0px);
+	    -moz-transform: translateY(0px);
+	    -ms-transform: translateY(0px);
+	    -o-transform: translateY(0px);
+	    transform: translateY(0px);
 	}
 
 input::-webkit-input-placeholder {
@@ -341,6 +400,13 @@ input:-moz-placeholder {
 	content: "\e904";
 	font-size: 19px;
 	color: #dbdbdb;
+}
+
+.icon-minus:hover:before,
+.icon-plus:hover:before,
+.icon-minus:active:before,
+.icon-plus:active:before{
+	color: #FFF;
 }
 
 .b-btn{
@@ -949,6 +1015,14 @@ input[type="checkbox"].error + span + label:before{
 					text-align: center;
     				line-height: 44px;
     				border-radius: 100px;
+				}
+				.icon-minus:hover,
+				.icon-plus:hover{
+					background-color: #afd74c;
+				}
+				.icon-minus:active,
+				.icon-plus:active{
+					background-color: #865adf;
 				}
 				.b-count{
 					text-align: center;
