@@ -119,6 +119,41 @@ $(document).ready(function(){
         return false;
     });
 
+    $(".b-reviews-nav").slick({
+        dots: false,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        arrows: false,
+        variableWidth: true,
+        focusOnSelect: true,
+        asNavFor: '.b-reviews-slider',
+    });
+
+    $(".b-reviews-slider").slick({
+        dots: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        // centerMode: true,
+        // centerPadding: '50px',
+        arrows: true,
+        //nextArrow: '<div class="b-slider-left-arrows icon-arrow-right" aria-hidden="true"></div>',
+        asNavFor: '.b-reviews-nav'
+    });
+
+    $(".b-textarea-problem").on("input change", function() {
+        if($(this).val()){
+            $(".b-textarea-pl").addClass("hide");
+        }else{
+            $(".b-textarea-pl").removeClass("hide");
+        }
+    });
+
+    $(".b-textarea-problem").on("focus", function() {
+        $(".b-textarea-pl").addClass("hide");
+    });
+
     //asNavFor: '.b-slider-left',
 
     // // Первая анимация элементов в слайде

@@ -511,6 +511,22 @@ sup{
 	font-size: 10px;
 }
 
+
+.b-quotes{
+	width: 20px;
+	height: 20px;
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+.b-quotes-open{
+    background-image: url(../i/icons/icon-quotes-open.svg);
+}
+
+.b-quotes-close{
+    background-image: url(../i/icons/icon-quotes-close.svg);
+}
+
 input[type="checkbox"]{
 	position: absolute;
 	opacity: 0;
@@ -679,6 +695,7 @@ input[type="checkbox"].error + span + label:before{
 					line-height: 24px;
 					font-family: 'Spectral-ExtraBoldItalic';
 					color: #292929;
+					letter-spacing: -1px;
 				}
 				.b-header-call{
 					display: inline-block;
@@ -1647,6 +1664,39 @@ input[type="checkbox"].error + span + label:before{
 .b-14{
 
 }
+	.b-reviews-nav{
+
+	}
+		.b-reviews-item{
+			width: 80px;
+		    border-radius: 100px;
+		    height: 80px;
+		    margin-right: 16px;
+		    float: left;
+		    overflow: hidden;
+		}
+		.b-reviews-item.slick-active .b-reviews-img {
+		    box-shadow: 0px 0px 0px 4px #85b30b;
+		}
+			.b-reviews-img{
+				display: block;
+			    background-position: 50% 50%;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			    width: 80px;
+			    height: 80px;
+			    cursor: pointer;
+			}
+
+		.b-reviews-slider .slick-prev{
+			display: none !important;
+		}
+
+		.b-reviews-content{
+			width: 650px;
+			padding: 20px;
+			background-color: #f6f5f3;
+		}
 
 .b-15{
 
@@ -1714,21 +1764,27 @@ input[type="checkbox"].error + span + label:before{
 }
 	.b-17-back{
 		position: absolute;
-		top: 0;
-		left: -315px;
+		top: 5px;
+		left: -308px;
 	}
 	.b-17-content{
 		position: relative;
 		z-index: 1;
-		width: 650px;
-		padding-bottom: 90px;
+		width: 640px;
+		padding-bottom: 100px;
 	}
 		.b-17-text{
+			position: relative;
 			padding: 45px 0 0 30px;
 		}
 			.b-17-text p{
 				font-size: 20px;
 				line-height: 28px;
+			}
+			.b-17 .b-quotes-open{
+				position: absolute;
+				top: 9px;
+				left: 0;
 			}
 			.show-more{
 				color: #85b30b;
@@ -1762,9 +1818,12 @@ input[type="checkbox"].error + span + label:before{
 		padding: 25px 0;
 	}
 
-	.b-18 .b-form,
+	.b-18 .b-form{
+		height: 700px;
+	}
 	.b-18 .b-form-left{
 		height: 700px;
+		padding: 33px 40px;
 	}
 
 	.b-18 .b-form{
@@ -1787,18 +1846,25 @@ input[type="checkbox"].error + span + label:before{
 		width: 470px;
 	}
 		.b-18-advantages-2 img{
-			left: -12px;
+			left: -6px;
 		}
 	.b-18-advantages-3{
 		width: 250px;
 	}
 		.b-18-advantages-3 img{
-			left: -12px;
+			left: -6px;
 		}
+
+	.b-18 .b-form-title h3{
+		margin-bottom: 22px;
+	}
+	.b-18 .b-form-order{
+		padding: 0 28px;
+	}
 
 	.b-gift-item{
 		height: 160px;
-		margin-bottom: 65px;
+		margin-bottom: 74px;
 	}
 		.b-gift-item-left{
 			position: relative;
@@ -1930,7 +1996,7 @@ input[type="checkbox"].error + span + label:before{
 	    left: calc(50% - 160px);
 	    width: 320px;
 	    padding: 33px 30px 38px 30px;
-	    border-right: 5px;
+	    border-radius: 5px;
 	    text-align: center;
 	    background-position: 50% 0%;
 	    background-repeat: no-repeat;
@@ -1977,19 +2043,47 @@ input[type="checkbox"].error + span + label:before{
 		padding-top: 55px;
 	}
 
-	.b-textarea{
-        border: 1.3px solid rgb(219, 219, 219);
-	    background-color: #fcfbfa;
-	    box-shadow: inset 1.414px 1.414px 6px 0px rgba(30, 30, 30, 0.1);
-	    border-radius: 5px;
-	    width: 460px;
-	    min-height: 120px;
-	    padding: 22px;
-	    font-family: "MuseoSansCyrl-300";
-	    font-size: 16px;
-	    line-height: 20px;
-	    margin-bottom: 40px;
+	.b-textarea-cont{
+		position: relative;
 	}
+		.b-textarea{
+	        border: 1.3px solid rgb(219, 219, 219);
+		    background-color: #fcfbfa;
+		    box-shadow: inset 1.414px 1.414px 6px 0px rgba(30, 30, 30, 0.1);
+		    border-radius: 5px;
+		    width: 460px;
+		    min-height: 120px;
+		    padding: 22px;
+		    font-family: "MuseoSansCyrl-300";
+		    font-size: 16px;
+		    line-height: 20px;
+		    margin-bottom: 40px;
+		}
+	.b-textarea-pl{
+		position: absolute;
+		top: 26px;
+    	left: 28px;
+	}
+		.b-textarea-pl p{
+			position: relative;
+			font-size: 16px;
+			line-height: 20px;
+  			color: rgba(102, 102, 102, 0.749);
+  			padding-left: 40px;
+		}
+		.b-textarea-pl p:before{
+			content:" ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 18px;
+			height: 18px;
+			background-position: 50% 0%;
+	    	background-repeat: no-repeat;
+	    	background-image: url(../i/icons/icon-input.svg);
+	    	background-size: 18px;
+		}
 	.b-20-content{
 	    position: relative;
 		margin-top: 28px;
@@ -2037,11 +2131,106 @@ input[type="checkbox"].error + span + label:before{
     	right: 146px;
 	}
 
+.b-footer{
+	background-color: #f2f2f2;
+}
+	.b-footer-top{
+		padding-top: 50px;
+		margin-bottom: 60px;
+	}
+		.b-footer-logo{
+		    display: inline-block;
+		    vertical-align: top;
+		    width: 178px;
+		    height: 80px;
+		    background-position: 50% 50%;
+		    background-repeat: no-repeat;
+		    background-image: url(../i/footer/logo-footer.jpg);
+		    background-size: 178px;
+		    margin: 14px 104px 0 -5px;
+		}
+		.b-footer-contacts{
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 133px;
+		}
+			.b-footer-contacts .b-header-social{
+				display: block;
+			    margin-top: 0;
+			    margin-bottom: 10px;
+			    padding-left: 30px;
+			}
+				.b-footer-contacts .b-header-social li a{
+					width: 30px;
+					height: 30px;
+					border: 3px solid #f2f2f2;
+				}
+				.b-footer-contacts .icon-call:before {
+				    padding-left: 10px;
+				    line-height: 31px;
+				    font-size: 11px;
+				}
+				.b-footer-contacts .icon-whatsapp:before {
+				    line-height: 29px;
+				    font-size: 15px;
+				    padding-left: 9px;
+				}
+				.b-footer-contacts .icon-telegram:before {
+				    line-height: 30px;
+				    padding-left: 8px;
+				    font-size: 14px;
+				}
+	.b-footer-politics{
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 18px;
+	}
+		.b-footer-politics a{
+			display: inline-block;
+			color: rgba(26, 26, 31, 0.502);
+			font-family: 'MuseoSansCyrl-700';
+			margin-bottom: 14px;
+			border-bottom: 1px solid #d0d0d0;
+		}
+	.tfa{
+		display: inline-block;
+		vertical-align: top;
+		float: right;
+		margin-top: 4px;
+		margin-right: 20px;
+   		text-align: center;
+	}
+		.tfa-logo{
+		    width: 95px;
+		    height: 35px;
+		    background-position: 50% 50%;
+		    background-repeat: no-repeat;
+		    background-image: url(../i/footer/tfa.svg);
+		    background-size: 95px;
+		    margin-bottom: 14px;
+		}
+		.tfa p,
+		.b-footer-bottom p{
+		  font-size: 14px;
+		  line-height: 20px;
+		  color: rgba(41, 41, 41, 0.349);
+		}
+	.b-footer-bottom{
+		padding-bottom: 40px;
+	}
+	.b-footer-bottom p.right{
+		margin-right: 44px;
+	}
+
+
 /*------------------------------*/
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-header-logo{
 	    background-image: url(../i/1/logo@2x.jpg);
+	}
+	.b-footer-logo{
+		background-image: url(../i/footer/logo-footer@2x.jpg);
 	}
 }	
 @media screen and (max-width: 1250px){
