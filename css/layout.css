@@ -1751,8 +1751,20 @@ input[type="checkbox"].error + span + label:before{
 .b-18{
 
 }
+	.b-18-content{
+		padding-bottom: 130px;
+	}
 	.b-18 .b-form .b-btn{
 		padding: 25px 0;
+	}
+
+	.b-18 .b-form,
+	.b-18 .b-form-left{
+		height: 700px;
+	}
+
+	.b-18 .b-form{
+		padding: 60px 25px 76px 25px;
 	}
 
 	.b-18 .b-advantages{
@@ -1776,14 +1788,14 @@ input[type="checkbox"].error + span + label:before{
 			position: relative;
 			display: inline-block;
 			vertical-align: top;
-			width: 210px;
+			width: 230px;
 			height: 100%;
-			margin-right: 40px;
+			margin-right: 20px;
 		}
 			.b-gift-count{
 				position: absolute;
 				top: 30px;
-				left: 18px;
+				left: 26px;
 				z-index: 1;
 				font-size: 70px;
 				line-height: 75px;
@@ -1791,7 +1803,7 @@ input[type="checkbox"].error + span + label:before{
 			.b-gift-item-left img{
 				position: absolute;
 				top: 0;
-				left: 50px;
+				left: 58px;
 				z-index: 2;
 				width: 150px;
 			}
@@ -1802,11 +1814,11 @@ input[type="checkbox"].error + span + label:before{
 			}
 			.b-gift-plus{
 				position: absolute;
-				top: 28px;
-				left: 180px;
-				z-index: 2;
-				font-size: 70px;
-				line-height: 75px;
+			    top: 28px;
+			    left: 190px;
+			    z-index: 2;
+			    font-size: 60px;
+			    line-height: 75px;
 			}
 		.b-gift-item-right{
 			position: relative;
@@ -1816,14 +1828,25 @@ input[type="checkbox"].error + span + label:before{
 			height: 100%;
 		}
 			.b-gift-item-right img{
-				width: 175px;
+				position: absolute;
+			    top: 0;
+			    left: 52px;
+			    z-index: 2;
+				width: 173px;
 			}
 			.b-gift-item-right .b-gift-bottom{
 				position: absolute;
-				bottom: 0;
-				left: 50px;
-
+				bottom: -5px;
+				left: 66px;
+				color: #FFF;
+				background-color: #85b30b;
+				border-radius: 4px;
+				padding: 3px 8px;
 			}
+
+	.b-gift-3 .b-gift-item-left .b-gift-count{
+		left: -5px;
+	}
 
 /*------------------------------*/
 
