@@ -4,6 +4,46 @@
     {
       "icon": {
         "paths": [
+          "M1003.63 877.531l-121.234 121.234-370.286-370.286-394.423 394.423-116.59-116.59 394.423-394.423-370.286-370.286 121.234-121.198 370.286 370.249 354.414-354.414 116.59 116.59-354.414 354.414 370.286 370.286z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(253, 253, 253)"
+          }
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "icon-close"
+        ],
+        "colorPermutations": {
+          "21921921912532532531": [
+            {
+              "f": 1
+            }
+          ]
+        }
+      },
+      "attrs": [
+        {
+          "fill": "rgb(253, 253, 253)"
+        }
+      ],
+      "properties": {
+        "order": 10,
+        "id": 7,
+        "name": "icon-close",
+        "prevSize": 32,
+        "code": 59655
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
           "M413.363 512.216l383.076-383.093c10.548-10.523 16.351-24.593 16.351-39.595 0-15.010-5.803-29.072-16.351-39.611l-33.567-33.551c-10.531-10.556-24.609-16.367-39.611-16.367s-29.063 5.811-39.603 16.367l-456.113 456.105c-10.581 10.573-16.376 24.701-16.334 39.72-0.042 15.085 5.744 29.196 16.334 39.778l455.688 455.663c10.54 10.556 24.601 16.367 39.611 16.367 15.002 0 29.063-5.811 39.611-16.367l33.559-33.551c21.837-21.837 21.837-57.386 0-79.214l-382.651-382.651z"
         ],
         "attrs": [
@@ -11,24 +51,24 @@
         ],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 0,
         "tags": [
           "left-arrow"
-        ]
+        ],
+        "grid": 0
       },
       "attrs": [
         {}
       ],
       "properties": {
         "order": 10,
-        "id": 6,
+        "id": 0,
         "name": "left-arrow",
         "prevSize": 32,
         "code": 59653
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 0
+      "iconIdx": 1
     },
     {
       "icon": {
@@ -40,24 +80,24 @@
         ],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 0,
         "tags": [
           "right-arrow"
-        ]
+        ],
+        "grid": 0
       },
       "attrs": [
         {}
       ],
       "properties": {
         "order": 11,
-        "id": 5,
+        "id": 1,
         "name": "right-arrow",
         "prevSize": 32,
         "code": 59654
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 1
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -84,14 +124,14 @@
       ],
       "properties": {
         "order": 9,
-        "id": 0,
+        "id": 2,
         "name": "icon-minus",
         "prevSize": 32,
         "code": 59651
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 2
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -117,14 +157,14 @@
       ],
       "properties": {
         "order": 8,
-        "id": 1,
+        "id": 3,
         "name": "icon-plus",
         "prevSize": 32,
         "code": 59652
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 3
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -146,14 +186,14 @@
       ],
       "properties": {
         "order": 5,
-        "id": 2,
+        "id": 4,
         "name": "icon-call",
         "prevSize": 32,
         "code": 59648
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 4
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -176,14 +216,14 @@
       ],
       "properties": {
         "order": 6,
-        "id": 3,
+        "id": 5,
         "name": "icon-whatsapp",
         "prevSize": 32,
         "code": 59649
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 5
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -206,14 +246,14 @@
       ],
       "properties": {
         "order": 7,
-        "id": 4,
+        "id": 6,
         "name": "icon-telegram",
         "prevSize": 32,
         "code": 59650
       },
       "setIdx": 0,
       "setId": 2,
-      "iconIdx": 6
+      "iconIdx": 7
     }
   ],
   "height": 1024,

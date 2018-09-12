@@ -423,6 +423,12 @@ input:-moz-placeholder {
 	color: #FFF;
 }
 
+.icon-close{
+	content: "\e907";
+	font-size: 8px;
+	color: #FFF;
+}
+
 .b-btn{
 	display: inline-block;
 	text-align: center;
@@ -1083,6 +1089,14 @@ input[type="checkbox"].error + span + label:before{
 			padding: 60px 60px 120px 60px;
 			border-radius: 10px;
 		}
+		.b-form-left .b-discover{
+			position: absolute;
+			top: 374px;
+    		left: 25px;
+		}
+			.b-form-left .b-discover p{
+				padding-top: 70px;
+			}
 		.b-form-left-back{
 			background-color: #FFF;
 		}
@@ -2385,6 +2399,10 @@ input[type="checkbox"].error + span + label:before{
 			margin-bottom: 14px;
 			border-bottom: 1px solid #d0d0d0;
 		}
+		.b-footer-politics a:hover{
+			color: #9bc338;
+			border-bottom: 1px solid rgba(155, 195, 56, 0.1);
+		}
 	.tfa{
 		display: inline-block;
 		vertical-align: top;
@@ -2415,6 +2433,25 @@ input[type="checkbox"].error + span + label:before{
 		margin-right: 44px;
 	}
 
+.b-popup{
+	padding: 0;
+	background-color: transparent;
+}
+
+.b-popup .b-form-title h3{
+	font-size: 35px;
+	line-height: 38px;
+}
+
+/*------------------------------*/
+
+.fancybox-bg{
+	background-color: #85b30b;
+	opacity: 0.98;
+}
+.fancybox-is-open .fancybox-bg{
+	opacity: 0.98;
+}
 
 /*------------------------------*/
 
