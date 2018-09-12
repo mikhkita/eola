@@ -1696,7 +1696,61 @@ input[type="checkbox"].error + span + label:before{
 			width: 650px;
 			padding: 20px;
 			background-color: #f6f5f3;
+			border-radius: 5px;
+			margin-bottom: 110px;
 		}
+			.b-reviews-text-cont{
+				padding: 30px 20px 30px 48px;
+			}
+				.b-reviews-text{
+					position: relative;
+					font-size: 20px;
+					line-height: 28px;
+					margin-bottom: 25px;
+				}
+				.b-reviews-text .b-quotes-open{
+					position: absolute;
+					top: -18px;
+    				left: -42px;
+				}
+				.b-reviews-text .b-quotes-close{
+					position: absolute;
+					bottom: -17px;
+    				right: -8px;
+				}
+
+		.b-reviews-slide .b-reviews-video{
+			width: 610px;
+    		height: 410px;
+    		border-radius: 5px;
+		}
+			.b-reviews-slide .b-reviews-video .b-btn{
+				position: absolute;
+				top: 154px;
+				left: 140px;
+			}
+
+	.b-reviews-person{
+
+	}
+		.b-reviews-person .b-reviews-img{
+			display: inline-block;
+		    vertical-align: middle;
+		    border-radius: 100px;
+		}
+			.b-reviews-name{
+				padding-left: 18px;
+				display: inline-block;
+    			vertical-align: middle;
+			}
+				.b-reviews-name h4{
+					font-size: 20px;
+					line-height: 22px;
+					font-family: 'MuseoSansCyrl-900';
+				}
+				.b-reviews-name small{
+
+				}
 
 .b-15{
 
