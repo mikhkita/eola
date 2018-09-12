@@ -140,6 +140,25 @@ $(document).ready(function(){
         asNavFor: '.b-reviews-nav'
     });
 
+    $(".b-tip-cont a").click(function(){
+        $(this).siblings(".b-tip").addClass("show");
+        return false;
+    });
+
+    $(function(){
+        $(document).mouseup(function (e){
+            var tip = $(".b-tip");
+            if (!tip.is(e.target) && tip.has(e.target).length === 0) {
+                tip.removeClass("show");
+            }
+        });
+    });
+
+    $(".b-tip-close").click(function(){
+        $(this).parents(".b-tip").removeClass("show");
+        return false;
+    });
+
     // $(".b-reviews-nav").on('beforeChange', function(event, slick, currentSlide, nextSlide){
     //     $(".b-reviews-item").removeClass("slick-active");
     //     $(".b-reviews-item[data-slick-index='"+currentSlide+"']").addClass("slick-active");

@@ -344,6 +344,7 @@
 						<div class="b-tip-cont">
 							<a href="#">при различных проблемах</a>
 							<div class="b-tip">
+								<a href="#" class="icon-close b-tip-close"></a>
 								<ul class="b-list">
 									<li>насморк</li>
 									<li>угри и прыщи</li>
@@ -475,7 +476,13 @@
 				<div class="b-tab-item b-tab-1 tab-active">
 					<div class="b-block">
 						<div class="b-discover">
-						<p>Список<br>противопо-<br>казаний</p>
+							<div class="b-tip-cont">
+								<a href="#">при различных проблемах</a>
+								<div class="b-tip">
+									<a href="#" class="icon-close b-tip-close"></a>
+								</div>
+							</div>
+							<p>Список<br>противопо-<br>казаний</p>
 <svg id="discover"
  xmlns="http://www.w3.org/2000/svg"
  xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1058,12 +1065,7 @@
 				</div>
 				<form class="b-form-problem right" method="post" action="kitsend.php">
 					<h3 class="b-20-title-1"><span class="number">1</span>Опишите в этом поле<br>вашу проблему, которую хотите<br>решить с помощью сока алоэ!<img class="b-20-line" src="i/20/line.svg"></h3>
-					<div class="b-textarea-cont">
-						<div class="b-textarea-pl">
-							<p>В чем заключается ваша проблема?</p>
-						</div>
-						<textarea class="b-textarea b-textarea-problem" name="problem" required></textarea>
-					</div>
+					<textarea class="b-textarea" name="problem" placeholder="В чем заключается ваша проблема?" required></textarea>
 					<h3 class="b-20-title-2"><span class="number">2</span>После того, как опишите<br>проблему, нажмите сюда<img class="b-20-line" src="i/20/line.svg"></h3>
 					<a href="#" class="b-btn b-btn-green">Готово</a>
 				</form>

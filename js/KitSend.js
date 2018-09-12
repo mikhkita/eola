@@ -83,7 +83,7 @@ $(document).ready(function(){
 	         	}
 	      	},
 	      	btnTpl : {
-		    	smallBtn   : '<button data-fancybox-close class="fancybox-close-small icon-close" title="Закрыть"></button>'
+		    	smallBtn   : '<button data-fancybox-close class="fancybox-close-small" title="Закрыть"></button>'
 		    },
 			beforeShow: function(){
 				$(".fancybox-wrap").addClass("beforeShow");
