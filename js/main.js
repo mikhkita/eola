@@ -58,11 +58,9 @@ $(document).ready(function(){
     $(".b-slider-left").on('beforeChange', function(event, slick, currentSlide, nextSlide){
         $(".b-slider-doc-item[data-id='"+nextSlide+"']").click();
         sliderBlock = true;
-        console.log("beforeChange");
     });
     $(".b-slider-left").on('afterChange', function(event, slick, currentSlide, nextSlide){
         sliderBlock = false;
-        console.log("afterChange");
     });
 
     $(".b-slider-doc-item").click(function(){
@@ -135,24 +133,30 @@ $(document).ready(function(){
         slidesToScroll: 1,
         infinite: true,
         speed: 500,
-        // centerMode: true,
-        // centerPadding: '50px',
+        fade: true,
+        cssEase: 'linear',
         arrows: true,
-        //nextArrow: '<div class="b-slider-left-arrows icon-arrow-right" aria-hidden="true"></div>',
+        nextArrow: '<div class="b-reviews-next-cont" aria-hidden="true"><span class="b-reviews-next">Смотреть следующий отзыв</span></div>',
         asNavFor: '.b-reviews-nav'
     });
 
-    $(".b-textarea-problem").on("input change", function() {
-        if($(this).val()){
-            $(".b-textarea-pl").addClass("hide");
-        }else{
-            $(".b-textarea-pl").removeClass("hide");
-        }
-    });
+    // $(".b-reviews-nav").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    //     $(".b-reviews-item").removeClass("slick-active");
+    //     $(".b-reviews-item[data-slick-index='"+currentSlide+"']").addClass("slick-active");
+    // });
 
-    $(".b-textarea-problem").on("focus", function() {
-        $(".b-textarea-pl").addClass("hide");
-    });
+
+    // $(".b-textarea-problem").on("input change", function() {
+    //     if($(this).val()){
+    //         $(".b-textarea-pl").addClass("hide");
+    //     }else{
+    //         $(".b-textarea-pl").removeClass("hide");
+    //     }
+    // });
+
+    // $(".b-textarea-problem").on("focus", function() {
+    //     $(".b-textarea-pl").addClass("hide");
+    // });
 
     //asNavFor: '.b-slider-left',
 

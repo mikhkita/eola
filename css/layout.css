@@ -343,7 +343,8 @@ input:-moz-placeholder {
 [class^="icon-"]:before, 
 [class*=" icon-"]:before,
 [class^="icon-"]:after, 
-[class*=" icon-"]:after{
+[class*=" icon-"]:after,
+.b-reviews-next:after{
 	font-family: 'icomoon' !important;
 	speak: none;
 	font-style: normal;
@@ -630,6 +631,44 @@ input[type="checkbox"].error + span + label:before{
 	border-bottom: 1px solid #0099ff;
 }
 
+.b-discover{
+	position: relative;
+	width: 194px;
+	height: 194px;
+}
+	#discover{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	svg #outer{
+		transition: 200ms;
+	  	transition-timing-function: ease-in-out;
+	  	-webkit-transition: 200ms;
+	  	-webkit-transition-timing-function: ease-in-out;
+	}
+	svg #outer:hover,
+	.b-discover p:hover ~ svg #outer{
+		fill: #afd74c;
+	}
+
+	svg #outer:active,
+	.b-discover p:active ~ svg #outer{
+		fill: #865adf;
+	}
+
+	.b-discover p{
+		position: relative;
+		z-index: 2;
+		padding-top: 56px;
+		text-align: center;
+		font-size: 22px;
+		line-height: 30px;
+		font-family: 'Spectral-BoldItalic';
+	}
+
 /*-------------------------------*/
 
 .b-1{
@@ -715,6 +754,11 @@ input[type="checkbox"].error + span + label:before{
 	.b-1-content{
 		width: 700px;
 	}
+		.b-1-content .b-discover{
+		    position: absolute;
+		    top: 345px;
+		    right: -110px;
+		}
 		.b-1-front{
 			position: relative;
 			z-index: 1;
@@ -962,10 +1006,19 @@ input[type="checkbox"].error + span + label:before{
 		}
 
 		.b-5-text{
+			display: inline-block;
 			padding-left: 170px;
 			position: relative;
 			z-index: 1;
 		}
+			.b-5-text img{
+				display: block;
+			    width: 32px;
+			    height: 22px;
+			    position: absolute;
+			    top: 3px;
+			    right: -20px;
+			}
 			.b-5-content .b-5-line{
 				position: absolute;
 				top: 62px;
@@ -1161,10 +1214,12 @@ input[type="checkbox"].error + span + label:before{
 		.b-form{
 			position: relative;
     		z-index: 2;
-			width: 499px;
+			width: 500px;
 			height: 650px;
 			padding: 60px 50px 76px 50px;
-			background-color: #FFF;
+	    	background-repeat: no-repeat;
+	    	background-image: url(../i/form-border-short.svg);
+	    	background-size: cover;
 			border-radius: 10px;
 		}
 			.b-form-title{
@@ -1367,6 +1422,7 @@ input[type="checkbox"].error + span + label:before{
 				position: absolute;
 				top: 15px;
 				left: -60px;
+				height: 710px;
 			}
 
 		.b-9-content .b-form{
@@ -1590,12 +1646,28 @@ input[type="checkbox"].error + span + label:before{
 		.b-tab-1{
 			background-color: #fdd000;
 		}
+			.b-tab-1 .b-discover{
+				position: absolute;
+				bottom: 120px;
+    			right: 336px;
+			}
 		.b-tab-2{
 			background-color: #b3e5d6;
 		}
+			.b-tab-2 .b-discover,
+			.b-tab-4 .b-discover{
+				position: absolute;
+				top: 360px;
+    			left: 336px;
+			}
 		.b-tab-3{
 			background-color: #c7ced5;
 		}
+			.b-tab-3 .b-discover{
+				position: absolute;
+				bottom: 100px;
+    			right: 336px;
+			}
 		.b-tab-4{
 			background-color: #e6c3c4;
 		}
@@ -1621,7 +1693,7 @@ input[type="checkbox"].error + span + label:before{
 				bottom: 0;
 			}
 			.b-tab-1 img{
-				left: -400px;
+				left: -380px;
 			}
 			.b-tab-2 img{
 				left: -195px;
@@ -1634,7 +1706,7 @@ input[type="checkbox"].error + span + label:before{
 			}
 			.b-tab-item-text{
 				position: absolute;
-				top: 360px;
+				top: 352px;
 				left: 610px;
 			}
 				.b-tab-item-text .text-block{
@@ -1649,13 +1721,18 @@ input[type="checkbox"].error + span + label:before{
 						width: 240px;
 					}
 
+					.b-tab-item-text ul.b-list li{
+						margin-bottom: 10px;
+					}
+
 .b-13{
 
 }
 	.b-13 .b-form-left img{
 		position: absolute;
 		top: 20px;
-		left: -60px;
+		left: -34px;
+		height: 680px;
 	}
 	.b-13-content{
 		padding-bottom: 110px;
@@ -1664,93 +1741,154 @@ input[type="checkbox"].error + span + label:before{
 .b-14{
 
 }
+	.b-14 .b-title{
+		margin-bottom: 25px;
+	}
+	.b-14-top-text{
+		position: relative;
+		display: inline-block;
+	}
+		.b-14-top-text img{
+			position: absolute;
+			bottom: -15px;
+    		right: -23px;
+		}
 	.b-reviews-nav{
-
+		margin-top: 20px;
 	}
 		.b-reviews-item{
 			width: 80px;
 		    border-radius: 100px;
 		    height: 80px;
-		    margin-right: 16px;
+		    margin-right: 20px;
 		    float: left;
 		    overflow: hidden;
 		}
-		.b-reviews-item.slick-active .b-reviews-img {
-		    box-shadow: 0px 0px 0px 4px #85b30b;
+		.b-reviews-item.slick-current .b-reviews-img{
+			border: 7px solid #85b30b;
+    		border-radius: 100px;
 		}
 			.b-reviews-img{
 				display: block;
 			    background-position: 50% 50%;
 			    background-repeat: no-repeat;
-			    background-size: cover;
+			    background-size: 80px;
 			    width: 80px;
 			    height: 80px;
 			    cursor: pointer;
 			}
 
-		.b-reviews-slider .slick-prev{
-			display: none !important;
+		.b-reviews{
+			position: relative;
+			margin-top: 22px;
+			background-color: transparent;
 		}
-
-		.b-reviews-content{
-			width: 650px;
-			padding: 20px;
-			background-color: #f6f5f3;
-			border-radius: 5px;
-			margin-bottom: 110px;
-		}
-			.b-reviews-text-cont{
-				padding: 30px 20px 30px 48px;
+			.b-reviews-slider{
+				position: relative;
+				z-index: 1;
 			}
-				.b-reviews-text{
-					position: relative;
-					font-size: 20px;
-					line-height: 28px;
-					margin-bottom: 25px;
-				}
-				.b-reviews-text .b-quotes-open{
-					position: absolute;
-					top: -18px;
-    				left: -42px;
-				}
-				.b-reviews-text .b-quotes-close{
-					position: absolute;
-					bottom: -17px;
-    				right: -8px;
-				}
-
-		.b-reviews-slide .b-reviews-video{
-			width: 610px;
-    		height: 410px;
-    		border-radius: 5px;
-		}
-			.b-reviews-slide .b-reviews-video .b-btn{
-				position: absolute;
-				top: 154px;
-				left: 140px;
+			.b-reviews-slider .slick-prev{
+				display: none !important;
 			}
 
-	.b-reviews-person{
+			.b-reviews-content{
+				width: 650px;
+				padding: 20px;
+				background-color: #f6f5f3;
+				border-radius: 5px;
+				margin-bottom: 110px;
+				margin-top: 26px;
+			}
+				.b-reviews-text-cont{
+					padding: 30px 20px 30px 48px;
+				}
+					.b-reviews-text{
+						position: relative;
+						font-size: 20px;
+						line-height: 28px;
+						margin-bottom: 25px;
+					}
+					.b-reviews-text .b-quotes-open{
+						position: absolute;
+						top: -18px;
+	    				left: -42px;
+					}
+					.b-reviews-text .b-quotes-close{
+						position: absolute;
+						bottom: -17px;
+	    				right: -8px;
+					}
 
-	}
-		.b-reviews-person .b-reviews-img{
-			display: inline-block;
-		    vertical-align: middle;
-		    border-radius: 100px;
+			.b-reviews-slide .b-reviews-video{
+				width: 610px;
+	    		height: 410px;
+	    		border-radius: 5px;
+	    		margin-top: 0;
+			}
+				.b-reviews-slide .b-reviews-video .b-btn{
+					position: absolute;
+					top: 154px;
+					left: 140px;
+				}
+
+		.b-reviews-person{
+
 		}
-			.b-reviews-name{
-				padding-left: 18px;
+			.b-reviews-person .b-reviews-img{
 				display: inline-block;
-    			vertical-align: middle;
+			    vertical-align: middle;
+			    border-radius: 100px;
+			    cursor: default;
 			}
-				.b-reviews-name h4{
-					font-size: 20px;
-					line-height: 22px;
-					font-family: 'MuseoSansCyrl-900';
+				.b-reviews-name{
+					padding-left: 18px;
+					display: inline-block;
+	    			vertical-align: middle;
 				}
-				.b-reviews-name small{
+					.b-reviews-name h4{
+						font-size: 20px;
+						line-height: 22px;
+						font-family: 'MuseoSansCyrl-900';
+					}
+					.b-reviews-name small{
 
-				}
+					}
+
+		.b-reviews .b-btn-green{
+			position: absolute;
+			top: 230px;
+	    	right: 50px;
+	    	z-index: 2;
+		}
+		.b-reviews-next-cont{
+			position: absolute;
+			top: 360px;
+			right: 52px;
+		}
+			.b-reviews-next{
+				cursor: pointer;
+				color: #83b118;
+				font-family: 'MuseoSansCyrl-700';
+				font-size: 15px;
+				margin-right: 40px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+			.b-reviews-next:after{
+				content: "\e906";
+				font-size: 12px;
+				color: #83b118;
+				margin-left: 12px;
+			}
+
+			.b-reviews-next:hover,
+			.b-reviews-next:hover:after{
+				color: #afd74c;
+			}
+			.b-reviews-next:active,
+			.b-reviews-next:active:after{
+				color: #865adf;
+			}
 
 .b-15{
 
@@ -1874,6 +2012,7 @@ input[type="checkbox"].error + span + label:before{
 
 	.b-18 .b-form{
 		height: 700px;
+		background-image: url(../i/form-border.svg);
 	}
 	.b-18 .b-form-left{
 		height: 700px;
