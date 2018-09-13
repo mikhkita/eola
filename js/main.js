@@ -87,24 +87,46 @@ $(document).ready(function(){
         return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
     }
 
-    $(".b-counter .icon-minus").click(function(){
+    $(".b-btn-count").click(function(){
         var $cont = $(this).siblings(".b-count"),
             $input = $cont.children("input"),
+            count;
+        if($(this).hasClass("icon-minus")){
             count = parseInt($input.val()) - 1;
-        count = count < 1 || isNaN(count) === true ? 1 : count;
-        $input.val(count).change();
-    });
-
-    $(".b-counter .icon-plus").click(function(){
-        var $cont = $(this).siblings(".b-count"),
-            $input = $cont.children("input"),
+            count = count < 1 || isNaN(count) === true ? 1 : count;
+        }else{
             count = parseInt($input.val()) + 1;
-        count = count > 99 || isNaN(count) === true ? 99 : count;
+            count = count > 99 || isNaN(count) === true ? 99 : count;
+        }
         $input.val(count).change();
+        $(".b-tip-count").addClass("show");
     });
 
     $(".b-count-current").on("input change", function() {
+        var count = $(this).val(),
+            $form = $(this).parents(".b-form-left");
+
         $(this).siblings("p").text(declOfNum($(this).val()));
+
+        if(count >= 3){
+            $form.find(".b-bonus-free").addClass("active");
+        }else{
+            $form.find(".b-bonus-free").removeClass("active");
+        }
+        if(count >= 5){
+            $form.find(".b-bonus-gift").addClass("active");
+        }else{
+            $form.find(".b-bonus-gift").removeClass("active");
+        }
+        if(count == 1){
+            $form.find(".old-price").addClass("hide");
+            $form.find(".more-1").addClass("hide");
+            $form.find(".less-1").removeClass("hide");
+        }else{
+            $form.find(".old-price").removeClass("hide");
+            $form.find(".more-1").removeClass("hide");
+            $form.find(".less-1").addClass("hide");
+        }
     });
 
     $(".b-video-block .b-btn-play").click(function(){
@@ -140,14 +162,19 @@ $(document).ready(function(){
         asNavFor: '.b-reviews-nav'
     });
 
-    $(".b-tip-cont a").click(function(){
+    $(".b-tip-cont > a").click(function(){
         $(this).siblings(".b-tip").addClass("show");
+        return false;
+    });
+
+    $(".b-discover").click(function(){
+        $(this).find(".b-tip").addClass("show");
         return false;
     });
 
     $(function(){
         $(document).mouseup(function (e){
-            var tip = $(".b-tip");
+            var tip = $(".b-tip, .b-tip-count");
             if (!tip.is(e.target) && tip.has(e.target).length === 0) {
                 tip.removeClass("show");
             }
@@ -155,7 +182,7 @@ $(document).ready(function(){
     });
 
     $(".b-tip-close").click(function(){
-        $(this).parents(".b-tip").removeClass("show");
+        $(this).parents(".b-tip, .b-tip-count").removeClass("show");
         return false;
     });
 
