@@ -99,7 +99,7 @@ $(document).ready(function(){
             count = count > 99 || isNaN(count) === true ? 99 : count;
         }
         $input.val(count).change();
-        $(".b-tip-count").addClass("show");
+        $(".b-tip-small").addClass("show");
     });
 
     $(".b-count-current").on("input change", function() {
@@ -174,7 +174,7 @@ $(document).ready(function(){
 
     $(function(){
         $(document).mouseup(function (e){
-            var tip = $(".b-tip, .b-tip-count");
+            var tip = $(".b-tip");
             if (!tip.is(e.target) && tip.has(e.target).length === 0) {
                 tip.removeClass("show");
             }
@@ -182,8 +182,16 @@ $(document).ready(function(){
     });
 
     $(".b-tip-close").click(function(){
-        $(this).parents(".b-tip, .b-tip-count").removeClass("show");
+        $(this).parents(".b-tip, .b-tip-small").removeClass("show");
         return false;
+    });
+
+    $("input[type='checkbox']").change(function(){
+        if($(this).prop('checked')){
+            $(this).siblings(".b-tip-small").removeClass("show");
+        }else{
+            $(this).siblings(".b-tip-small").addClass("show");
+        }
     });
 
     // $(".b-reviews-nav").on('beforeChange', function(event, slick, currentSlide, nextSlide){

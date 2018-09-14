@@ -331,7 +331,7 @@ small{
 		color: #FFF;
 	}
 	.b-tip.show,
-	.b-tip-count.show{
+	.b-tip-small.show{
 		visibility: visible;
 	    opacity: 1;
 	    -webkit-transform: translateY(0px);
@@ -649,10 +649,13 @@ input[type="checkbox"].error + span + label:before{
 	/*box-shadow: 0px 0px 0px 2px #F00;*/
 }
 
-.b-checkbox label a{
-	padding-bottom: 1px;
-	border-bottom: 1px solid #0099ff;
+.b-checkbox{
+	position: relative;
 }
+	.b-checkbox label a{
+		padding-bottom: 1px;
+		border-bottom: 1px solid #0099ff;
+	}
 
 .b-discover{
 	position: relative;
@@ -1236,7 +1239,7 @@ input[type="checkbox"].error + span + label:before{
 						color: rgba(26, 26, 31, 0.502);
 					}
 
-				.b-tip-count{
+				.b-tip-small{
 					position: absolute;
 					top: 0;
 					right: -288px;
@@ -1257,17 +1260,17 @@ input[type="checkbox"].error + span + label:before{
 				    -o-transform: translateX(10px);
 				    transform: translateX(10px);
 				}
-					.b-tip-count p{
+					.b-tip-small p{
 						color: #FFF;
 						font-size: 12px;
 						line-height: 18px;
 					}
-					.b-tip-count .b-tip-close {
+					.b-tip-small .b-tip-close {
 					    position: absolute;
 					    top: 0px;
 					    right: 8px;
 					}
-					.b-tip-count:before {
+					.b-tip-small:before {
 					    content: "s";
 					    position: absolute;
 					    font-size: 0px;
@@ -2653,6 +2656,19 @@ input[type="checkbox"].error + span + label:before{
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		margin-left: 130px;
+	}
+
+	.b-checkbox .b-tip-small{
+		top: -3px;
+    	right: -268px;
+		background-color: #f5662c;
+		padding: 8px 16px 12px 16px;
+		font-size: 11px;
+		line-height: 15px;
+	}
+	.b-checkbox .b-tip-small:before {
+	    top: 13px;
+	    border-right: 12px solid #f5662c;
 	}
 
 /*------------------------------*/

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>  
 <head>
-	<title></title>
+	<title>Сок Алоэ</title>
 	<meta name="keywords" content=''>
 	<meta name="description" content=''>
 
@@ -235,7 +235,7 @@
 									<input type="text" name="count" class="b-count-current" value="2" maxlength="2" oninput="this.value = this.value.replace(/\D/g, '')">
 									<p>упаковки</p>
 								</div>
-								<div class="b-tip-count">
+								<div class="b-tip-small">
 									<a href="#" class="icon-close b-tip-close"></a>
 									<p>от 5 упаковок + 1 упаковка бесплатно</p>
 									<p>от 8 упаковок + 2 упаковка бесплатно</p>
@@ -934,7 +934,7 @@
 									<input type="text" name="count" class="b-count-current" value="2" maxlength="2" oninput="this.value = this.value.replace(/\D/g, '')">
 									<p>упаковки</p>
 								</div>
-								<div class="b-tip-count">
+								<div class="b-tip-small">
 									<a href="#" class="icon-close b-tip-close"></a>
 									<p>от 5 упаковок + 1 упаковка бесплатно</p>
 									<p>от 8 упаковок + 2 упаковка бесплатно</p>
@@ -1209,6 +1209,28 @@
 		</div>
 	</div>
 
+	<div class="b-thanks b-popup" id="b-popup-success">
+		<h2 class="b-center"><b>Будьте внимательны</b><br>при покупке сока алоэ!</h2>
+		<p>Эффективен исключительно свежевыжатый сок алоэ,<br>т.к. сок промышленного производства, в том числе<br>аптечный, не содержит в себе нужных полезных веществ!</p>
+		<h4><b class="orange">В промышленном и аптечном соке</b> присутствует:</h4>
+		<div class="b-fact-advantages">
+			<div class="b-facts-advantages-item b-facts-advantages-1">
+				<img src="i/icons/icon-temperature.svg">
+				<p>пастеризации, при которой сок нагревается до 70 С<sup>о</sup></p>
+				<small>(меняются органолептические свойства сока)</small>
+			</div>
+			<div class="b-facts-advantages-item b-facts-advantages-2">
+				<img src="i/icons/icon-dnk.svg">
+				<p>гомогенизации<br>и нормализации</p>
+			</div>
+			<div class="b-facts-advantages-item b-facts-advantages-3">
+				<img src="i/icons/icon-vial.svg">
+				<p>добавлению консервантов,<br>сорбатов и парабенов </p>
+			</div>
+		</div>
+		<p>Эти процессы убивают в соке до 80% полезных<br>витаминов и минералов. Производственные гиганты<br>таким образом увеличивают срок годности сока алоэ<br>для роста собственных продаж.</p>
+	</div>
+
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
 		<div class="b-popup" id="b-popup-1">
@@ -1243,13 +1265,16 @@
 					<h3><b>Перезвоните мне</b></h3>
 					<p>Наш менеджер свяжется с вами<br>в течение 7 минут</p>
 				</div>
-				<div class="b-form-order" method="post" action="kitsend.php">
+				<div class="b-form-order">
 					<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
 					<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
 					<a href="#" class="b-btn b-btn-green">Перезвоните мне</a>
 					<div class="b-checkbox b-center">
 						<input id="b-popup-call-accept" type="checkbox" name="accept" required checked>
 						<label for="b-popup-call-accept">Я принимаю <a href="#">условия передачи информации</a></label>
+						<div class="b-tip-small">
+							<p>Для продолжения нужно согласие с условиями</p>
+						</div>
 					</div>
 				</div>
 				<a href="#b-popup-success" class="b-thanks-link" style="display:none;"></a>
@@ -1259,11 +1284,7 @@
 
 
 
-		<div class="b-thanks b-popup" id="b-popup-success">
-			<h3>Спасибо!</h3>
-			<h4>Ваша заявка успешно отправлена.<br/>Наш менеджер свяжется с Вами в течение часа.</h4>
-			<input type="submit" class="b-orange-butt" onclick="$.fancybox.close(); return false;" value="Закрыть">
-		</div>
+		
 		<div class="b-thanks b-popup" id="b-popup-error">
 			<h3>Ошибка отправки!</h3>
 			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
