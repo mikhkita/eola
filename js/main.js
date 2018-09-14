@@ -99,7 +99,7 @@ $(document).ready(function(){
             count = count > 99 || isNaN(count) === true ? 99 : count;
         }
         $input.val(count).change();
-        $(".b-tip-small").addClass("show");
+        $(this).parents(".b-form-left").find(".b-tip-small").addClass("show");
     });
 
     $(".b-count-current").on("input change", function() {
@@ -132,10 +132,7 @@ $(document).ready(function(){
     $(".b-video-block .b-btn-play").click(function(){
         var $cont = $(this).parents(".b-video-block");
         $cont.addClass("play");
-        $cont.find("iframe").attr("src", $cont.find("iframe").attr("src")+"&autoplay=1"); 
-        if( $(".b-audio-butt").hasClass("play") ){
-            $(".b-audio-butt").click();
-        }
+        $cont.find("iframe").attr("src", $cont.find("iframe").attr("src")+"&autoplay=1");
         return false;
     });
 
