@@ -191,6 +191,8 @@ $(document).ready(function(){
         }
     });
 
+    $(window).enllax();
+
     // $(".b-reviews-nav").on('beforeChange', function(event, slick, currentSlide, nextSlide){
     //     $(".b-reviews-item").removeClass("slick-active");
     //     $(".b-reviews-item[data-slick-index='"+currentSlide+"']").addClass("slick-active");

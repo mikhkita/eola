@@ -132,8 +132,8 @@ label.error{
 	display: none !important;
 }
 input.error,textarea.error{
-	border: 1px solid #F00 !important;
-	box-shadow: 0 0px 0px 1px #F00;
+	border: 1px solid rgb(255, 98, 64) !important;
+	box-shadow: 0 0px 0px 1px rgb(255, 98, 64);
 }
 
 .fancybox-inner{
@@ -163,7 +163,6 @@ input.error,textarea.error{
 	max-width: 1880px;
 	width: 100%;
 	margin: 0px auto;
-	border-radius: 10px;
 	overflow: hidden;
 }
 .b-block-gray{
@@ -648,8 +647,8 @@ span.error{
 
 input[type="checkbox"].error + label:before,
 input[type="checkbox"].error + span + label:before{
-	border: 1px solid #F00;
-	/*box-shadow: 0px 0px 0px 2px #F00;*/
+	border: 1px solid rgb(255, 98, 64);
+	box-shadow: 0px 0px 0px 1px rgb(255, 98, 64);
 }
 
 .b-checkbox{
@@ -725,6 +724,67 @@ input[type="checkbox"].error + span + label:before{
 		font-family: 'MuseoSansCyrl-900';
 		margin-bottom: 5px;
 	}
+
+/*------------enllax-------------*/
+
+.b-enllax{
+	position: absolute;
+	z-index: 10;
+}
+
+.b-1-enllax-1{
+	top: 50px;
+	left: 300px;
+}
+.b-1-enllax-2{
+	top: 125px;
+    left: 700px;
+}
+.b-1-enllax-3{
+	top: 260px;
+    left: 660px;
+}
+.b-1-enllax-4{
+	top: 300px;
+    left: 1000px;
+}
+.b-1-enllax-5{
+	top: 400px;
+	right: 0;
+}
+.b-1-enllax-6{
+	top: 300px;
+	right: -350px;
+}
+
+.b-17-enllax-1{
+	top: 0;
+	left: -150px;
+}
+.b-17-enllax-2{
+	top: 50px;
+    left: 300px;
+}
+.b-17-enllax-3{
+	top: 250px;
+    left: -70px;
+}
+.b-17-enllax-4{
+	top: 300px;
+    left: 330px;
+}
+.b-17-enllax-5{
+	top: 500px;
+	left: 100px;
+}
+.b-17-enllax-6{
+	top: 600px;
+	left: 350px;
+}
+.b-17-enllax-7{
+	top: 550px;
+	right: -100px;
+}
 
 /*-------------------------------*/
 
@@ -1413,9 +1473,9 @@ input[type="checkbox"].error + span + label:before{
 			}
 
 			.b-input{
-			    border: 1.3px solid rgb(219, 219, 219);
+			    border: 1px solid rgb(219, 219, 219);
 			    background-color: #fcfbfa;
-			    box-shadow: inset 1.414px 1.414px 6px 0px rgba(30, 30, 30, 0.1);
+			    box-shadow: inset 1px 1px 6px 0px rgba(30, 30, 30, 0.1);
 			    border-radius: 100px;
 			    width: 370px;
 			    padding: 28px 63px;
@@ -2132,7 +2192,7 @@ input[type="checkbox"].error + span + label:before{
 	}
 
 .b-17{
-	overflow: hidden;
+
 }
 	.b-17-back{
 		position: absolute;
@@ -2417,9 +2477,9 @@ input[type="checkbox"].error + span + label:before{
 		position: relative;
 	}
 		.b-textarea{
-	        border: 1.3px solid rgb(219, 219, 219);
+	        border: 1px solid rgb(219, 219, 219);
 		    background-color: #fcfbfa;
-		    box-shadow: inset 1.414px 1.414px 6px 0px rgba(30, 30, 30, 0.1);
+		    box-shadow: inset 1px 1px 6px 0px rgba(30, 30, 30, 0.1);
 		    border-radius: 5px;
 		    width: 460px;
 		    min-height: 120px;
@@ -2658,9 +2718,9 @@ input[type="checkbox"].error + span + label:before{
 
 	.b-checkbox .b-tip-small{
 		top: -3px;
-    	right: -287;
+    	right: -287px;
 		background-color: #f5662c;
-		padding: 8px 16px 12px 16px;
+		padding: 8px 16px 10px 16px;
 		font-size: 11px;
 		line-height: 15px;
 	}
@@ -2825,9 +2885,11 @@ input[type="checkbox"].error + span + label:before{
 		background-image: url(../i/footer/logo-footer@2x.jpg);
 	}
 }	
-@media screen and (max-width: 1250px){
-	
+@media screen and (min-width: 1880px){
+	.b-block-wide{
+		border-radius: 10px;
+	}
 }
-@media screen and (max-width: 1020px){
+/*@media screen and (max-width: 1020px){
 
-}
+}*/
