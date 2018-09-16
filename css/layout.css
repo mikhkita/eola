@@ -685,6 +685,10 @@ input[type="checkbox"].error + span + label:before{
 			-o-transition: color 200ms ease-out, border-bottom 200ms ease-out;
 		    transition: color 200ms ease-out, border-bottom 200ms ease-out;
 		}
+		.b-discover-text small{
+			font-family: 'MuseoSansCyrl-300';
+			color: #1a1a1f;
+		}
 	svg.discover{
 		position: absolute;
 		top: 0;
@@ -2073,13 +2077,13 @@ input[type="checkbox"].error + span + label:before{
 	    				right: -8px;
 					}
 
-			.b-reviews-slide .b-reviews-video{
+			.b-reviews-content .b-reviews-video{
 				width: 610px;
 	    		height: 410px;
 	    		border-radius: 5px;
 	    		margin-top: 0;
 			}
-				.b-reviews-slide .b-reviews-video .b-btn{
+				.b-reviews-content .b-reviews-video .b-btn{
 					position: absolute;
 					top: 154px;
 					left: 140px;
@@ -2704,10 +2708,10 @@ input[type="checkbox"].error + span + label:before{
 	overflow: visible;
 }
 
-.b-popup .b-form-title h3{
-	font-size: 35px;
-	line-height: 38px;
-}
+	.b-popup .b-form-title h3{
+		font-size: 35px;
+		line-height: 38px;
+	}
 
 .b-popup-call-header{
 	margin-bottom: 25px;
@@ -2832,33 +2836,33 @@ input[type="checkbox"].error + span + label:before{
 		margin-bottom: 20px;
 	}
 
-	.b-thanks .b-fact-advantages {
+	.b-thanks-styles .b-fact-advantages {
 	    margin: 43px 0 18px 0;
 	}
-		.b-thanks .b-fact-advantages h4{
+		.b-thanks-styles .b-fact-advantages h4{
 			margin-bottom: 14px;
 		}
 
-	.b-thanks .b-facts-advantages-item{
+	.b-thanks-styles .b-facts-advantages-item{
 		width: 49%;
 		display: inline-block;
 		margin-bottom: 25px;
 		padding-left: 43px;
 	}
 
-		.b-thanks .b-facts-advantages-item img{
+		.b-thanks-styles .b-facts-advantages-item img{
 			left: 0;
 		}
-		.b-thanks .b-facts-advantages-1 img{
+		.b-thanks-styles .b-facts-advantages-1 img{
 			height: 48px;
 		}
-		.b-thanks .b-facts-advantages-2 img{
+		.b-thanks-styles .b-facts-advantages-2 img{
 			left: 6px
 		}
-		.b-thanks .b-facts-advantages-3 img{
+		.b-thanks-styles .b-facts-advantages-3 img{
 			left: 6px;
 		}
-		.b-thanks .b-facts-advantages-4{
+		.b-thanks-styles .b-facts-advantages-4{
 			padding-left: 6px;
 		}
 
@@ -2877,7 +2881,7 @@ input[type="checkbox"].error + span + label:before{
 			vertical-align: top;
 			padding-top: 25px;
 		}
-	.b-thanks .b-btn{
+	.b-thanks-styles .b-btn{
 		margin-top: 25px;
 	}
 
@@ -2894,6 +2898,79 @@ input[type="checkbox"].error + span + label:before{
 
 	.b-error .fancybox-close-small{
 		top: 37px;
+	}
+
+.b-popup-review{
+	background-color: #FFF;
+	border-radius: 10px;
+	width: 940px;
+	padding: 60px;
+}
+	.b-popup-review .b-form-title{
+		margin-bottom: 45px;
+	}
+		.b-popup-review .b-form-title h2{
+			margin-bottom: 30px;
+		}
+		.b-popup-review .b-form-title h4{
+			font-size: 32px;
+			line-height: 38px;
+			letter-spacing: -1px;
+		}
+
+	.b-popup-review-body{
+		width: 650px;
+    	margin: 0 auto;
+	}
+		.b-popup-review-body h3{
+			margin-left: -5px;
+    		width: 102%;
+   			letter-spacing: -1px;
+   			margin-bottom: 50px;
+		}
+		.b-popup-review-body h4{
+			letter-spacing: -1px;
+		}
+			.b-popup-review-body h3 b{
+				font-family: 'MuseoSansCyrl-900';
+			}
+		.b-popup-review-body .b-reviews-content{
+			margin-bottom: 85px;
+		}
+
+.b-popup-recipes{
+	width: 1140px;
+	height: 740px;
+	border-radius: 10px;
+	background-color: #f7f5f4;
+}
+	.b-popup-recipes .b-18-content{
+		margin-top: 0;
+		padding: 20px;
+		overflow: hidden;
+	}
+	.b-popup-recipes .b-form-left{
+		width: 600px;
+	}
+	.b-popup-recipes .b-form-left img{
+		height: auto;
+		width: 730px;
+		left: 0px;
+		position: absolute;
+    	top: 270px;
+    	left: 0;
+	}
+	.b-popup-recipes .b-form-title{
+		margin-bottom: 30px;
+	}
+	.b-popup-recipes .b-18 .b-form-left{
+		padding: 34px 0;
+	}
+	.b-form-left-title{
+		padding-left: 35px;
+	}
+	.b-popup-recipes .b-discover-text{
+		padding-top: 50px;
 	}
 
 /*------------------------------*/
