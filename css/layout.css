@@ -754,7 +754,7 @@ input[type="checkbox"].error + span + label:before{
 	left: 300px;
 }
 .b-1-enllax-2{
-	top: 245px;
+	top: 180px;
     left: 700px;
 }
 .b-1-enllax-3{
@@ -2290,11 +2290,12 @@ input[type="checkbox"].error + span + label:before{
 					display: inline-block;
 					vertical-align: top;
 					font-size: 18px;
-					padding-top: 70px;
+					padding-top: 62px;
 				}
 				.b-17-sign img{
 					display: inline-block;
 					vertical-align: top;
+					padding-left: 10px;
 					width: 180px;
 					height: 120px;
 				}
@@ -2729,7 +2730,7 @@ input[type="checkbox"].error + span + label:before{
 	.b-17-sign-text p{
 		color: rgba(26, 26, 31, 0.5);
 	}
-	.b-17-sign img{
+	.b-thanks-page .b-17-sign img{
 		margin-top: -18px;
 	}
 

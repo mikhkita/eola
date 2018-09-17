@@ -200,7 +200,7 @@ $(document).ready(function(){
 
     $(".b-blur-init").each(function(indx, element){
         var pos = $(this).position();
-        var left = $(this).parents(".b-10").length ? -368 : -412;
+        var left = $(this).parents(".b-10").length ? -468 : -512;
         $(this).children(".b-2-item-blur").css(
             {"background-position" : (-pos.left+left).toString()+"px "+(-pos.top).toString()+"px"}
         );
