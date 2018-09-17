@@ -19,7 +19,22 @@
 	<!-- link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css">
 	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"> -->
 
-	<!--<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">-->
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="Aloe"/>
+	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+
 </head>
 <body>
 	
@@ -258,10 +273,8 @@
 								<p>Цена за 1 упаковку:</p>
 								<span class="new-price">
 									<span class="price-value">
-										<span class="more-1">490</span>
-										<span class="less-1 hide">600</span>
-									</span>
-									<span class="price-rub">руб</span>
+										<span class="more-1">490</span><span class="less-1 hide">600</span>
+									</span><span class="price-rub">руб</span>
 								</span>
 								<span class="old-price">
 									<span class="rice-value">600</span><span class="price-rub">руб</span>
@@ -281,7 +294,9 @@
 							</div>
 							<input type="text" name="name" class="b-input b-name-input" placeholder="Имя" required>
 							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+							<input type="hidden" name="subject" value="Заказать свежевыжатый сок алоэ (block-7)">
 							<a href="#" class="ajax b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
+							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 							<div class="b-checkbox b-center">
 								<input id="b-7-accept" type="checkbox" name="accept" required checked>
 								<label for="b-7-accept">Я принимаю <a href="#" target="_blank">условия передачи информации</a></label>
@@ -426,7 +441,9 @@
 						<form class="b-form-order" method="post" action="kitsend.php">
 							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
 							<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
+							<input type="hidden" name="subject" value="Получить бесплатное руководство (block-9)">
 							<a href="#" class="ajax b-btn b-btn-green">Получить бесплатное руководство</a>
+							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 							<div class="b-checkbox b-center">
 								<input id="b-9-accept" type="checkbox" name="accept" required checked>
 								<label for="b-9-accept">Я принимаю <a href="#" target="_blank">условия передачи информации</a></label>
@@ -781,7 +798,9 @@
 						<form class="b-form-order" method="post" action="kitsend.php">
 							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
 							<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
+							<input type="hidden" name="subject" value="Получить бесплатное руководство (block-13)">
 							<a href="#" class="ajax b-btn b-btn-green">Получить бесплатное руководство</a>
+							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 							<div class="b-checkbox b-center">
 								<input id="b-13-accept" type="checkbox" name="accept" required checked>
 								<label for="b-13-accept">Я принимаю <a href="#" target="_blank">условия передачи информации</a></label>
@@ -972,10 +991,8 @@
 								<p>Цена за 1 упаковку:</p>
 								<span class="new-price">
 									<span class="price-value">
-										<span class="more-1">490</span>
-										<span class="less-1 hide">600</span>
-									</span>
-									<span class="price-rub">руб</span>
+										<span class="more-1">490</span><span class="less-1 hide">600</span>
+									</span><span class="price-rub">руб</span>
 								</span>
 								<span class="old-price">
 									<span class="rice-value">600</span><span class="price-rub">руб</span>
@@ -995,7 +1012,9 @@
 							</div>
 							<input type="text" name="name" class="b-input b-name-input" placeholder="Имя" required>
 							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+							<input type="hidden" name="subject" value="Заказать свежевыжатый сок алоэ (block-15)">
 							<a href="#" class="ajax b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
+							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 							<div class="b-checkbox b-center">
 								<input id="b-15-accept" type="checkbox" name="accept" required checked>
 								<label for="b-15-accept">Я принимаю <a href="#" target="_blank">условия передачи информации</a></label>
@@ -1136,7 +1155,9 @@
 						<form class="b-form-order" method="post" action="kitsend.php">
 							<input type="text" name="name" class="b-input b-name-input" placeholder="Имя" required>
 							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+							<input type="hidden" name="subject" value="Сделать большой заказ по выгодной цене(block-18)">
 							<a href="#" class="ajax b-btn b-btn-green two-string">Сделать большой заказ<br>по выгодной цене</a>
+							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 							<div class="b-checkbox b-center">
 								<input id="b-18-accept" type="checkbox" name="accept" required checked>
 								<label for="b-18-accept">Я принимаю <a href="#" target="_blank">условия передачи информации</a></label>
@@ -1197,8 +1218,10 @@
 				<form class="b-form-problem right" method="post" action="kitsend.php">
 					<h3 class="b-20-title-1"><span class="number">1</span>Опишите в этом поле<br>вашу проблему, которую хотите<br>решить с помощью сока алоэ!<img class="b-20-line" src="i/20/line.svg"></h3>
 					<textarea class="b-textarea" name="problem" placeholder="В чем заключается ваша проблема?" required></textarea>
+					<input type="hidden" name="subject" value="Опишите в этом поле вашу проблему (block-20)">
 					<h3 class="b-20-title-2"><span class="number">2</span>После того, как опишите<br>проблему, нажмите сюда<img class="b-20-line" src="i/20/line.svg"></h3>
 					<a href="#" class="ajax b-btn b-btn-green">Готово</a>
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 				</form>
 			</div>
 		</div>
@@ -1282,7 +1305,9 @@
 				<div class="b-form-order">
 					<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
 					<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
+					<input type="hidden" name="subject" value="Перезвоните мне (block-popup)">
 					<a href="#" class="ajax b-btn b-btn-green">Перезвоните мне</a>
+					<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 					<div class="b-checkbox b-center">
 						<input id="b-popup-call-accept" type="checkbox" name="accept" required checked>
 						<label for="b-popup-call-accept">Я принимаю <a href="#" target="_blank">условия передачи информации</a></label>
@@ -1402,7 +1427,9 @@ d="M152.731,162.666 C142.856,163.617 135.408,168.393 130.387,177.000 C125.366,18
 					<form class="b-form-order" method="post" action="kitsend.php">
 						<input type="text" name="name" class="b-input b-name-input" placeholder="Имя" required>
 						<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+						<input type="hidden" name="subject" value="Получить 5 рецептов + рекомендации (block-popup)">
 						<a href="#" class="ajax b-btn b-btn-green">Получить 5 рецептов + рекомендации</a>
+						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 						<div class="b-checkbox b-center">
 							<input id="b-popup-accept-1" type="checkbox" name="accept" required checked>
 							<label for="b-popup-accept-1">Я принимаю <a href="#" target="_blank">условия передачи информации</a></label>

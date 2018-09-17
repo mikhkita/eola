@@ -43,8 +43,8 @@ function fancyOpen(el){
 var customHandlers = [];
 
 $(document).ready(function(){	
-	var rePhone = /^\+\d \(\d{3}\) \d{3}-\d{2}-\d{2}$/,
-		tePhone = '+7 (999) 999-99-99';
+	var rePhone = /^\+\d \(\d{3}\) - \d{3} - \d{2} - \d{2}$/,
+		tePhone = '+7 (999) - 999 - 99 - 99';
 
 	$.validator.addMethod('customPhone', function (value) {
 		return rePhone.test(value);
@@ -59,7 +59,7 @@ $(document).ready(function(){
 			errorElement : "span"
 		});
 		if( $(this).find("input[name=phone]").length ){
-			$(this).find("input[name=phone]").mask(tePhone,{placeholder:" "});
+			$(this).find("input[name=phone]").mask(tePhone,{placeholder:"_"});
 		}
 	});
 
@@ -164,9 +164,9 @@ $(document).ready(function(){
 				customHandlers[$this.attr("data-beforeAjax")]($this);
 			}
 
-			if( $this.attr("data-goal") ){
-				yaCounter12345678.reachGoal($this.attr("data-goal"));
-			}
+			// if( $this.attr("data-goal") ){
+			// 	yaCounter12345678.reachGoal($this.attr("data-goal"));
+			// }
 
   			$.ajax({
 			  	type: $(this).attr("method"),
