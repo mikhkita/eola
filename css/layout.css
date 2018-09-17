@@ -980,8 +980,7 @@ input[type="checkbox"].error + span + label:before{
 				position: relative;
 				z-index: 2;
 				height: 100%;
-			    background-color: #FFF;
-			    opacity: 0.9;
+			    background-color: rgba(255,255,255,0.75);
 			    border-radius: 5px;
 			}
 			.b-2-item-blur{
@@ -998,11 +997,19 @@ input[type="checkbox"].error + span + label:before{
 			    -webkit-filter: blur(10px);
 			    -moz-filter: blur(10px);
 			    filter: blur(10px);
-			    -webkit-transform: scale(1.05);
-			    -moz-transform: scale(1.05);
-			    -ms-transform: scale(1.05);
-			    -o-transform: scale(1.05);
-			    transform: scale(1.05);
+			    -webkit-transform: scale(1.1);
+			    -moz-transform: scale(1.1);
+			    -ms-transform: scale(1.1);
+			    -o-transform: scale(1.1);
+			    transform: scale(1.1);
+			}
+			.b-4 .b-2-item-blur{
+				background-image: url(../i/4/back.jpg);
+			    background-size: 1880px 675px;
+			}
+			.b-10 .b-2-item-blur{
+				background-image: url(../i/10/back.jpg);
+			    background-size: 1880px 950px;
 			}
 			.b-2-item-left{
 				display: inline-block;
@@ -1698,11 +1705,9 @@ input[type="checkbox"].error + span + label:before{
 	}
 		.b-10-item{
 			position: absolute;
-			padding: 20px 22px;
 		    width: 372px;
 		    border-radius: 5px;
-		    background-color: #FFF;
-		    opacity: 0.98;
+		    overflow: hidden;
 		}
 		.b-10-item-1{
 			top: 360px;
@@ -1715,6 +1720,10 @@ input[type="checkbox"].error + span + label:before{
 		.b-10-item-3{
 			top: 694px;
 			left: 385px;
+		}
+		.b-10-item .b-2-item-content{
+			padding: 20px 22px;
+			background-color: rgba(255,255,255,0.85);
 		}
 
 .b-11{

@@ -198,6 +198,16 @@ $(document).ready(function(){
 
     $(window).enllax();
 
+    $(".b-blur-init").each(function(indx, element){
+        var pos = $(this).position();
+        //console.log(($(this).parents(".b-block-wide").outerWidth() - $(this).parents(".b-block").outerWidth())/2);
+        var left = $(this).parents(".b-10").length ? -368 : -412;
+        $(this).children(".b-2-item-blur").css(
+            {"background-position" : -pos.left+left+"px "+(-pos.top).toString()+"px"});
+
+        console.log((-pos.left).toString()+"px"+","+(-pos.top).toString()+"px");
+    });
+
     // $(".b-reviews-nav").on('beforeChange', function(event, slick, currentSlide, nextSlide){
     //     $(".b-reviews-item").removeClass("slick-active");
     //     $(".b-reviews-item[data-slick-index='"+currentSlide+"']").addClass("slick-active");
