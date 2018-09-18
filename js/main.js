@@ -206,6 +206,26 @@ $(document).ready(function(){
         );
     });
 
+    $(".show-more").click(function(){
+        var $target = $(this).siblings(".show-more-text");
+        if($target.hasClass("show")){//при закрытии
+            $target.removeClass("show").slideUp();
+            $(this).children(".open").removeClass("hide");
+            $(this).children(".close").addClass("hide");
+            setTimeout(function() {
+                $(".b-17-content").removeClass("short-padding");
+            }, 200);
+        }else{//при открытии
+            $target.addClass("show").slideDown();
+            $(this).children(".open").addClass("hide");
+            $(this).children(".close").removeClass("hide");
+            setTimeout(function() {
+                $(".b-17-content").addClass("short-padding");
+            }, 400);
+        }
+        return false;
+    });
+
     // $(".b-reviews-nav").on('beforeChange', function(event, slick, currentSlide, nextSlide){
     //     $(".b-reviews-item").removeClass("slick-active");
     //     $(".b-reviews-item[data-slick-index='"+currentSlide+"']").addClass("slick-active");

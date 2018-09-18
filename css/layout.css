@@ -677,6 +677,10 @@ input[type="checkbox"].error + span + label:before{
 		font-family: 'Spectral-BoldItalic';
 		cursor: pointer;
 	}
+		.b-forms .b-discover-text.two-string,
+		.b-discover-text.two-string{
+			margin-top: 50px;
+		}
 		.b-discover-text p{
 			font-size: 22px;
 			line-height: 24px;
@@ -734,7 +738,7 @@ input[type="checkbox"].error + span + label:before{
 		color: #FFF;
 	}
 
-	svg.discover:hover ~ .b-discover-text p
+	/*svg.discover:hover ~ .b-discover-text p*/
 
 	.b-tabs .b-discover .b-tip{
 		width: 460px;
@@ -793,14 +797,14 @@ input[type="checkbox"].error + span + label:before{
 		top: 300px;
 	}
 .b-17-enllax-3{
-	top: 250px;
+	top: 200px;
     left: -70px;
 }
 	.b-thanks-page .b-17-enllax-3{
 		top: 300px;
 	}
 .b-17-enllax-4{
-	top: 300px;
+	top: 250px;
     left: 330px;
 }
 .b-17-enllax-5{
@@ -1071,25 +1075,58 @@ input[type="checkbox"].error + span + label:before{
 			.b-3-item{
 				position: relative;
 			}
+				.b-3-line{
+					position: absolute;
+					background-position: 0px 0px;
+					background-repeat: no-repeat;
+				}
+					.b-3-line-1{
+						background-image: url(../i/3/line-1.svg);
+					    background-size: 310px;
+						max-width: 310px;
+					    height: 132px;
+					    top: 20px;
+					    left: 450px;
+					}
+					.b-3-line-2{
+						background-image: url(../i/3/line-2.svg);
+					    background-size: 200px;
+					    width: 200px;
+					    top: 295px;
+					    left: 0;
+					}
+						.b-3-item-2 .line-height{
+							height: 165px;
+						}
+					.b-3-line-3{
+						background-image: url(../i/3/line-3.svg);
+					    background-size: 55px;
+						width: 55px;
+					    top: 310px;
+					    left: 300px;
+					}
+						.b-3-item-3 .line-height{
+							height: 115px;
+						}
 				.b-3-item-content h2{
 					line-height: 56px;
 				}
 				.b-3-item-content p{
 
 				}
-				.b-3-item img{
+				.b-3-item .b-3-img{
 					position: absolute;
 					top: 0;
 					left: 0;
 					display: inline-block;
 				}
-					.b-3-item-1 img{
+					.b-3-item-1 .b-3-img{
 						top: 10px;
 					}
-					.b-3-item-2 img{
+					.b-3-item-2 .b-3-img{
 						top: -16px;
 					}
-					.b-3-item-3 img{
+					.b-3-item-3 .b-3-img{
 						top: -50px;
 					}
 				.b-3-item.left .b-3-item-content{
@@ -1103,10 +1140,10 @@ input[type="checkbox"].error + span + label:before{
 				.b-3-item.right{
 					width: 545px;
 				}
-					.b-3-item.left img{
+					.b-3-item.left .b-3-img{
 						width: 214px;
 					}
-					.b-3-item.right img{
+					.b-3-item.right .b-3-img{
 						width: 140px;
 					}
 
@@ -1122,7 +1159,7 @@ input[type="checkbox"].error + span + label:before{
 				position: relative;
 				width: 550px;
 			}
-				.b-3-filatov img{
+				.b-3-filatov .b-3-img{
 					position: absolute;
 					top: -14px;
 					left: 0;
@@ -2266,6 +2303,9 @@ input[type="checkbox"].error + span + label:before{
 		width: 640px;
 		padding-bottom: 100px;
 	}
+	.b-17-content.short-padding{
+		padding-bottom: 60px;
+	}
 		.b-17-text{
 			position: relative;
 			padding: 45px 0 0 30px;
@@ -2284,6 +2324,13 @@ input[type="checkbox"].error + span + label:before{
 				display: inline-block;
 				margin-top: 30px;
 				border-bottom: 1px dotted #85b30b;
+			}
+			.show-more:hover{
+				color: #865adf;
+				border-bottom: 1px dotted #865adf;
+			}
+			.show-more-hide{
+				display: none;
 			}
 
 			.b-17-sign{
@@ -3009,9 +3056,6 @@ input[type="checkbox"].error + span + label:before{
 	}
 	.b-form-left-title{
 		padding-left: 35px;
-	}
-	.b-popup-recipes .b-discover-text{
-		margin-top: 50px;
 	}
 
 /*------------------------------*/

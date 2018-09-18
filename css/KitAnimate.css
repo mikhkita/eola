@@ -110,6 +110,36 @@
 	   	 -o-transition-delay: 1000ms;
 			transition-delay: 1000ms;
 }
+.delay1200,
+.fadeWidth.delay1200,
+.fadeHeight.delay1200,
+.slider-anim.show.delay1200{
+	-webkit-transition-delay: 1200ms;
+	   -moz-transition-delay: 1200ms;
+	    -ms-transition-delay: 1200ms;
+	   	 -o-transition-delay: 1200ms;
+			transition-delay: 1200ms;
+}
+.delay2000,
+.fadeWidth.delay2000,
+.fadeHeight.delay2000,
+.slider-anim.show.delay2000{
+	-webkit-transition-delay: 2000ms;
+	   -moz-transition-delay: 2000ms;
+	    -ms-transition-delay: 2000ms;
+	   	 -o-transition-delay: 2000ms;
+			transition-delay: 2000ms;
+}
+.delay3000,
+.fadeWidth.delay3000,
+.fadeHeight.delay3000,
+.slider-anim.show.delay3000{
+	-webkit-transition-delay: 3000ms;
+	   -moz-transition-delay: 3000ms;
+	    -ms-transition-delay: 3000ms;
+	   	 -o-transition-delay: 3000ms;
+			transition-delay: 3000ms;
+}
 .fadeRight{
 	-webkit-transform: translateX(100px);
 	   -moz-transform: translateX(100px);
@@ -201,3 +231,26 @@
 	    		transform: scale(1);
 	    opacity: 1;
 	}
+
+.fadeWidth{
+	width: 0;
+	-webkit-transition: width 2000ms linear;
+	   -moz-transition: width 2000ms linear;
+	    -ms-transition: width 2000ms linear;
+	   	 -o-transition: width 2000ms linear;
+			transition: width 2000ms linear;
+}
+	.fadeWidth.show{
+		width: 100%;
+	}
+.fadeHeight{
+	height: 0;
+	-webkit-transition: height 800ms linear;
+	   -moz-transition: height 800ms linear;
+	    -ms-transition: height 800ms linear;
+	   	 -o-transition: height 800ms linear;
+			transition: height 800ms linear;
+}
+	.fadeHeight.show{
+		height: 100%;
+	}	
