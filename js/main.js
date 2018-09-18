@@ -226,6 +226,18 @@ $(document).ready(function(){
         return false;
     });
 
+    $("body").on("click", ".b-btn-submit", function(){
+        $(this).parents("form").submit();
+        return false;
+    });
+
+    $(".b-btn-submit").parents("form").submit(function(){
+        if( $(this).find("input.error,select.error,textarea.error").length){
+            $(this).find("input.error,select.error,textarea.error").eq(0).focus();
+            return false;
+        }
+    });
+
     // $(".b-reviews-nav").on('beforeChange', function(event, slick, currentSlide, nextSlide){
     //     $(".b-reviews-item").removeClass("slick-active");
     //     $(".b-reviews-item[data-slick-index='"+currentSlide+"']").addClass("slick-active");

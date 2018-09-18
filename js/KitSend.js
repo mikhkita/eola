@@ -50,7 +50,7 @@ $(document).ready(function(){
 		return rePhone.test(value);
 	});
 
-	$(".ajax").parents("form").each(function(){
+	$(".ajax, .b-btn-submit").parents("form").each(function(){
 		$(this).validate({
 			rules: {
 				email: 'email',
@@ -196,6 +196,7 @@ $(document).ready(function(){
 					$this.find("input.valid, textarea.valid").removeClass("valid");
 					$this.find(".ajax").removeAttr("onclick");
 					$this.find("input[type=text],textarea").val("");
+					$this.find(".b-count-current").val("2");
 				}
 			});
   		}else{

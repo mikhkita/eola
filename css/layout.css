@@ -135,7 +135,7 @@ input.error,textarea.error{
 	border: 1px solid #ff6240 !important;
 	box-shadow: 0 0px 0px 1px #ff6240;
 }
-input.valid,textarea.valid{
+.b-input.valid,.b-textarea.valid{
 	border: 1px solid #87c782 !important;
 	box-shadow: 0 0px 0px 1px #87c782;
 }
@@ -268,11 +268,11 @@ small{
 .b-tip-cont{
 	position: relative;
 }
-	.b-tip-cont > a{
+	h2 .b-tip-cont > a{
 		color: #85b30b;
 		border-bottom: 1px dotted #85b30b;
 	}
-	.b-tip-cont > a:hover{
+	h2 .b-tip-cont > a:hover{
 		color: #865adf;
 		border-bottom: 1px dotted #865adf;
 	}
@@ -1580,6 +1580,37 @@ input[type="checkbox"].error + span + label:before{
 		margin-top: 42px;
 		margin-bottom: 120px;
 	}
+		.b-facts .b-tip{
+			width: 460px;
+			left: -490px;
+    		top: -250px;
+    		padding: 28px 35px 35px 35px;
+		}
+			.b-facts .b-tip h3{
+				font-size: 25px;
+    			line-height: 35px;
+    			margin-bottom: 10px;
+			}
+			.b-facts .b-tip p{
+				font-size: 18px;
+    			line-height: 25px;
+			}
+			.b-facts .b-tip small{
+				display: inline-block;
+				vertical-align: top;
+				padding-top: 15px;
+			}
+			.b-facts .b-tip .b-thanks-juice{
+				margin-bottom: 0;
+			}
+			.b-facts .b-tip:before {
+			    right: -29px;
+			    left: auto;
+			    top: 255px;
+			    border: 10px solid transparent;
+			    border-left: 20px solid #FFF;
+			}
+
 			.b-fact-item{
 				width: 100%;
 				height: 700px;
