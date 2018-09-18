@@ -2651,6 +2651,12 @@ input[type="checkbox"].error + span + label:before{
 			.b-20-back img{
 
 			}
+		.b-20-right{
+			position: relative;
+		}
+		.b-20-right .b-form-title h3 {
+		    margin-bottom: 3px;
+		}
 		.b-form-problem{
 			position: relative;
 			z-index: 2;
