@@ -132,8 +132,12 @@ label.error{
 	display: none !important;
 }
 input.error,textarea.error{
-	border: 1px solid rgb(255, 98, 64) !important;
-	box-shadow: 0 0px 0px 1px rgb(255, 98, 64);
+	border: 1px solid #ff6240 !important;
+	box-shadow: 0 0px 0px 1px #ff6240;
+}
+input.valid,textarea.valid{
+	border: 1px solid #87c782 !important;
+	box-shadow: 0 0px 0px 1px #87c782;
 }
 
 .fancybox-inner{
@@ -348,10 +352,10 @@ small{
 	}
 
 input::-webkit-input-placeholder {
-	color: #666;
+	color: #888;
 }
 input:-moz-placeholder {
-	color: #666;
+	color: #888;
 }
 
 [class^="icon-"]:before, 
@@ -1903,6 +1907,9 @@ input[type="checkbox"].error + span + label:before{
 		width: 100%;
 		height: 100%;
 	}
+		.b-tabs .b-tip{
+			width: 460px;
+		}
 		.b-tab-1{
 			background-color: #fdd000;
 		}

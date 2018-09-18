@@ -56,6 +56,7 @@ $(document).ready(function(){
 				email: 'email',
 				phone: 'customPhone'
 			},
+			validClass: "valid",
 			errorElement : "span"
 		});
 		if( $(this).find("input[name=phone]").length ){
@@ -192,6 +193,7 @@ $(document).ready(function(){
 					$(".b-error-link").click();
 				},
 				complete: function(){
+					$this.find("input.valid, textarea.valid").removeClass("valid");
 					$this.find(".ajax").removeAttr("onclick");
 					$this.find("input[type=text],textarea").val("");
 				}
