@@ -2661,7 +2661,6 @@ input[type="checkbox"].error + span + label:before{
 			position: relative;
 			z-index: 2;
 			width: 610px;
-			padding: 40px 0 0 40px;
 		}
 			.b-form-problem h3{
 				position: relative;
@@ -2687,6 +2686,40 @@ input[type="checkbox"].error + span + label:before{
 		position: absolute;
     	bottom: -55px;
     	right: 146px;
+	}
+
+	.b-problem-start,
+	.b-problem-finish{
+		visibility: hidden;
+	    opacity: 0;
+	    -webkit-transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    -moz-transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    -ms-transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    -o-transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    transition: transform 300ms ease-out, opacity 300ms ease-out, visibility 300ms ease-out;
+	    -webkit-transform: translateX(10px);
+	    -moz-transform: translateX(10px);
+	    -ms-transform: translateX(10px);
+	    -o-transform: translateX(10px);
+	    transform: translateX(10px);
+	}
+	.b-problem-start.show,
+	.b-problem-finish.show{
+		visibility: visible;
+	    opacity: 1;
+	    -webkit-transform: translateX(0px);
+	    -moz-transform: translateX(0px);
+	    -ms-transform: translateX(0px);
+	    -o-transform: translateX(0px);
+	    transform: translateX(0px);
+	}
+	.b-problem-start{
+		padding: 40px 0 0 40px;
+	}
+	.b-problem-finish{
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 
 .b-footer{

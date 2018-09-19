@@ -238,6 +238,12 @@ $(document).ready(function(){
         }
     });
 
+    $(".b-problem-next").click(function(event) {
+        $(".b-problem-start").removeClass("show");
+        $(".b-problem-finish").addClass("show");
+        return false;
+    });
+
     // $(".b-reviews-nav").on('beforeChange', function(event, slick, currentSlide, nextSlide){
     //     $(".b-reviews-item").removeClass("slick-active");
     //     $(".b-reviews-item[data-slick-index='"+currentSlide+"']").addClass("slick-active");

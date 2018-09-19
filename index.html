@@ -1246,39 +1246,40 @@
 					<img src="i/20/left.jpg">
 				</div>
 				<div class="b-20-right right">
-					<form class="b-form" action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-call">
-						<div class="b-popup-call-header">
-							<div class="b-popup-line-container">
-								<div class="b-popup-line">
-									<p>Почти готово</p>
+					<form class="b-form-problem" action="kitsend.php" data-goal="CALLBACK" method="POST">
+						<div class="b-problem-start show">
+							<h3 class="b-20-title-1"><span class="number">1</span>Опишите в этом поле<br>вашу проблему, которую хотите<br>решить с помощью сока алоэ!<img class="b-20-line" src="i/20/line.svg"></h3>
+							<textarea class="b-textarea" name="problem" placeholder="В чем заключается ваша проблема?" required></textarea>
+							<input type="hidden" name="subject" value="Опишите в этом поле вашу проблему (block-20)">
+							<h3 class="b-20-title-2"><span class="number">2</span>После того, как опишите<br>проблему, нажмите сюда<img class="b-20-line" src="i/20/line.svg"></h3>
+							<a href="#" class="b-btn b-btn-green b-problem-next">Готово</a>
+						</div>
+						<div class="b-form b-problem-finish">
+							<div class="b-popup-call-header">
+								<div class="b-popup-line-container">
+									<div class="b-popup-line">
+										<p>Почти готово</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="b-center b-form-title">
-							<h3><b>Введите ваши данные</b></h3>
-							<p>куда мы отправим вам рецепты</p>
-						</div>
-						<div class="b-form-order">
-							<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
-							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
-							<input type="hidden" name="subject" value="Опишите в этом поле вашу проблему (block-20)">
-							<a href="#" class="ajax b-btn b-btn-green">Получить рецепты</a>
-							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
-							<div class="b-checkbox b-center">
-								<input id="b-popup-call-accept" type="checkbox" name="accept" required checked>
-								<label for="b-popup-call-accept">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
+							<div class="b-center b-form-title">
+								<h3><b>Введите ваши данные</b></h3>
+								<p>куда мы отправим вам рецепты</p>
 							</div>
+							<div class="b-form-order">
+								<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
+								<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+								<input type="hidden" name="subject" value="Опишите в этом поле вашу проблему (block-20)">
+								<a href="#" class="ajax b-btn b-btn-green">Получить рецепты</a>
+								<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+								<div class="b-checkbox b-center">
+									<input id="b-popup-call-accept" type="checkbox" name="accept" required checked>
+									<label for="b-popup-call-accept">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
+								</div>
+							</div>
+							<a href="#b-popup-success" class="b-thanks-link" style="display:none;"></a>
 						</div>
-						<a href="#b-popup-success" class="b-thanks-link" style="display:none;"></a>
 					</form>
-					<!-- <form class="b-form-problem" method="post" action="kitsend.php">
-						<h3 class="b-20-title-1"><span class="number">1</span>Опишите в этом поле<br>вашу проблему, которую хотите<br>решить с помощью сока алоэ!<img class="b-20-line" src="i/20/line.svg"></h3>
-						<textarea class="b-textarea" name="problem" placeholder="В чем заключается ваша проблема?" required></textarea>
-						<input type="hidden" name="subject" value="Опишите в этом поле вашу проблему (block-20)">
-						<h3 class="b-20-title-2"><span class="number">2</span>После того, как опишите<br>проблему, нажмите сюда<img class="b-20-line" src="i/20/line.svg"></h3>
-						<a href="#" class="ajax b-btn b-btn-green">Готово</a>
-						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
-					</form> -->
 				</div>
 			</div>
 		</div>
