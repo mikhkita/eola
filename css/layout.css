@@ -2640,7 +2640,7 @@ input[type="checkbox"].error + span + label:before{
 	.b-20-content{
 	    position: relative;
 		margin-top: 28px;
-		padding-bottom: 100px;
+		padding-bottom: 110px;
 	}
 		.b-20-back{
 			position: absolute;
@@ -2720,6 +2720,12 @@ input[type="checkbox"].error + span + label:before{
 		position: absolute;
 		top: 0;
 		right: 0;
+	}
+	.b-form.b-problem-finish{
+		height: 600px;
+		padding: 60px 50px 76px 50px;
+		background: url(../i/form-aloe.png) 0 100% no-repeat,
+					url(../i/form-border-b-20.svg) 50% 50% no-repeat;
 	}
 
 .b-footer{
@@ -2942,7 +2948,6 @@ input[type="checkbox"].error + span + label:before{
 		letter-spacing: 3px;
 		margin-left: 130px;
 	}
-
 	.b-checkbox .b-tip-small{
 		top: -3px;
     	right: -287px;
@@ -2954,6 +2959,19 @@ input[type="checkbox"].error + span + label:before{
 	.b-checkbox .b-tip-small:before {
 	    top: 13px;
 	    border-right: 12px solid #f5662c;
+	}
+
+.b-popup-preroll{
+
+}
+	.b-popup-preroll .b-title{
+		padding-top: 20px;
+	}
+	.b-popup-preroll .fancybox-close-small{
+		top: 230px;
+	}
+	.b-popup-preroll .b-7-content{
+		padding-bottom: 40px;
 	}
 
 .b-thanks{
@@ -3171,6 +3189,29 @@ input[type="checkbox"].error + span + label:before{
 .fancybox-close-small:focus:after{ 
 	outline: none; 
 }
+
+/*------------------------------*/
+
+.b-review-page,
+.b-thanks-popup-page{
+	padding: 90px 0;
+	background-color: #85b30b;
+	opacity: 0.98;
+}
+	.b-review-page .b-review-block,
+	.b-thanks-popup-page .b-thanks-block {
+		margin: 0 auto;
+	}
+
+.b-thanks-popup-page{
+	padding: 50px 0 90px 0;
+}
+	.b-thanks-block{
+		width: 940px;
+	}
+	.b-thanks-popup-page .b-thanks-envelope {
+	    top: -154px;
+	}
 
 /*------------------------------*/
 

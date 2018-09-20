@@ -80,9 +80,9 @@ $(document).ready(function(){
         $("."+$(this).attr("data-block")).addClass("tab-active");
     });
 
-    function declOfNum(number)  
+    function declOfNum(number, title)  
     {
-        var titles = ['упаковка','упаковки','упаковок'];
+        var titles = title || ['упаковка','упаковки','упаковок'];
         cases = [2, 0, 1, 1, 1, 2];  
         return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
     }
@@ -108,7 +108,9 @@ $(document).ready(function(){
         var count = $(this).val(),
             $form = $(this).parents(".b-form-left");
 
-        $(this).siblings("p").text(declOfNum($(this).val()));
+        $(this).siblings("p").text(declOfNum(count));
+        $form.parent().find(".order-count").text(count);
+        $form.parent().find(".b-form .word-format").text(declOfNum(count, ['упаковку','упаковки','упаковок']));
 
         if(count >= 3){
             $form.find(".b-bonus-free").addClass("active");
@@ -121,13 +123,25 @@ $(document).ready(function(){
             $form.find(".b-bonus-gift").removeClass("active");
         }
         if(count == 1){
-            $form.find(".old-price").addClass("hide");
-            $form.find(".more-1").addClass("hide");
+            $form.find(".old-price, .more-1").addClass("hide");
             $form.find(".less-1").removeClass("hide");
         }else{
-            $form.find(".old-price").removeClass("hide");
-            $form.find(".more-1").removeClass("hide");
+            $form.find(".old-price, .more-1").removeClass("hide");
             $form.find(".less-1").addClass("hide");
+        }
+
+        if(count >= 10){
+            $form.find(".free-1, .free-2").addClass("hide");
+            $form.find(".free-4").removeClass("hide");
+            $form.find(".b-bonus .word-format").text(declOfNum(4));
+        }else if(count < 10 && count >= 8){
+            $form.find(".free-1, .free-4").addClass("hide");
+            $form.find(".free-2").removeClass("hide");
+            $form.find(".b-bonus .word-format").text(declOfNum(2));
+        }else{
+            $form.find(".free-2, .free-4").addClass("hide");
+            $form.find(".free-1").removeClass("hide");
+            $form.find(".b-bonus .word-format").text(declOfNum(1));
         }
     });
 
@@ -239,30 +253,24 @@ $(document).ready(function(){
     });
 
     $(".b-problem-next").click(function(event) {
+        var $textarea = $(this).siblings("textarea");
+        if($textarea.val() == ""){
+            $textarea.addClass("error").focus();
+            return false;
+        }
+        $textarea.removeClass("error");
         $(".b-problem-start").removeClass("show");
         $(".b-problem-finish").addClass("show");
         return false;
     });
 
-    // $(".b-reviews-nav").on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    //     $(".b-reviews-item").removeClass("slick-active");
-    //     $(".b-reviews-item[data-slick-index='"+currentSlide+"']").addClass("slick-active");
-    // });
+    if(window.location.hash == "#error") {
+        $(".b-error-link").click();
+        if(history.pushState)
+            history.pushState('', document.title, window.location.pathname);
+    }
 
-
-    // $(".b-textarea-problem").on("input change", function() {
-    //     if($(this).val()){
-    //         $(".b-textarea-pl").addClass("hide");
-    //     }else{
-    //         $(".b-textarea-pl").removeClass("hide");
-    //     }
-    // });
-
-    // $(".b-textarea-problem").on("focus", function() {
-    //     $(".b-textarea-pl").addClass("hide");
-    // });
-
-    //asNavFor: '.b-slider-left',
+    
 
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");

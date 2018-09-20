@@ -165,9 +165,9 @@ $(document).ready(function(){
 				customHandlers[$this.attr("data-beforeAjax")]($this);
 			}
 
-			// if( $this.attr("data-goal") ){
-			// 	yaCounter12345678.reachGoal($this.attr("data-goal"));
-			// }
+			if( $this.attr("data-goal") ){
+				yaCounter12345678.reachGoal($this.attr("data-goal"));
+			}
 
   			$.ajax({
 			  	type: $(this).attr("method"),

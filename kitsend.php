@@ -43,10 +43,10 @@
 			
 		$message .= "</div>";
 		
-		if(send_mime_mail("Сайт ".$from,$email_from,$name,$email_admin,'UTF-8','UTF-8',$subject,$message,true)){	
-			echo "1";
+		if(send_mime_mail("Сайт ".$from,$email_from,$name,$email_admin,'UTF-8','UTF-8',$subject,$message,true)){
+			header("Location: thanks.html");
 		}else{
-			echo "0";
+			header("Location: index.html#error");
 		}
 	}
 ?>

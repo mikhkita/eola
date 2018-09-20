@@ -90,7 +90,7 @@
 							<p><b>Отжимаем сок в день вашего<br>обращения</b> и сразу доставляем<br>его вам</p>
 						</div>
 					</div>
-					<a href="#" class="b-btn b-btn-green b-go" data-block=".b-7">Заказать свежевыжатый сок алоэ</a>
+					<a href="#b-popup-preroll" class="fancy b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
 					<div class="b-discover">
 						<div class="b-tip-cont">
 							<div class="b-tip">
@@ -298,12 +298,12 @@
 							<div class="b-bonus">
 								<span>Бонусы:&nbsp;&nbsp;</span>
 								<div class="b-bonus-item b-bonus-free">Бесплатная доставка</div><br>
-								<div class="b-bonus-item b-bonus-gift">1 упаковка сока в подарок</div>
+								<div class="b-bonus-item b-bonus-gift"><span class="free-1">1</span><span class="free-2 hide">2</span><span class="free-4 hide">4</span> <span class="word-format">упаковка</span> сока в подарок</div>
 							</div>
 						</div>
 						<div class="b-form right">
 							<div class="b-center b-form-title">
-								<h3><b>Заказать</b> 2 упаковки<br>сока алоэ по спец. цене</h3>
+								<h3><b>Заказать</b> <span class="order-count">2</span>&nbsp;<span class="word-format">упаковки</span><br>сока алоэ по спец. цене</h3>
 								<p>Менеджер позвонит вам в течение 15 минут<br>для уточнения адреса и времени доставки</p>
 							</div>
 							<input type="text" name="name" class="b-input b-name-input" placeholder="Имя" required>
@@ -862,7 +862,7 @@
 				</div>
 			</div>
 			<div class="b-reviews">
-				<a href="#" class="b-btn b-btn-green b-go" data-block=".b-15">Заказать свежевыжатый сок алоэ</a>
+				<a href="#b-popup-preroll" class="fancy b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
 				<div class="b-reviews-slider">
 					<div class="b-reviews-slide">
 						<h3>Всего лишь за месяц использования пропала излишняя<br>жирность кожи и подтянулся овал лица</h3>
@@ -1028,12 +1028,12 @@
 							<div class="b-bonus">
 								<span>Бонусы:&nbsp;&nbsp;</span>
 								<div class="b-bonus-item b-bonus-free">Бесплатная доставка</div><br>
-								<div class="b-bonus-item b-bonus-gift">1 упаковка сока в подарок</div>
+								<div class="b-bonus-item b-bonus-gift"><span class="free-1">1</span><span class="free-2 hide">2</span><span class="free-4 hide">4</span> <span class="word-format">упаковка</span> сока в подарок</div>
 							</div>
 						</div>
 						<div class="b-form right">
 							<div class="b-center b-form-title">
-								<h3><b>Заказать</b> 2 упаковки<br>сока алоэ по спец. цене</h3>
+								<h3><b>Заказать</b> <span class="order-count">2</span>&nbsp;<span class="word-format">упаковки</span><br>сока алоэ по спец. цене</h3>
 								<p>Менеджер позвонит вам в течение 15 минут<br>для уточнения адреса и времени доставки</p>
 							</div>
 							<input type="text" name="name" class="b-input b-name-input" placeholder="Имя" required>
@@ -1246,7 +1246,7 @@
 					<img src="i/20/left.jpg">
 				</div>
 				<div class="b-20-right right">
-					<form class="b-form-problem" action="kitsend.php" data-goal="CALLBACK" method="POST">
+					<form class="b-form-problem" action="kitsend.php" method="POST">
 						<div class="b-problem-start show">
 							<h3 class="b-20-title-1"><span class="number">1</span>Опишите в этом поле<br>вашу проблему, которую хотите<br>решить с помощью сока алоэ!<img class="b-20-line" src="i/20/line.svg"></h3>
 							<textarea class="b-textarea" name="problem" placeholder="В чем заключается ваша проблема?" required></textarea>
@@ -1269,9 +1269,7 @@
 							<div class="b-form-order">
 								<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
 								<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
-								<input type="hidden" name="subject" value="Опишите в этом поле вашу проблему (block-20)">
-								<a href="#" class="ajax b-btn b-btn-green">Получить рецепты</a>
-								<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+								<a href="#" class="b-btn-submit b-btn b-btn-green">Получить рецепты</a>
 								<div class="b-checkbox b-center">
 									<input id="b-popup-call-accept" type="checkbox" name="accept" required checked>
 									<label for="b-popup-call-accept">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
@@ -1309,7 +1307,7 @@
 					</div>
 					<div class="b-footer-politics">
 						<a href="#" target="_blank">Карта сайта</a><br>
-						<a href="privacy_policy.pdf" target="_blank">Политика конфендиальности</a>
+						<a href="policy.pdf" target="_blank">Политика конфендиальности</a>
 					</div>
 					<div class="tfa">
 						<a href="#">
@@ -1348,7 +1346,7 @@
 		</div>
 
 		<div class="b-popup b-popup-call" id="b-popup-call">
-			<form class="b-form" action="kitsend.php" data-goal="CALLBACK" method="POST" id="b-form-call">
+			<form class="b-form" action="kitsend.php" method="POST" id="b-form-call">
 				<div class="b-popup-call-header">
 					<div class="b-popup-line-container">
 						<div class="b-popup-line">
@@ -1376,6 +1374,65 @@
 				</div>
 				<a href="#b-popup-success" class="b-thanks-link" style="display:none;"></a>
 			</form>
+		</div>
+
+		<div class="b-popup b-popup-preroll" id="b-popup-preroll">
+			<div class="b-title white">
+				<h2 class="b-center">Закажите <b>свежевыжатый сок алоэ</b><br>с доставкой в день отжима!</h2>
+			</div>
+			<div class="b-7-content clearfix">
+				<form class="b-form-order" method="post" action="kitsend.php">
+					<div class="b-form-left b-form-left-back left">
+						<h3><b>Выберите</b> количество<br>упаковок свежевыжатого<br>сока алоэ:</h3>
+						<div class="b-counter">
+							<a href="#" class="icon-minus b-btn-count" onclick="return false;"></a>
+							<a href="#" class="icon-plus b-btn-count" onclick="return false;"></a>
+							<div class="b-count">
+								<input type="text" name="count" class="b-count-current" value="2" maxlength="2" oninput="this.value = this.value.replace(/\D/g, '')">
+								<p>упаковки</p>
+							</div>
+							<div class="b-tip-small">
+								<a href="#" class="icon-close b-tip-close"></a>
+								<p>от 5 упаковок + 1 упаковка бесплатно</p>
+								<p>от 8 упаковок + 2 упаковка бесплатно</p>
+								<p>от 10 упаковок + 4 упаковка бесплатно</p>
+							</div>
+						</div>
+						<div class="b-price">
+							<p>Цена за 1 упаковку:</p>
+							<span class="new-price">
+								<span class="price-value">
+									<span class="more-1">490</span><span class="less-1 hide">600</span>
+								</span><span class="price-rub">руб</span>
+							</span>
+							<span class="old-price">
+								<span class="rice-value">600</span><span class="price-rub">руб</span>
+								<img src="i/7/red-line.svg">
+							</span>
+						</div>
+						<div class="b-bonus">
+							<span>Бонусы:&nbsp;&nbsp;</span>
+							<div class="b-bonus-item b-bonus-free">Бесплатная доставка</div><br>
+							<div class="b-bonus-item b-bonus-gift"><span class="free-1">1</span><span class="free-2 hide">2</span><span class="free-4 hide">4</span> <span class="word-format">упаковка</span> сока в подарок</div>
+						</div>
+					</div>
+					<div class="b-form right">
+						<div class="b-center b-form-title">
+							<h3><b>Заказать</b> <span class="order-count">2</span>&nbsp;<span class="word-format">упаковки</span><br>сока алоэ по спец. цене</h3>
+							<p>Менеджер позвонит вам в течение 15 минут<br>для уточнения адреса и времени доставки</p>
+						</div>
+						<input type="text" name="name" class="b-input b-name-input" placeholder="Имя" required>
+						<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+						<input type="hidden" name="subject" value="Заказать свежевыжатый сок алоэ (block-preroll)">
+						<a href="#" class="b-btn-submit b-btn b-btn-green">Заказать свежевыжатый сок алоэ</a>
+						<a href="thanks.html" class="b-thanks-link" style="display:none;"></a>
+						<div class="b-checkbox b-center">
+							<input id="b-preroll-accept" type="checkbox" name="accept" required checked>
+							<label for="b-preroll-accept">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
 
 		<div class="b-popup b-popup-review" id="b-popup-review">
