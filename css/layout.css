@@ -864,7 +864,7 @@ input[type="checkbox"].error + span + label:before{
 					margin-left: -13px;
     				position: relative;
 				}
-					.b-header-social li a{
+					.b-header-social li span{
 						vertical-align: top;
 						display: inline-block;
 						box-sizing: content-box;
@@ -2719,7 +2719,7 @@ input[type="checkbox"].error + span + label:before{
 	.b-problem-finish{
 		position: absolute;
 		top: 0;
-		right: 0;
+		right: 40px;
 	}
 	.b-form.b-problem-finish{
 		height: 600px;
@@ -2757,7 +2757,7 @@ input[type="checkbox"].error + span + label:before{
 			    margin-bottom: 10px;
 			    padding-left: 30px;
 			}
-				.b-footer-contacts .b-header-social li a{
+				.b-footer-contacts .b-header-social li span{
 					width: 30px;
 					height: 30px;
 					border: 3px solid #f2f2f2;
@@ -2802,6 +2802,7 @@ input[type="checkbox"].error + span + label:before{
    		text-align: center;
 	}
 		.tfa-logo{
+			display: block;
 		    width: 95px;
 		    height: 35px;
 		    background-position: 50% 50%;
