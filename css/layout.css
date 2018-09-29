@@ -2131,7 +2131,9 @@ input[type="checkbox"].error + span + label:before{
 		    overflow: hidden;
 		}
 		.b-reviews-item.slick-current .b-reviews-img{
-			border: 7px solid #85b30b;
+			-webkit-box-shadow: inset 0 0 0 7px #85b30b;
+	    	-moz-box-shadow: inset 0 0 0 7px #85b30b;
+	    	box-shadow: inset 0 0 0 7px #85b30b;
     		border-radius: 100px;
 		}
 			.b-reviews-img{
