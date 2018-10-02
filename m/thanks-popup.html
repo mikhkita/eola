@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>  
+<head>
+	<title>Сок Алоэ</title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<!-- <link rel="stylesheet" href="css/slick-theme.css" type="text/css"> -->
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+
+	<!-- link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css">
+	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"> -->
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="Aloe"/>
+	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
+
+</head>
+<body>
+	
+	<div class="b b-thanks-popup-page">
+			<div class="b-thanks b-thanks-block">
+				<div class="b-thanks-envelope">
+					<img src="i/popup/envelope.png">
+					<h4 class="white"><b>Рецепты с применением сока алоэ</b><br>успешно отправлены на вашу почту</h4>
+				</div>
+				<div class="b-thanks-body b-thanks-styles">
+					<h2 class="b-center"><b>Будьте внимательны</b><br>при покупке сока алоэ!</h2>
+					<h4>Эффективен исключительно свежевыжатый сок алоэ,<br>т.к. сок промышленного производства, в том числе<br>аптечный, не содержит в себе нужных полезных веществ!</h4>
+					<div class="b-fact-advantages clearfix">
+						<h4><b class="orange">В промышленном и аптечном соке</b> присутствует:</h4>
+						<div class="b-facts-advantages-item b-facts-advantages-1">
+							<img src="i/icons/icon-temperature.svg">
+							<p>пастеризации, при которой<br>сок нагревается до 70 С<sup>о</sup></p>
+						</div>
+						<div class="b-facts-advantages-item b-facts-advantages-2">
+							<img src="i/icons/icon-dnk.svg">
+							<p>гомогенизации<br>и нормализации</p>
+						</div>
+						<div class="b-facts-advantages-item b-facts-advantages-3">
+							<img src="i/icons/icon-vial.svg">
+							<p>добавлению консервантов,<br>сорбатов и парабенов </p>
+						</div>
+						<div class="b-facts-advantages-item b-facts-advantages-4">
+							<small>В ряде случаев промышленные добавки даже могут привести к проблемам со здоровьем</small>
+						</div>
+					</div>
+					<h4><b>Эти процессы убивают в соке</b> до 80% полезных<br>витаминов и минералов. Производственные гиганты<br>таким образом увеличивают срок годности сока алоэ<br>для роста собственных продаж.</h4>
+					<div class="b-thanks-juice">
+						<img src="i/popup/juice.jpg">
+						<p>Это можно сравнить с фруктовым соком известных марок<br>От свежевыжатого сока в них остается разве что аромат <br>и абсолютно ничего полезного для здоровья...</p>
+					</div>
+					<h2 class="b-center">У вас есть возможность<br><b>заказать свежевыжатый<br>100%-й сок алоэ</b> в Москве</h2>
+					<h4 class="b-center">Узнайте о свежевыжатой соке алоэ больше,<br>нажав по кнопке ниже</h4>
+					<div class="b-center">
+						<a href="index.html" class="b-btn b-btn-green two-string">Узнать о свежевыжатом<br>соке алоэ больше!</a>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div style="display:none;">
+		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
+
+		<div class="b-popup" id="b-popup-call">
+			<form class="b-form" action="kitsend.php" method="POST" id="b-form-call">
+				<div class="b-popup-call-header">
+					<div class="b-popup-line-container">
+						<div class="b-popup-line">
+							<p>Почти готово</p>
+						</div>
+					</div>
+				</div>
+				<div class="b-center b-form-title">
+					<h3><b>Перезвоните мне</b></h3>
+					<p>Наш менеджер свяжется с вами<br>в течение 7 минут</p>
+				</div>
+				<div class="b-form-order">
+					<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+					<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
+					<a href="#" class="ajax b-btn b-btn-green">Перезвоните мне</a>
+					<div class="b-checkbox b-center">
+						<input id="b-popup-call-accept" type="checkbox" name="accept" required checked>
+						<label for="b-popup-call-accept">Я принимаю <a href="#" target="_blank">условия передачи информации</a></label>
+						<div class="b-tip-small">
+							<p>Для продолжения нужно согласие с условиями</p>
+						</div>
+					</div>
+				</div>
+				<a href="#b-popup-success" class="b-thanks-link" style="display:none;"></a>
+			</form>
+		</div>
+
+		<div class="b-thanks b-popup" id="b-popup-success">
+			<div class="b-thanks-envelope">
+				<img src="i/popup/envelope.png">
+				<h4 class="white"><b>Рецепты с применением сока алоэ</b><br>успешно отправлены на вашу почту</h4>
+			</div>
+			<div class="b-thanks-body">
+				<h2 class="b-center"><b>Будьте внимательны</b><br>при покупке сока алоэ!</h2>
+				<h4>Эффективен исключительно свежевыжатый сок алоэ,<br>т.к. сок промышленного производства, в том числе<br>аптечный, не содержит в себе нужных полезных веществ!</h4>
+				<div class="b-fact-advantages clearfix">
+					<h4><b class="orange">В промышленном и аптечном соке</b> присутствует:</h4>
+					<div class="b-facts-advantages-item b-facts-advantages-1">
+						<img src="i/icons/icon-temperature.svg">
+						<p>пастеризации, при которой<br>сок нагревается до 70 С<sup>о</sup></p>
+					</div>
+					<div class="b-facts-advantages-item b-facts-advantages-2">
+						<img src="i/icons/icon-dnk.svg">
+						<p>гомогенизации<br>и нормализации</p>
+					</div>
+					<div class="b-facts-advantages-item b-facts-advantages-3">
+						<img src="i/icons/icon-vial.svg">
+						<p>добавлению консервантов,<br>сорбатов и парабенов </p>
+					</div>
+					<div class="b-facts-advantages-item b-facts-advantages-4">
+						<small>В ряде случаев промышленные добавки даже могут привести к проблемам со здоровьем</small>
+					</div>
+				</div>
+				<h4><b>Эти процессы убивают в соке</b> до 80% полезных<br>витаминов и минералов. Производственные гиганты<br>таким образом увеличивают срок годности сока алоэ<br>для роста собственных продаж.</h4>
+				<div class="b-thanks-juice">
+					<img src="i/popup/juice.jpg">
+					<p>Это можно сравнить с фруктовым соком известных марок<br>От свежевыжатого сока в них остается разве что аромат <br>и абсолютно ничего полезного для здоровья...</p>
+				</div>
+				<h2 class="b-center">У вас есть возможность<br><b>заказать свежевыжатый<br>100%-й сок алоэ</b> в Москве</h2>
+				<h4 class="b-center">Узнайте о свежевыжатой соке алоэ больше,<br>нажав по кнопке ниже</h4>
+				<div class="b-center">
+					<a href="#" class="b-btn b-btn-green two-string">Узнать о свежевыжатом<br>соке алоэ больше!</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="b-error b-popup" id="b-popup-error">
+			<h2><b>Ошибка отправки!</b></h2>
+			<h4>Приносим свои извинения. Пожалуйста, попробуйте отправить Вашу заявку позже.</h4>
+			<a href="#" class="b-btn b-btn-green" onclick="$.fancybox.close(); return false;">Закрыть</a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<!--<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script>-->
+	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/KitAnimate.js"></script>
+	<script type="text/javascript" src="js/KitSend.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/jquery.enllax.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
