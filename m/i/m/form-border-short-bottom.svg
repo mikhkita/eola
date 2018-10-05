@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="501px" height="651px" viewBox="0 0 501 651" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>form-border-short</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="form-border-short" fill="#FFFFFF" stroke="#F2F2F2">
+            <path d="M490.5,650.499 L287.488,650.499 C287.356,650.488 283.909,650.144 279.385,643.993 C272.91,635.19 262.876,628.503 251.365,628.503 C239.453,628.503 229.803,636.143 222.7,644.938 C218.471,650.175 214.936,650.482 214.54,650.499 L10.5,650.499 C4.977,650.499 0.5,646.023 0.5,640.5 C0.5,215.201823 0.5,1.86882292 0.5,0.501 C2.08927015,0.501 73.2599368,0.501 214.012,0.501 C214.144,0.512 286.564,0.519 286.96,0.501 L490.5,0.501 C493.353657,0.501 497.615723,0.501 500.5,0.501 C500.5,3.55957031 500.5,7.83065661 500.5,10.5 L500.5,640.5 C500.5,646.023 496.023,650.499 490.5,650.499 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

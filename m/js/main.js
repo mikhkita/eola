@@ -152,28 +152,15 @@ $(document).ready(function(){
         return false;
     });
 
-    $(".b-reviews-nav").slick({
-        dots: false,
-        slidesToShow: 5,
-        slidesToScroll: 5,
-        arrows: false,
-        variableWidth: true,
-        focusOnSelect: true,
-        asNavFor: '.b-reviews-slider',
-    });
-
-    $(".b-reviews-slider").slick({
+    $(".b-reviews").slick({
         dots: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
         arrows: true,
-        nextArrow: '<div class="b-reviews-next-cont" aria-hidden="true"><span class="b-reviews-next">Смотреть следующий отзыв</span></div>',
-        asNavFor: '.b-reviews-nav'
+        nextArrow: '<div class="b-slider-left-arrows icon-arrow-right" aria-hidden="true"></div>',
+        prevArrow: '<div class="b-slider-left-arrows icon-arrow-left" aria-hidden="true"></div>', 
     });
+
 
     $(".b-tip-cont > a").click(function(){
         $(this).siblings(".b-tip").addClass("show");
@@ -270,7 +257,11 @@ $(document).ready(function(){
             history.pushState('', document.title, window.location.pathname);
     }
 
-    
+    $( ".b-nav" ).accordion({
+      active: 0,
+      collapsible: false,
+      heightStyle: "content"
+    });
 
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");
