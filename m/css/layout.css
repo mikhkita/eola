@@ -488,7 +488,7 @@ input:-moz-placeholder {
     -o-transition: background-color 100ms ease-out, box-shadow 100ms ease-out;
     transition: background-color 100ms ease-out, box-shadow 100ms ease-out;
     height: 81px;
-    left: -8px;
+    /* left: -8px; */
     position: relative;
 }
 	.b-btn-green:hover{
@@ -3568,6 +3568,7 @@ h4 em{
 .b-12 .b-btn{
 	margin-top: 20px;
 	padding: 24px 22px;
+	left: 0px;
 }
 .b-12{
 	padding-bottom: 80px;

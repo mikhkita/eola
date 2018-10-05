@@ -2586,7 +2586,7 @@ input[type="checkbox"].error + span + label:before{
 			display: inline-block;
 			font-size: 12.5px;
 			line-height: 25px;
-			letter-spacing: 6px;
+			letter-spacing: 4px;
 			text-transform: uppercase;
 			font-family: 'MuseoSansCyrl-900';
 			margin-bottom: 18px;
