@@ -238,6 +238,10 @@ $(document).ready(function(){
             return false;
         }
     });
+    
+    $(".b-textarea").click(function(){
+        $textarea.focus();
+    });
 
     $(".b-problem-next").click(function(event) {
         var $textarea = $(this).siblings("textarea");

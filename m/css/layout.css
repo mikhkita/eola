@@ -637,11 +637,11 @@ input[type="checkbox"] + label:after{
 	display: none;
 }
 
-input[type="checkbox"] + span + label:hover:before,
+/*input[type="checkbox"] + span + label:hover:before,
 input[type="checkbox"] + label:hover:before{
 	background-color: #9bc338;
 	border-color: #9bc338;
-}
+}*/
 input[type="checkbox"]:checked + span + label,
 input[type="checkbox"]:checked + label{
 
@@ -2502,6 +2502,10 @@ input[type="checkbox"].error + span + label:before{
 				.b-17-sign-text{
 					display: inline-block;
 					vertical-align: top;
+					position: absolute;
+					top: -37px;
+					left: 9px;
+					width: 190px;
 				}
 				.b-17-sign > p{
 					display: inline-block;
@@ -2525,9 +2529,8 @@ input[type="checkbox"].error + span + label:before{
 	}
 
 	.b-18 .b-form{
-		height: 700px;
-		background: url(../i/form-aloe.png) 0 100% no-repeat,
-					url(../i/form-border.svg) 50% 50% no-repeat;
+		height: 620px;
+		background: url(../i/form-border.svg) 50% 50% no-repeat;
 	}
 	.b-18 .b-form-left{
 		height: 700px;
@@ -2536,6 +2539,8 @@ input[type="checkbox"].error + span + label:before{
 
 	.b-18 .b-form{
 		padding: 60px 25px 76px 25px;
+		border-radius: 10px;
+		background-size: cover;
 	}
 
 	.b-18 .b-advantages{
@@ -2780,9 +2785,11 @@ input[type="checkbox"].error + span + label:before{
 	        background-image: url(../i/icons/icon-input.svg);
 	        margin-bottom: 40px;
 	        display:  inline-block;
-	        float:  left;
+	        /* float:  left; */
 	        resize: none;
+	        left: -10px;
 	        margin-left: 8px;
+	        position: relative;
 	 }
 	.b-20-content{
 	    position: relative;
@@ -2985,14 +2992,14 @@ input[type="checkbox"].error + span + label:before{
 
 .b-thanks-page{
 	overflow: hidden;
-	padding-bottom: 310px;
+	padding-bottom: 0px;
 }
 	.b-thanks-page .b-17-content{
 		padding-bottom: 0;
 	}
 	.b-thanks-page .b-title{
-		padding-top: 78px;
-		margin-bottom: 33px;
+		padding-top: 36px;
+		margin-bottom: 29px;
 	}
 	.b-thanks-page .b-header{
 		margin-bottom: 0;
@@ -3000,12 +3007,15 @@ input[type="checkbox"].error + span + label:before{
 
 	.b-thanks-phone{
 		display: inline-block;
-		margin-top: 28px;
+		margin-top: 11px;
 		color: rgb(133, 179, 11);
 		border-bottom: 1px solid rgba(155, 195, 56, 0.5);
 		font-size: 35px;
-		line-height: 45px;
+		line-height: 41px;
+		width: 287px;
 		font-family:'Spectral-BoldItalic';
+		letter-spacing: -0.4px;
+		margin-left: 9px;
 	}
 	.b-thanks-page .b-17-sign {
 	    margin-top: 92px;
@@ -3013,10 +3023,13 @@ input[type="checkbox"].error + span + label:before{
 
 	.b-17-sign-text h3{
 		margin-top: 10px;
+		font-size: 25px;
 		font-family: 'MuseoSansCyrl-900';
 	}
 	.b-17-sign-text p{
 		color: rgba(26, 26, 31, 0.5);
+		font-size: 16px;
+		line-height: 22px;
 	}
 	.b-thanks-page .b-17-sign img{
 		margin-top: -18px;
@@ -3030,10 +3043,10 @@ input[type="checkbox"].error + span + label:before{
 	overflow: visible;
 }
 
-	.b-popup .b-form-title h3{
+	/*.b-popup .b-form-title h3{
 		font-size: 35px;
 		line-height: 38px;
-	}
+	}*/
 
 .b-popup-call-header{
 	margin-bottom: 25px;
@@ -3296,6 +3309,7 @@ input[type="checkbox"].error + span + label:before{
 	}
 	.b-popup-recipes .b-form-title{
 		margin-bottom: 30px;
+		left: -46px;
 	}
 	.b-popup-recipes .b-18 .b-form-left{
 		padding: 34px 0;
@@ -3781,7 +3795,117 @@ h4 em{
 .b-1 .b-btn-green{
 	left: 0px;
 }
-/*------------------------------*/
+.b-thanks-page .b-17-back{
+	position: relative;
+	left: -235px;
+	top: -53px;
+	width: 467px;
+	display: block;
+	/* z-index: 1; */
+}
+.b-thanks-page .b-17-content{
+	width: 100%;
+	text-align: left;
+}
+.b-thanks-bottom{
+	position: relative;
+	/* overflow: hidden; */
+}
+.b-thanks-page .b-17-sign{
+	position: absolute;
+	top: -60px;
+	left: 121px;
+}
+.b-thanks-page .b-17-sign img{
+	width: 103px;
+	height: auto;
+	position:  absolute;
+	top: 55px;
+	left: -11px;
+	z-index: 0;
+}
+.b-thanks-page h2 b{
+	font-size: 48px;
+}
+.b-thanks-page h2{
+	line-height: 34px;
+	margin-bottom: 4px;
+}
+.b-17-content p{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.b-17-sign-text p{
+	padding: 0px
+}
+.b-thanks-bottom{
+	top: 63px;
+	height: 420px;
+}
+.b-17-sign small{
+	letter-spacing: 0.7px;
+}
+.b-20-right{
+	left: -8px;
+}
+/*************popups*********/
+.b-popup-preroll .fancybox-close-small{
+    top: 0px;
+    right: 0px;
+}
+
+.b-popup-recipes .fancybox-close-small{
+	top: 0px;
+	right: 7px;
+}
+.b-popup-preroll{
+	width: calc(100% - 32px);
+	overflow-x: hidden;
+	margin: 0px;
+    padding-top: 44px;
+}
+.b-popup-preroll .b-bonus-gift{
+	left: -18px;
+}
+.b-problem-finish h3{
+	text-align: center;
+
+}
+.b-center.b-form-title p{
+	position: static;
+	left: 0px;
+}
+.b-problem-finish{
+	right: 0px;
+}
+.b-form.b-problem-finish {
+    height: 576px;
+    padding: 60px 50px 76px 50px;
+    background: url(../i/m/form-aloe@2x.png) 50% 100% no-repeat, url(../i/m/form-border-short-top) 50% 50% no-repeat;
+    background-size: cover;
+    z-index: 2;
+    width: 335px;
+    height: 576px;
+    padding: 46px 50px 76px 50px;
+    /* margin-left:  16px; */
+    background: none;
+    background-size: cover;
+    border-radius: 0px 0px 10px 10px;
+    left: calc(50% - 167px);
+}
+
+.b-popup-recipes{
+	background: none;
+	width: 100%;
+	/* overflow-x: hidden; */
+	height: auto;
+	margin: 0px;
+	padding-top: 44px;
+}
+.b-popup-recipes .b-center.b-form-title p{
+	width: 100%;
+}
+/**********************/
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
 	.b-header-logo{
