@@ -3915,6 +3915,9 @@ h4 em{
 .ui-icon{
 	display: none !important;
 }
+.b-popup .b-price{
+	text-align: center;
+}
 /**********************/
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {
