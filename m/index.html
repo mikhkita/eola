@@ -6,7 +6,7 @@
 	<meta name="description" content=''>
 
 	<!-- <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1"> -->
-	<meta name="viewport" content="width=375">
+	<meta name="viewport" content="width=375, user-scalable=no">
 	<meta name="format-detection" content="telephone=no">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -157,7 +157,7 @@
 						<div class="b-3-line line-height">
 						<!-- 	<div class="b-3-line b-3-line-2 anim fadeHeight delay1200" data-cont=".b-3-content"></div> -->
 						</div>
-						<div class="anim fadeRight delay1000" data-cont=".b-3-content">
+						<div class="anim fadeLeft delay300" data-cont=".b-3-content">
 							<img src="i/3/cell.jpg" class="b-3-img">
 							<div class="b-3-item-content">
 								<h2><b>В такой стрес-<br>совой обстановке</b></h2>
@@ -169,7 +169,7 @@
 						<!-- <div class="b-3-line line-height">
 							<div class="b-3-line b-3-line-3 anim fadeHeight delay2000" data-cont=".b-3-content"></div>
 						</div> -->
-						<div class="anim fadeLeft delay2000" data-cont=".b-3-content">
+						<div class="anim fadeLeft delay600" data-cont=".b-3-content">
 							<img src="i/3/vitamins.jpg" class="b-3-img">
 							<div class="b-3-item-content">
 								<h2><b>За 14 дней<br>в тканях листа</b></h2>
@@ -1049,7 +1049,7 @@
 								<p>куда мы отправим вам рецепты</p>
 							</div>
 							<div class="b-form-order">
-								<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
+								<input  id="first-input" type="text" name="email" class="b-input b-email-input" placeholder="E-mail" autofocus required>
 								<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
 								<a href="#" class="b-btn-submit b-btn b-btn-green">Получить рецепты</a>
 								<div class="b-checkbox b-center">
@@ -1164,12 +1164,6 @@
 							<div class="b-count">
 								<input type="text" name="count" class="b-count-current" value="2" maxlength="2" oninput="this.value = this.value.replace(/\D/g, '')">
 								<p>упаковки</p>
-							</div>
-							<div class="b-tip-small">
-								<a href="#" class="icon-close b-tip-close"></a>
-								<p>от 5 упаковок + 1 упаковка бесплатно</p>
-								<p>от 8 упаковок + 2 упаковка бесплатно</p>
-								<p>от 10 упаковок + 4 упаковка бесплатно</p>
 							</div>
 						</div>
 						<div class="b-price">
@@ -1354,6 +1348,7 @@
 	<script type="text/javascript" src="js/slick.js"></script>
 	<script type="text/javascript" src="js/jquery.enllax.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/fastclick.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

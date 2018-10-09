@@ -238,10 +238,7 @@ $(document).ready(function(){
             return false;
         }
     });
-    
-    $(".b-textarea").click(function(){
-        $textarea.focus();
-    });
+
 
     $(".b-problem-next").click(function(event) {
         var $textarea = $(this).siblings("textarea");
@@ -252,6 +249,10 @@ $(document).ready(function(){
         $textarea.removeClass("error");
         $(".b-problem-start").removeClass("show");
         $(".b-problem-finish").addClass("show");
+         setTimeout(function(){
+                $( "#first-input" ).focus();
+            }, 100);
+
         return false;
     });
 
@@ -266,6 +267,10 @@ $(document).ready(function(){
       collapsible: false,
       heightStyle: "content"
     });
+
+    $(function() {
+    FastClick.attach(document.body);
+});
 
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");

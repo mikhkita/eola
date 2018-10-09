@@ -2452,9 +2452,9 @@ input[type="checkbox"].error + span + label:before{
 .b-17{
 
 }
-	.b-17-header{
+	/*.b-17-header{
 		position: relative;
-	}
+	}*/
 	.b-17-back{
 		position: absolute;
 		top: 5px;
@@ -3440,6 +3440,7 @@ h2.b-subtitle{
 	width: 307px;
 	left: -21px;
 	margin-top: 20px;
+	padding: 12px 25px 12px 50px;
 }
 .b-form-left-back{
 	background: url(../i/m/form-border-short-top.svg) 50% 50% no-repeat;
@@ -3904,6 +3905,15 @@ h4 em{
 }
 .b-popup-recipes .b-center.b-form-title p{
 	width: 100%;
+}
+.b-popup-preroll h3{
+	text-align: center;
+}
+.b-popup-preroll .b-counter{
+	left: 5px;
+}
+.ui-icon{
+	display: none !important;
 }
 /**********************/
 
