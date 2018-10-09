@@ -3215,7 +3215,22 @@ input[type="checkbox"].error + span + label:before{
 	.b-thanks-popup-page .b-thanks-envelope {
 	    top: -154px;
 	}
-
+.b-exit-popup .b-block-wide{
+	border-radius: 10px;
+}
+.b-exit-popup .fancybox-close-small{
+	right: 30px;
+	top: 30px;
+}
+.b-exit-popup .fancybox-close-small:after{
+	color: #85B30E;
+}
+.leave{
+	margin-bottom: 24px;
+}
+.b-exit-popup .b-block-wide{
+	width: 1340px;
+}
 /*------------------------------*/
 
 @media (-webkit-min-device-pixel-ratio: 1.5) {

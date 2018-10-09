@@ -269,8 +269,10 @@ $(document).ready(function(){
     });
 
     $(function() {
-    FastClick.attach(document.body);
-});
+        FastClick.attach(document.body);
+    });
+
+
 
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");

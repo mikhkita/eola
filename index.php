@@ -1,3 +1,12 @@
+<?
+
+$mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i',$_SERVER['HTTP_USER_AGENT'])||preg_match('/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i',substr($_SERVER['HTTP_USER_AGENT'],0,4)));
+
+if( $mobile ){
+	header("Location: http://aloem/");
+}
+
+?>
 <!DOCTYPE html>
 <html>  
 <head>
@@ -721,6 +730,9 @@
 									<h4>Противопоказания:</h4>
 									<p>Наружное применение алоэ в виде примочек, орошений, компрессов, масок практически не имеет противопоказаний, за исключением случаев проявления аллергической реакции при первичном использовании</p><br>
 									<p>Прием же внутрь и инъекции алоэ требуют особой осторожности и консультаций с лечащим врачом.</p><br>
+
+
+
 									<p>Прием сока алоэ внутрь противопоказан при заболеваниях печени (гепатит, цирроз), желчного пузыря (холецистит, желчно-каменная болезнь), почек (нефрит), воспалительных процессах в мочевом пузыре (цистит), тяжелых формах сердечно-сосудистых заболеваний.</p>
 								</div>
 							</div>
@@ -1255,7 +1267,7 @@
 								<p>куда мы отправим вам рецепты</p>
 							</div>
 							<div class="b-form-order">
-								<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
+								<input id="first-input" type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
 								<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
 								<a href="#" class="b-btn-submit b-btn b-btn-green">Получить рецепты</a>
 								<div class="b-checkbox b-center">
@@ -1310,6 +1322,7 @@
 			</div>
 		</div>
 	</div>
+	<a href="#exit-popup" class="fancy b-exit-popup-link"></a>
 
 	<div style="display:none;">
 		<a href="#b-popup-error" class="b-error-link fancy" style="display:none;"></a>
@@ -1540,7 +1553,65 @@ d="M152.731,162.666 C142.856,163.617 135.408,168.393 130.387,177.000 C125.366,18
 				</div>
 			</div>
 		</div>
-
+		
+		<div class="b-popup b-exit-popup" id="exit-popup">
+			<div class="b b-13">
+		<div class="b-block-wide b-block-gray">
+			<div class="b-block">
+				<div class="b-center b-title">
+					<h2 class="leave"><b>Постойте!</b> Не уходите с пустыми руками!</h2>
+					<h2>Получите <b>15 самых эффективных<br>рецептов</b> с добавлением сока алоэ,</h2>
+					<h4>которые идеально подойдут для всей семьи!</h4>
+				</div>
+				<div class="b-13-content b-forms clearfix">
+					<div class="b-discover">
+						<div class="b-tip-cont">
+							<div class="b-tip">
+								<a href="#" class="icon-close b-tip-close"></a>
+								<h4>Руководство содержит:</h4>
+								<p><b>Рецепты</b> для конкретной проблемы<br>или заболевания.</p><br>
+								<p><b>Правила применения сока:</b><br>«Как получить максимальный эффект<br>и не навредить организму».</p><br>
+								<p><b>5 простых рецептов «на каждый день»</b> для поддержания и укрепления здоровья: ребенка, взрослого и пенсионера.</p>
+							</div>
+						</div>
+						<div class="b-discover-text two-string">
+							<p>Список</p><br><p>рекомендаций</p><br>
+							<small>по употреблению<br>сока алоэ</small>
+						</div>
+<svg class="discover"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="194.65px" height="193.65px">
+<path class="outer" fill-rule="evenodd"  fill="rgb(243, 243, 243)"
+ d="M158.682,167.674 C147.826,168.718 139.637,173.949 134.116,183.369 C128.595,192.791 120.987,194.995 111.292,189.999 C101.597,184.992 91.884,184.956 82.155,189.896 C72.425,194.829 64.833,192.569 59.377,183.111 C53.922,173.653 45.769,168.365 34.920,167.252 C24.070,166.131 18.904,160.117 19.420,149.207 C19.936,138.294 15.932,129.431 7.408,122.619 C-1.117,115.804 -2.217,107.946 4.107,99.052 C10.431,90.149 11.847,80.527 8.354,70.181 C4.860,59.830 8.176,52.626 18.300,48.566 C28.424,44.502 34.809,37.172 37.457,26.576 C40.104,15.978 46.782,11.716 57.493,13.773 C68.202,15.844 77.531,13.132 85.478,5.654 C93.425,-1.827 101.346,-1.801 109.241,5.734 C117.136,13.269 126.446,16.042 137.170,14.051 C147.894,12.060 154.543,16.374 157.117,26.989 C159.690,37.607 166.025,44.979 176.121,49.114 C186.217,53.245 189.483,60.472 185.918,70.796 C182.354,81.121 183.702,90.748 189.965,99.694 C196.228,108.636 195.073,116.488 186.502,123.242 C177.930,129.993 173.865,138.832 174.306,149.741 C174.747,160.656 169.539,166.635 158.682,167.674 Z"/>
+<path class="inner" fill-rule="evenodd"  stroke="rgb(194, 193, 194)" stroke-width="1.3px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.251" fill="none"
+ d="M152.731,162.666 C142.856,163.617 135.408,168.393 130.387,177.000 C125.366,185.604 118.446,187.618 109.628,183.056 C100.810,178.485 91.976,178.451 83.127,182.961 C74.277,187.470 67.371,185.403 62.410,176.763 C57.447,168.123 50.032,163.295 40.165,162.274 C30.297,161.252 25.597,155.760 26.067,145.793 C26.536,135.824 22.895,127.728 15.141,121.506 C7.388,115.279 6.387,108.104 12.139,99.975 C17.891,91.844 19.179,83.052 16.002,73.605 C12.824,64.149 15.840,57.564 25.048,53.857 C34.257,50.142 40.064,43.449 42.472,33.774 C44.880,24.090 50.954,20.192 60.695,22.078 C70.436,23.963 78.921,21.490 86.149,14.655 C93.377,7.822 100.581,7.848 107.763,14.732 C114.943,21.613 123.411,24.150 133.164,22.330 C142.918,20.509 148.966,24.449 151.307,34.147 C153.648,43.846 159.409,50.580 168.592,54.355 C177.775,58.129 180.745,64.735 177.503,74.162 C174.261,83.594 175.488,92.393 181.184,100.564 C186.880,108.733 185.830,115.901 178.034,122.075 C170.238,128.243 166.540,136.314 166.942,146.282 C167.342,156.252 162.606,161.711 152.731,162.666 Z"/>
+</svg>
+					</div>
+					<div class="b-form-left left">
+						<img src="i/13/left.jpg">
+					</div>
+					<div class="b-form right">
+						<div class="b-center b-form-title">
+							<h3><b>Заполните короткую<br>форму</b> и в ту же минуту<br>получите бесплатное<br>руководство!</h3>
+						</div>
+						<form class="b-form-order" method="post" action="kitsend.php">
+							<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
+							<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
+							<input type="hidden" name="subject" value="Получить бесплатное руководство (block-13)">
+							<a href="#" class="b-btn-submit b-btn b-btn-green">Получить бесплатное руководство</a>
+							<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
+							<div class="b-checkbox b-center">
+								<input id="b-13-accept" type="checkbox" name="accept" required checked>
+								<label for="b-13-accept">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		</div>
 		<div class="b-popup b-thanks" id="b-popup-success">
 			<div class="b-thanks-envelope">
 				<img src="i/popup/envelope.png">

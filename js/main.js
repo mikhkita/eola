@@ -261,6 +261,9 @@ $(document).ready(function(){
         $textarea.removeClass("error");
         $(".b-problem-start").removeClass("show");
         $(".b-problem-finish").addClass("show");
+        setTimeout(function(){
+            $( "#first-input" ).focus();
+        }, 100);
         return false;
     });
 
@@ -270,7 +273,26 @@ $(document).ready(function(){
             history.pushState('', document.title, window.location.pathname);
     }
 
-    
+    var isWindows = false,
+        timerLeave = 0,
+        showLeave = true;
+        inputFocus= false;
+
+    setInterval(function() {
+        timerLeave++;
+        if(timerLeave > 120){
+            showLeave = true;
+            timerLeave = 0;
+        }
+    }, 1000);
+
+    $(document).mouseleave(function(){
+        if(!$(".fancybox-slide .b-popup").length && showLeave){
+            $(".b-exit-popup-link").click();
+            showLeave = false;
+            timerLeave = 0;
+        }
+    });
 
     // // Первая анимация элементов в слайде
     // $(".b-step-slide[data-slick-index='0'] .slider-anim").addClass("show");
