@@ -87,8 +87,9 @@ $(document).ready(function(){
         return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
     }
 
-    $(".b-btn-count").click(function(){
-        var $cont = $(this).siblings(".b-count"),
+    $('.b-btn-count').bind('touchend', function(e) {
+      e.preventDefault();
+      var $cont = $(this).siblings(".b-count"),
             $input = $cont.children("input"),
             count;
         if($(this).hasClass("icon-minus")){
@@ -102,7 +103,26 @@ $(document).ready(function(){
         if(!$(this).parents(".b-form-left").find(".b-tip-small").hasClass("no-show")){
             $(this).parents(".b-form-left").find(".b-tip-small").addClass("show");
         }
-    });
+      $(this).click();
+      // This line still calls the standard click event, in case the user needs to interact with the element that is being clicked on, but still avoids zooming in cases of double clicking.
+    })
+
+    // $(".b-btn-count").fastClick(function(){
+    //     var $cont = $(this).siblings(".b-count"),
+    //         $input = $cont.children("input"),
+    //         count;
+    //     if($(this).hasClass("icon-minus")){
+    //         count = parseInt($input.val()) - 1;
+    //         count = count < 1 || isNaN(count) === true ? 1 : count;
+    //     }else{
+    //         count = parseInt($input.val()) + 1;
+    //         count = count > 99 || isNaN(count) === true ? 99 : count;
+    //     }
+    //     $input.val(count).change();
+    //     if(!$(this).parents(".b-form-left").find(".b-tip-small").hasClass("no-show")){
+    //         $(this).parents(".b-form-left").find(".b-tip-small").addClass("show");
+    //     }
+    // });
 
     $(".b-count-current").on("input change", function() {
         var count = $(this).val(),
@@ -268,9 +288,7 @@ $(document).ready(function(){
       heightStyle: "content"
     });
 
-    $(function() {
-        FastClick.attach(document.body);
-    });
+   
 
 
 

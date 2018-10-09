@@ -16,7 +16,7 @@ if( !$mobile ){
 	<meta name="description" content=''>
 
 	<!-- <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1"> -->
-	<meta name="viewport" content="width=375, user-scalable=no">
+	<meta name="viewport" content="width=375">
 	<meta name="format-detection" content="telephone=no">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
