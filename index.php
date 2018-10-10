@@ -479,6 +479,7 @@ if( $mobile ){
 							<div class="b-checkbox b-center">
 								<input id="b-9-accept" type="checkbox" name="accept" required checked>
 								<label for="b-9-accept">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
+								<input type="hidden" name="pdf" value="send">
 							</div>
 						</form>
 					</div>
@@ -837,6 +838,7 @@ if( $mobile ){
 							<div class="b-checkbox b-center">
 								<input id="b-13-accept" type="checkbox" name="accept" required checked>
 								<label for="b-13-accept">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
+								<input type="hidden" name="pdf" value="send">
 							</div>
 						</form>
 					</div>
@@ -1555,6 +1557,7 @@ d="M152.731,162.666 C142.856,163.617 135.408,168.393 130.387,177.000 C125.366,18
 						<div class="b-checkbox b-center">
 							<input id="b-popup-accept-1" type="checkbox" name="accept" required checked>
 							<label for="b-popup-accept-1">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
+							<input type="hidden" name="pdf" value="send">
 						</div>
 					</form>
 				</div>
@@ -1611,6 +1614,7 @@ d="M152.731,162.666 C142.856,163.617 135.408,168.393 130.387,177.000 C125.366,18
 							<div class="b-checkbox b-center">
 								<input id="b-13-accept" type="checkbox" name="accept" required checked>
 								<label for="b-13-accept">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
+								<input type="hidden" name="pdf" value="send">
 							</div>
 						</form>
 					</div>

@@ -3308,7 +3308,7 @@ input[type="checkbox"].error + span + label:before{
     	left: 0;
 	}
 	.b-popup-recipes .b-form-title{
-		margin-bottom: 30px;
+		/*margin-bottom: 30px;*/
 		left: -46px;
 	}
 	.b-popup-recipes .b-18 .b-form-left{

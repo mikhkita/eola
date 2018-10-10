@@ -3229,7 +3229,16 @@ input[type="checkbox"].error + span + label:before{
 	margin-bottom: 24px;
 }
 .b-exit-popup .b-block-wide{
-	width: 1340px;
+	width: 1140px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.b-exit-popup .b-form{
+	position: absolute;
+	right: 90px;
+}
+.b-exit-popup .b-13 .b-form-left img{
+	left: -15px;
 }
 /*------------------------------*/
 

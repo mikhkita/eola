@@ -1,11 +1,14 @@
 <?php
-	require_once("phpmail.php");
+	require_once("PHPMailer.php");
+	require_once("SMTP.php");
 
-	$email_admin = "rom4es.test@gmail.com";
+	$email_admin = "dima@redder.pro";
 	// $email_admin = "soc.taxi.35@gmail.com";
 
 	$from = "“Сок Алоэ”";
 	$email_from = "robot@taxi-chita.ru";
+	$email_client = $_POST["email"];
+	$send_pdf = $_POST["pdf"];
 
 	$deafult = array(
 		"name"=>"Имя",
@@ -43,7 +46,25 @@
 			
 		$message .= "</div>";
 		
-		if(send_mime_mail("Сайт ".$from,$email_from,$name,$email_admin,'UTF-8','UTF-8',$subject,$message,true)){
+		if (isset($send_pdf)) {
+			$mail2 = new PHPMailer();
+			$mail2->From = $email_from;
+			$mail2->Subject = "Бесплатное руководство";
+			$mail2->AddAddress($email_client);
+			$mail2->IsHTML(true);
+			$mail2->addAttachment("policy.pdf", "policy.pdf");
+		}
+
+		
+		$mail = new PHPMailer();
+		$mail->From = $email_from;
+		$mail->FromName = $from;
+		$mail->AddAddress($email_admin);
+		$mail->IsHTML(true);
+		$mail->Subject = $subject;
+		$mail->Body = $message;	
+
+		if ($mail->Send()){
 			header("Location: thanks.html");
 		}else{
 			header("Location: index.html#error");

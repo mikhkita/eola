@@ -676,7 +676,7 @@ if( !$mobile ){
 		</div>
 	</div> -->
 
-	<div class="b b-14">
+	<!-- <div class="b b-14">
 		<div class="b-block">
 			<div class="b-title">
 				<h2><b>Посмотрите<br> на отзывы</b> тех, <nobr>кто уже начал регулярно</nobr> принимать наш свежевыжатый сок алоэ</h2>
@@ -785,7 +785,7 @@ if( !$mobile ){
 			</div>
 		
 		</div>
-	</div>
+	</div> -->
 
 	<div class="b b-16">
 		<div class="b-block">
@@ -1291,13 +1291,13 @@ if( !$mobile ){
 					<div class="b-center b-form-title">
 						<h3><b>Введите данные</b><br>в форме ниже</h3>
 						<p>и мы моментально отправим вам<br>15 самых эффективных рецептов</p><br>
-						<p><b>+ список</b> рекомендаций<br> от врача-терапевта</p>
+						<!-- <p><b>+ список</b> рекомендаций<br> от врача-терапевта</p> -->
 					</div>
 					<form class="b-form-order" method="post" action="kitsend.php">
 						<input type="tel" name="phone" class="b-input b-phone-input" placeholder="Номер телефона" required>
 						<input type="text" name="email" class="b-input b-email-input" placeholder="E-mail" required>
 						<input type="hidden" name="subject" value="Получить 5 рецептов + рекомендации (block-popup)">
-						<a href="#" class="b-btn-submit b-btn b-btn-green">Получить 5 рецептов + рекомендации</a>
+						<a href="#" class="b-btn-submit b-btn b-btn-green">Получить бесплатное руководство</a>
 						<a href="#b-popup-success" class="b-thanks-link fancy" style="display:none;"></a>
 						<div class="b-checkbox b-center">
 							<input id="b-popup-accept-1" type="checkbox" name="accept" required checked>

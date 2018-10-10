@@ -1,5 +1,6 @@
 <?php
-	require_once("phpmail.php");
+	require_once("PHPMailer.php");
+	require_once("SMTP.php");
 
 	$email_admin = "dima@redder.pro";
 	// $email_admin = "soc.taxi.35@gmail.com";
@@ -43,7 +44,16 @@
 			
 		$message .= "</div>";
 		
-		if(send_mime_mail("Сайт ".$from,$email_from,$name,$email_admin,'UTF-8','UTF-8',$subject,$message,true)){
+		$mail = new PHPMailer();
+		$mail->From = $email_from;
+		$mail->FromName = $from;
+		$mail->AddAddress($email_admin);
+		$mail->IsHTML(true);
+		$mail->Subject = $subject;
+		$mail->Body = $message;
+		$mail->addAttachment("policy.pdf", "policy.pdf");
+
+		if ($mail->Send()){
 			header("Location: thanks.html");
 		}else{
 			header("Location: index.html#error");
