@@ -288,7 +288,7 @@ small{
 		color: #85b30b;
 		border-bottom: 1px dotted #85b30b;
 	}
-	h2 .b-tip-cont > a:hover{
+	h2 .b-tip-cont > a:active{
 		color: #865adf;
 		border-bottom: 1px dotted #865adf;
 	}
@@ -343,10 +343,10 @@ small{
 	    background-color: #CCC;
 	    border-radius: 100px;
 	}
-	.b-tip-close:hover{
+	.b-tip-close:active{
 		background-color: #f5662c;
 	}
-	.b-tip-close:hover:before{
+	.b-tip-close:active:before{
 		color: #FFF;
 	}
 	.b-tip.show,
@@ -450,8 +450,8 @@ input:-moz-placeholder {
 	color: #dbdbdb;
 }
 
-.icon-minus:hover:before,
-.icon-plus:hover:before,
+.icon-minus:active:before,
+.icon-plus:active:before,
 .icon-minus:active:before,
 .icon-plus:active:before{
 	color: #FFF;
@@ -491,7 +491,7 @@ input:-moz-placeholder {
     /* left: -8px; */
     position: relative;
 }
-	.b-btn-green:hover{
+	.b-btn-green:active{
 		background-color: rgb(168, 209, 71);
   		-webkit-box-shadow: inset 0px 10px 50px 0px rgba(222, 253, 113, 0.5),inset 0px -1px 5px 0px rgba(222, 253, 113, 0.9),inset 0px -5px 10px 0px rgba(222, 253, 113, 0.5);
   		-moz-box-shadow: inset 0px 10px 50px 0px rgba(222, 253, 113, 0.5),inset 0px -1px 5px 0px rgba(222, 253, 113, 0.9),inset 0px -5px 10px 0px rgba(222, 253, 113, 0.5);
@@ -540,10 +540,10 @@ input:-moz-placeholder {
 		top: calc(50% - 13px);
 		left: calc(50% - 6px);
 	}
-	.b-btn-yellow:hover:before{
+	.b-btn-yellow:active:before{
 		/* border-left: 12px solid #FFF; */
 	}
-	.b-btn-yellow:hover{
+	.b-btn-yellow:active{
 		color: #FFF;
 		background-color: #afd74c;
 	}
@@ -637,8 +637,8 @@ input[type="checkbox"] + label:after{
 	display: none;
 }
 
-/*input[type="checkbox"] + span + label:hover:before,
-input[type="checkbox"] + label:hover:before{
+/*input[type="checkbox"] + span + label:active:before,
+input[type="checkbox"] + label:active:before{
 	background-color: #9bc338;
 	border-color: #9bc338;
 }*/
@@ -654,8 +654,8 @@ input[type="checkbox"]:checked + label:before{
 }
 input[type="checkbox"]:checked + span + label:after,
 input[type="checkbox"]:checked + label:after,
-input[type="checkbox"] + span + label:hover:after,
-input[type="checkbox"] + label:hover:after{
+input[type="checkbox"] + span + label:active:after,
+input[type="checkbox"] + label:active:after{
 	content: '';
 	display: block;
 	position: absolute;
@@ -691,7 +691,7 @@ input[type="checkbox"].error + span + label:before{
 		padding-bottom: 1px;
 		border-bottom: 1px solid #0099ff;
 	}
-	.b-checkbox label a:hover{
+	.b-checkbox label a:active{
 		color: #9bc338;
 		border-bottom: 1px solid rgba(155, 195, 56, 0.5);
 	}
@@ -746,8 +746,8 @@ input[type="checkbox"].error + span + label:before{
 	  	-webkit-transition: 200ms;
 	  	-webkit-transition-timing-function: ease-in-out;
 	}
-	svg .outer:hover,
-	.b-discover .b-discover-text:hover ~ svg .outer{
+	svg .outer:active,
+	.b-discover .b-discover-text:active ~ svg .outer{
 		fill: #afd74c;
 	}
 	svg .outer:active,
@@ -755,22 +755,22 @@ input[type="checkbox"].error + span + label:before{
 		fill: #865adf;
 	}
 
-	.b-discover-text:hover p,
-	svg.discover:hover ~ .b-discover-text p,
+	.b-discover-text:active p,
+	svg.discover:active ~ .b-discover-text p,
 	.b-discover-text:active p,
 	svg.discover:active ~ .b-discover-text p{
 		color: #FFF;
 		border-bottom: 1px dotted #FFF;
 	}
 
-	.b-discover-text:hover small,
-	svg.discover:hover ~ .b-discover-text small,
+	.b-discover-text:active small,
+	svg.discover:active ~ .b-discover-text small,
 	.b-discover-text:active small,
 	svg.discover:active ~ .b-discover-text small{
 		color: #FFF;
 	}
 
-	/*svg.discover:hover ~ .b-discover-text p*/
+	/*svg.discover:active ~ .b-discover-text p*/
 
 	.b-tabs .b-discover .b-tip{
 		width: 460px;
@@ -940,7 +940,7 @@ input[type="checkbox"].error + span + label:before{
 					line-height: 20px;
 					border-bottom: 1px dotted;
 				}
-				.b-header-call:hover{
+				.b-header-call:active{
 					color: #85b30b;
 				}
 
@@ -1455,8 +1455,8 @@ input[type="checkbox"].error + span + label:before{
 					line-height: 44px;
 					border-radius: 100px;
 				}
-				.icon-minus:hover,
-				.icon-plus:hover{
+				.icon-minus:active,
+				.icon-plus:active{
 					background-color: #afd74c;
 				}
 				.icon-minus:active,
@@ -1839,7 +1839,7 @@ input[type="checkbox"].error + span + label:before{
 		    border-bottom: 1px dotted #0096ff;
 		    margin-bottom: 42px;
 		}
-		.b-fact-more:hover{
+		.b-fact-more:active{
 			color: #9bc338;
 			border-bottom: 1px dotted rgba(155, 195, 56, 0.5);
 		}
@@ -1971,7 +1971,7 @@ input[type="checkbox"].error + span + label:before{
 						-o-transition: border 200ms ease-out;
 					    transition: border 200ms ease-out;
 					}
-					.b-slider-doc-item:hover{
+					.b-slider-doc-item:active{
 						opacity: 1;
 					}
 					.b-slider-doc-item p{
@@ -1987,8 +1987,8 @@ input[type="checkbox"].error + span + label:before{
 			content: "\e906";
 		}
 
-		/*.b-slider-left-arrows:hover.icon-arrow-right,
-		.b-slider-left-arrows:hover.icon-arrow-left{
+		/*.b-slider-left-arrows:active.icon-arrow-right,
+		.b-slider-left-arrows:active.icon-arrow-left{
 			color: #1b81c5;
 		}*/
 
@@ -2070,7 +2070,7 @@ input[type="checkbox"].error + span + label:before{
 			.b-nav a:last-child{
 				margin-right: 0;
 			}
-			.b-nav a:hover:not(.nav-active){
+			.b-nav a:active:not(.nav-active){
 				background-color: rgba(255, 255, 255, 0.3);
 			}
 			.b-nav span{
@@ -2379,8 +2379,8 @@ input[type="checkbox"].error + span + label:before{
 				margin-left: 12px;
 			}
 
-			.b-reviews-next:hover,
-			.b-reviews-next:hover:after{
+			.b-reviews-next:active,
+			.b-reviews-next:active:after{
 				color: #afd74c;
 			}
 			.b-reviews-next:active,
@@ -2488,7 +2488,7 @@ input[type="checkbox"].error + span + label:before{
 				margin-top: 30px;
 				border-bottom: 1px dotted #85b30b;
 			}
-			.show-more:hover{
+			.show-more:active{
 				color: #865adf;
 				border-bottom: 1px dotted #865adf;
 			}
@@ -2951,7 +2951,7 @@ input[type="checkbox"].error + span + label:before{
 			margin-bottom: 14px;
 			border-bottom: 1px solid #d0d0d0;
 		}
-		.b-footer-politics a:hover{
+		.b-footer-politics a:active{
 			color: #9bc338;
 			border-bottom: 1px solid rgba(155, 195, 56, 0.5);
 		}
@@ -3351,7 +3351,7 @@ input[type="checkbox"].error + span + label:before{
     background-color: transparent;
 }
 
-.fancybox-close-small:hover:after {
+.fancybox-close-small:active:after {
 	opacity: 1;
     color: #FFF;
     background-color: transparent;
