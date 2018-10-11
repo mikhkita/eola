@@ -1,0 +1,12 @@
+User-agent: Yandex
+Disallow: /thanks.html
+Disallow: /kitsend.php
+Disallow: /phpmail.php
+
+User-agent: Googlebot
+Disallow: /thanks.html
+Disallow: /kitsend.php
+Disallow: /phpmail.php
+
+Host: lp.sok-aloe.ru
+Sitemap: http://lp.sok-aloe.ru/sitemap.xml

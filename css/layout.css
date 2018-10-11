@@ -824,6 +824,7 @@ input[type="checkbox"].error + span + label:before{
 
 .b-1{
 	padding-bottom: 120px;
+	overflow: hidden;
 }
 	.b-header{
 		padding-top: 40px;
@@ -1053,6 +1054,7 @@ input[type="checkbox"].error + span + label:before{
 					height: 100%;
 				}
 .b-3{
+	overflow: hidden;
 	padding-bottom: 137px;
 }
 	.b-3 .b-title{
@@ -1192,7 +1194,7 @@ input[type="checkbox"].error + span + label:before{
 	}
 
 .b-5{
-
+	overflow: hidden;
 }
 	.b-5 .b-title{
 		position: relative;
@@ -2320,7 +2322,7 @@ input[type="checkbox"].error + span + label:before{
 	}
 
 .b-17{
-
+	overflow: hidden;
 }
 	.b-17-header{
 		position: relative;
@@ -2537,11 +2539,11 @@ input[type="checkbox"].error + span + label:before{
 		}
 		.b-19-item-1{
 			width: 350px;
-			margin-right: 60px;
+			margin-right: 59px;
 		}
 		.b-19-item-2{
 			width: 320px;
-			margin-right: 60px;
+			margin-right: 59px;
 		}
 		.b-19-item-3{
 			width: 340px;

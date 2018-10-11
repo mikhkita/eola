@@ -24,11 +24,7 @@ if( !$mobile ){
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/KitAnimate.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
-	<!-- <link rel="stylesheet" href="css/slick-theme.css" type="text/css"> -->
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
-
-	<!-- link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1024px)" href="css/layout-tablet.css">
-	<link rel="stylesheet" media="screen and (min-width: 240px) and (max-width: 767px)" href="css/layout-mobile.css"> -->
 
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
@@ -58,12 +54,6 @@ if( !$mobile ){
 	
 	<div class="b b-1">
 		<div class="b-block">
-			<!-- <img src="i/parallax/p-1.png" class="b-enllax b-1-enllax-1" alt="" data-enllax-ratio="1" data-enllax-type="foreground" data-enllax-direction="vertical">
-			<img src="i/parallax/p-2.png" class="b-enllax b-1-enllax-2" alt="" data-enllax-ratio="0.5" data-enllax-type="foreground" data-enllax-direction="vertical">
-			<img src="i/parallax/p-5.png" class="b-enllax b-1-enllax-3" alt="" data-enllax-ratio="0.1" data-enllax-type="foreground" data-enllax-direction="vertical">
-			<img src="i/parallax/p-8.png" class="b-enllax b-1-enllax-4" alt="" data-enllax-ratio="0.2" data-enllax-type="foreground" data-enllax-direction="vertical">
-			<img src="i/parallax/p-6.png" class="b-enllax b-1-enllax-5" alt="" data-enllax-ratio="1" data-enllax-type="foreground" data-enllax-direction="vertical">
-			<img src="i/parallax/p-7.png" class="b-enllax b-1-enllax-6" alt="" data-enllax-ratio="1.5" data-enllax-type="foreground" data-enllax-direction="vertical"> -->
 			<div class="b-header clearfix">
 				<div class="b-header-left">
 					<ul class="b-header-social">
@@ -80,12 +70,11 @@ if( !$mobile ){
 					<p>Звоните:</p>
 				</div>
 				<div class="b-header-center">
-					<a href="index.html" class="b-header-logo"></a>
+					<a href="/m/" class="b-header-logo"></a>
 				</div>
 				<div class="b-header-right">
 					<div class="b-header-phone-cont">
 						<a href="tel:+74959204120" class="b-header-phone">+ 7 495 920 41 20</a>
-						<!-- <a href="#b-popup-call" class="b-header-call fancy">заказать звонок</a> -->
 					</div>
 				</div>
 			</div>
@@ -108,20 +97,6 @@ if( !$mobile ){
 						</div>
 					</div>
 					<a href="#b-popup-preroll" class="fancy b-btn b-btn-green">Заказать свежевыжатый<br> сок алоэ</a>
-					<!-- <div class="b-discover b-go" data-block=".b-2">
-						<div class="b-discover-text">
-							<p>Узнать</p><br><p>о производстве</p><br><p>сока больше</p>
-						</div>
-<svg class="discover"
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="194.65px" height="193.65px">
-<path class="outer" fill-rule="evenodd"  fill="rgb(243, 243, 243)"
- d="M158.682,167.674 C147.826,168.718 139.637,173.949 134.116,183.369 C128.595,192.791 120.987,194.995 111.292,189.999 C101.597,184.992 91.884,184.956 82.155,189.896 C72.425,194.829 64.833,192.569 59.377,183.111 C53.922,173.653 45.769,168.365 34.920,167.252 C24.070,166.131 18.904,160.117 19.420,149.207 C19.936,138.294 15.932,129.431 7.408,122.619 C-1.117,115.804 -2.217,107.946 4.107,99.052 C10.431,90.149 11.847,80.527 8.354,70.181 C4.860,59.830 8.176,52.626 18.300,48.566 C28.424,44.502 34.809,37.172 37.457,26.576 C40.104,15.978 46.782,11.716 57.493,13.773 C68.202,15.844 77.531,13.132 85.478,5.654 C93.425,-1.827 101.346,-1.801 109.241,5.734 C117.136,13.269 126.446,16.042 137.170,14.051 C147.894,12.060 154.543,16.374 157.117,26.989 C159.690,37.607 166.025,44.979 176.121,49.114 C186.217,53.245 189.483,60.472 185.918,70.796 C182.354,81.121 183.702,90.748 189.965,99.694 C196.228,108.636 195.073,116.488 186.502,123.242 C177.930,129.993 173.865,138.832 174.306,149.741 C174.747,160.656 169.539,166.635 158.682,167.674 Z"/>
-<path class="inner" fill-rule="evenodd"  stroke="rgb(194, 193, 194)" stroke-width="1.3px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.251" fill="none"
- d="M152.731,162.666 C142.856,163.617 135.408,168.393 130.387,177.000 C125.366,185.604 118.446,187.618 109.628,183.056 C100.810,178.485 91.976,178.451 83.127,182.961 C74.277,187.470 67.371,185.403 62.410,176.763 C57.447,168.123 50.032,163.295 40.165,162.274 C30.297,161.252 25.597,155.760 26.067,145.793 C26.536,135.824 22.895,127.728 15.141,121.506 C7.388,115.279 6.387,108.104 12.139,99.975 C17.891,91.844 19.179,83.052 16.002,73.605 C12.824,64.149 15.840,57.564 25.048,53.857 C34.257,50.142 40.064,43.449 42.472,33.774 C44.880,24.090 50.954,20.192 60.695,22.078 C70.436,23.963 78.921,21.490 86.149,14.655 C93.377,7.822 100.581,7.848 107.763,14.732 C114.943,21.613 123.411,24.150 133.164,22.330 C142.918,20.509 148.966,24.449 151.307,34.147 C153.648,43.846 159.409,50.580 168.592,54.355 C177.775,58.129 180.745,64.735 177.503,74.162 C174.261,83.594 175.488,92.393 181.184,100.564 C186.880,108.733 185.830,115.901 178.034,122.075 C170.238,128.243 166.540,136.314 166.942,146.282 C167.342,156.252 162.606,161.711 152.731,162.666 Z"/>
-</svg>
-					</div> -->
 				</div>
 			</div>
 		</div>
@@ -158,10 +133,8 @@ if( !$mobile ){
 				<h2>Усиливаем до 3-х раз <b>эффективность<br>сока алоэ</b> <br><h2 class="b-subtitle">благодаря 2-недельному хранению листьев при низких температурах</h2></h2>
 			</div>
 			<div class="b-3-content  clearfix">
-				<!-- <img src="i/3/lines.svg" class="b-lines"> -->
 				<div class="b-3-list clearfix">
 					<div class="b-3-item b-3-item-1 left">
-						<!-- <div class=" b-3-line b-3-line-1 anim fadeWidth delay400" data-cont=".b-3-content"></div> -->
 						<div class="anim fadeLeft" data-cont=".b-3-content">
 							<img src="i/3/aloe.jpg" class="b-3-img">
 							<div class="b-3-item-content">
@@ -172,7 +145,6 @@ if( !$mobile ){
 					</div>
 					<div class="b-3-item b-3-item-2 right">
 						<div class="b-3-line line-height">
-						<!-- 	<div class="b-3-line b-3-line-2 anim fadeHeight delay1200" data-cont=".b-3-content"></div> -->
 						</div>
 						<div class="anim fadeLeft delay300" data-cont=".b-3-content">
 							<img src="i/3/cell.jpg" class="b-3-img">
@@ -183,9 +155,6 @@ if( !$mobile ){
 						</div>
 					</div>
 					<div class="b-3-item b-3-item-3 left">
-						<!-- <div class="b-3-line line-height">
-							<div class="b-3-line b-3-line-3 anim fadeHeight delay2000" data-cont=".b-3-content"></div>
-						</div> -->
 						<div class="anim fadeLeft delay600" data-cont=".b-3-content">
 							<img src="i/3/vitamins.jpg" class="b-3-img">
 							<div class="b-3-item-content">
@@ -199,10 +168,6 @@ if( !$mobile ){
 						</div>
 					</div>
 				</div>
-				<!-- <div class="b-3-filatov right anim fadeRight delay3000" data-cont=".b-3-content">
-					<img src="i/3/leaf.jpg" class="b-3-img">
-					<p>Метод открыт академиком В. П. Филатовым<br>в конце 1930-х годов</p>
-				</div> -->
 			</div>
 		</div>
 	</div>
@@ -212,7 +177,7 @@ if( !$mobile ){
 			<div class="b-block">
 				<div class="b-title">
 					<h2 class="white"><b>Бережно <br>отжимаем листья</b><br>при помощи пресса, сохраняя максимум полезных веществ</h2>
-					<h4 class="white">На больших производствах <br>листья измельчаются в «труху»,<br>20% витаминов сока разрушаются мгновенно</h4>
+					<h4 class="white">На больших производствах <br>листья измельчаются в «труху»,<br>20% витаминов сока разрушаются при этом мгновенно</h4>
 				</div>
 				<div class="b-2-list">
 					<div class="b-blur-init b-2-item b-2-item-1 anim fadeLeft">			
@@ -231,7 +196,6 @@ if( !$mobile ){
 				<h4>Он точно такой, как если бы Вы сами выжали сок из листа алоэ</h4>
 			</div>
 			<div class="b-5-content">
-				<!-- <img src="i/5/left.jpg" class="b-5-img-left anim fadeLeft delay100" data-cont=".b-5-content"> -->
 				<img src="i/5/right.jpg" class="b-5-img-right anim fadeRight delay300" data-cont=".b-5-content">
 				<img src="i/5/line.svg" class="b-5-line anim fadeLeft" data-cont=".b-5-content">
 				<div class="b-5-text anim fadeLeft" data-cont=".b-5-content">
@@ -244,6 +208,7 @@ if( !$mobile ){
 	</div>
 
 	<div class="b-block-wide b-block-gray">
+		<? /* ?>
 		<!-- <div class="b b-6">
 			<div class="b-block">
 				<div class="b-title b-center">
@@ -256,6 +221,7 @@ if( !$mobile ){
 				</div>
 			</div>
 		</div> -->
+		<? */ ?>
 	
 
 		<div class="b b-7">
@@ -274,12 +240,6 @@ if( !$mobile ){
 									<input type="text" name="count" class="b-count-current" value="2" maxlength="2" oninput="this.value = this.value.replace(/\D/g, '')">
 									<p>упаковки</p>
 								</div>
-								<!-- <div class="b-tip-small">
-									<a href="#" class="icon-close b-tip-close"></a>
-									<p>от 5 упаковок + 1 упаковка бесплатно</p>
-									<p>от 8 упаковок + 2 упаковка бесплатно</p>
-									<p>от 10 упаковок + 4 упаковка бесплатно</p>
-								</div> -->
 							</div>
 							<div class="b-price">
 								<p>Цена за 1 упаковку:</p>
@@ -323,7 +283,7 @@ if( !$mobile ){
 	<div class="b b-8">
 		<div class="b-block">
 			<div class="b-title">
-				<h2 class="b-center">100%-ную натуральность<br> сока подтверждает <br><b>3 неоспоримых факта:</b></h2>
+				<h2 class="b-center">100%-ную натуральность<br> сока подтверждают <br><b>3 неоспоримых факта:</b></h2>
 			</div>
 			<div class="b-facts">
 				<div class="b-fact-item b-fact-1">
@@ -354,7 +314,6 @@ if( !$mobile ){
 							</div>
 						</div>
 						<div class="b-tip-cont">
-							<!-- <a href="#" class="b-fact-more">Узнать больше о соке промышленного производства</a> -->
 							<div class="b-tip">
 								<a href="#" class="icon-close b-tip-close"></a>
 								<h3>Эти процессы убивают в соке<br>до 80% полезных витаминов<br>и минералов</h3>
@@ -424,6 +383,7 @@ if( !$mobile ){
 					</ul>
 				<a href="#b-popup-recipes" class="fancy b-btn b-btn-green">Получить бесплатное<br> руководство</a>
 				</div>
+				<? /* ?>
 				<!-- <div class="b-9-content b-forms clearfix">
 					<div class="b-discover">
 							<div class="b-tip-cont">
@@ -438,15 +398,15 @@ if( !$mobile ){
 							<div class="b-discover-text">
 								<p>Руководство</p><br><p>содержит</p>
 							</div>
-<svg class="discover"
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="194.65px" height="193.65px">
-<path class="outer" fill-rule="evenodd"  fill="rgb(243, 243, 243)"
- d="M158.682,167.674 C147.826,168.718 139.637,173.949 134.116,183.369 C128.595,192.791 120.987,194.995 111.292,189.999 C101.597,184.992 91.884,184.956 82.155,189.896 C72.425,194.829 64.833,192.569 59.377,183.111 C53.922,173.653 45.769,168.365 34.920,167.252 C24.070,166.131 18.904,160.117 19.420,149.207 C19.936,138.294 15.932,129.431 7.408,122.619 C-1.117,115.804 -2.217,107.946 4.107,99.052 C10.431,90.149 11.847,80.527 8.354,70.181 C4.860,59.830 8.176,52.626 18.300,48.566 C28.424,44.502 34.809,37.172 37.457,26.576 C40.104,15.978 46.782,11.716 57.493,13.773 C68.202,15.844 77.531,13.132 85.478,5.654 C93.425,-1.827 101.346,-1.801 109.241,5.734 C117.136,13.269 126.446,16.042 137.170,14.051 C147.894,12.060 154.543,16.374 157.117,26.989 C159.690,37.607 166.025,44.979 176.121,49.114 C186.217,53.245 189.483,60.472 185.918,70.796 C182.354,81.121 183.702,90.748 189.965,99.694 C196.228,108.636 195.073,116.488 186.502,123.242 C177.930,129.993 173.865,138.832 174.306,149.741 C174.747,160.656 169.539,166.635 158.682,167.674 Z"/>
-<path class="inner" fill-rule="evenodd"  stroke="rgb(194, 193, 194)" stroke-width="1.3px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.251" fill="none"
- d="M152.731,162.666 C142.856,163.617 135.408,168.393 130.387,177.000 C125.366,185.604 118.446,187.618 109.628,183.056 C100.810,178.485 91.976,178.451 83.127,182.961 C74.277,187.470 67.371,185.403 62.410,176.763 C57.447,168.123 50.032,163.295 40.165,162.274 C30.297,161.252 25.597,155.760 26.067,145.793 C26.536,135.824 22.895,127.728 15.141,121.506 C7.388,115.279 6.387,108.104 12.139,99.975 C17.891,91.844 19.179,83.052 16.002,73.605 C12.824,64.149 15.840,57.564 25.048,53.857 C34.257,50.142 40.064,43.449 42.472,33.774 C44.880,24.090 50.954,20.192 60.695,22.078 C70.436,23.963 78.921,21.490 86.149,14.655 C93.377,7.822 100.581,7.848 107.763,14.732 C114.943,21.613 123.411,24.150 133.164,22.330 C142.918,20.509 148.966,24.449 151.307,34.147 C153.648,43.846 159.409,50.580 168.592,54.355 C177.775,58.129 180.745,64.735 177.503,74.162 C174.261,83.594 175.488,92.393 181.184,100.564 C186.880,108.733 185.830,115.901 178.034,122.075 C170.238,128.243 166.540,136.314 166.942,146.282 C167.342,156.252 162.606,161.711 152.731,162.666 Z"/>
-</svg>
+							<svg class="discover"
+							 xmlns="http://www.w3.org/2000/svg"
+							 xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="194.65px" height="193.65px">
+							<path class="outer" fill-rule="evenodd"  fill="rgb(243, 243, 243)"
+							 d="M158.682,167.674 C147.826,168.718 139.637,173.949 134.116,183.369 C128.595,192.791 120.987,194.995 111.292,189.999 C101.597,184.992 91.884,184.956 82.155,189.896 C72.425,194.829 64.833,192.569 59.377,183.111 C53.922,173.653 45.769,168.365 34.920,167.252 C24.070,166.131 18.904,160.117 19.420,149.207 C19.936,138.294 15.932,129.431 7.408,122.619 C-1.117,115.804 -2.217,107.946 4.107,99.052 C10.431,90.149 11.847,80.527 8.354,70.181 C4.860,59.830 8.176,52.626 18.300,48.566 C28.424,44.502 34.809,37.172 37.457,26.576 C40.104,15.978 46.782,11.716 57.493,13.773 C68.202,15.844 77.531,13.132 85.478,5.654 C93.425,-1.827 101.346,-1.801 109.241,5.734 C117.136,13.269 126.446,16.042 137.170,14.051 C147.894,12.060 154.543,16.374 157.117,26.989 C159.690,37.607 166.025,44.979 176.121,49.114 C186.217,53.245 189.483,60.472 185.918,70.796 C182.354,81.121 183.702,90.748 189.965,99.694 C196.228,108.636 195.073,116.488 186.502,123.242 C177.930,129.993 173.865,138.832 174.306,149.741 C174.747,160.656 169.539,166.635 158.682,167.674 Z"/>
+							<path class="inner" fill-rule="evenodd"  stroke="rgb(194, 193, 194)" stroke-width="1.3px" stroke-linecap="butt" stroke-linejoin="miter" opacity="0.251" fill="none"
+							 d="M152.731,162.666 C142.856,163.617 135.408,168.393 130.387,177.000 C125.366,185.604 118.446,187.618 109.628,183.056 C100.810,178.485 91.976,178.451 83.127,182.961 C74.277,187.470 67.371,185.403 62.410,176.763 C57.447,168.123 50.032,163.295 40.165,162.274 C30.297,161.252 25.597,155.760 26.067,145.793 C26.536,135.824 22.895,127.728 15.141,121.506 C7.388,115.279 6.387,108.104 12.139,99.975 C17.891,91.844 19.179,83.052 16.002,73.605 C12.824,64.149 15.840,57.564 25.048,53.857 C34.257,50.142 40.064,43.449 42.472,33.774 C44.880,24.090 50.954,20.192 60.695,22.078 C70.436,23.963 78.921,21.490 86.149,14.655 C93.377,7.822 100.581,7.848 107.763,14.732 C114.943,21.613 123.411,24.150 133.164,22.330 C142.918,20.509 148.966,24.449 151.307,34.147 C153.648,43.846 159.409,50.580 168.592,54.355 C177.775,58.129 180.745,64.735 177.503,74.162 C174.261,83.594 175.488,92.393 181.184,100.564 C186.880,108.733 185.830,115.901 178.034,122.075 C170.238,128.243 166.540,136.314 166.942,146.282 C167.342,156.252 162.606,161.711 152.731,162.666 Z"/>
+							</svg>
 					</div>
 					<div class="b-form-left left">
 						<img src="i/9/left.jpg">
@@ -468,6 +428,7 @@ if( !$mobile ){
 						</form>
 					</div>
 				</div> -->
+				<? */ ?>
 			</div>
 		</div>
 
@@ -512,26 +473,6 @@ if( !$mobile ){
 						<div class="b-protocol">Декларация о соответствии</div>
 					</div>
 				</div>
-				<!-- <div class="b-slider-right right">
-					<div class="b-slider-doc-list">
-						<div class="b-slider-doc-item slide-active" data-id="0">
-							<img src="i/11/doc-1.jpg">
-							<p>Протокол<br>испытаний ч. 1</p>
-						</div>
-						<div class="b-slider-doc-item" data-id="1">
-							<img src="i/11/doc-1.jpg">
-							<p>Протокол<br>испытаний ч. 2</p>
-						</div>
-						<div class="b-slider-doc-item" data-id="2">
-							<img src="i/11/doc-1.jpg">
-							<p>Протокол<br>испытаний ч. 3</p>
-						</div>
-						<div class="b-slider-doc-item" data-id="3">
-							<img src="i/11/doc-1.jpg">
-							<p>Таможенный союз<br>декларации соотвествия</p>
-						</div>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</div>
@@ -628,7 +569,7 @@ if( !$mobile ){
 			</div>
 		</div>
 	</div>
-
+	<? /* ?>
 	<!-- <div class="b b-13">
 		<div class="b-block-wide b-block-gray">
 			<div class="b-block">
@@ -786,7 +727,7 @@ if( !$mobile ){
 		
 		</div>
 	</div> -->
-
+	<? */ ?>
 	<div class="b b-16">
 		<div class="b-block">
 			<div class="b-16-content">
@@ -831,12 +772,6 @@ if( !$mobile ){
 									<input type="text" name="count" class="b-count-current" value="2" maxlength="2" oninput="this.value = this.value.replace(/\D/g, '')">
 									<p>упаковки</p>
 								</div>
-								<!-- <div class="b-tip-small">
-									<a href="#" class="icon-close b-tip-close"></a>
-									<p>от 5 упаковок + 1 упаковка бесплатно</p>
-									<p>от 8 упаковок + 2 упаковка бесплатно</p>
-									<p>от 10 упаковок + 4 упаковка бесплатно</p>
-								</div> -->
 							</div>
 							<div class="b-price">
 								<p>Цена за 1 упаковку:</p>
@@ -877,7 +812,7 @@ if( !$mobile ){
 		</div>
 	</div>
 
-
+	<? /* ?>
 	<!-- <div class="b b-17">
 		<div class="b-block">
 			<img src="i/parallax/p-1.png" class="b-enllax b-17-enllax-1" alt="" data-enllax-ratio="0.8" data-enllax-type="foreground" data-enllax-direction="vertical">
@@ -997,7 +932,7 @@ if( !$mobile ){
 			</div>
 		</div>
 	</div> -->
-
+	<? */ ?>
 	<div class="b b-19">
 		<div class="b-block clearfix">
 			<div class="b-title b-center">
@@ -1026,12 +961,14 @@ if( !$mobile ){
 			</div>
 			<small>После получения заказа вам нужно будет только<br>поместить сок в морозилку вашего холодильника, <br>где он может храниться без потери своих <br>свойств течение 1 года</small>
 		</div>
+		<? /* ?>
 		<!-- <div class="b-19-address">
 			<h3>адреса</h3>
 			<p>Кутузовский проспект, 88 ТЦ Квадро,<br>магазин «Мастерская вкуса» (1 этаж)</p>
 			<p>ул. Новокосинская 32/1,<br>Торговый центр ПриАлит (2 этаж) </p>
 			<p>Кутузовский проспект, 43,<br>магазин «Мастерская вкуса»</p>
 		</div> -->
+		<? */ ?>
 	</div>
 
 	<div class="b b-20">
@@ -1054,6 +991,7 @@ if( !$mobile ){
 							<a href="#" class="b-btn b-btn-green b-problem-next">Готово</a>
 						</div>
 						<div class="b-form b-problem-finish">
+							<? /* ?>
 							<!-- <div class="b-popup-call-header">
 								<div class="b-popup-line-container">
 									<div class="b-popup-line">
@@ -1061,6 +999,7 @@ if( !$mobile ){
 									</div>
 								</div>
 							</div> -->
+							<? */ ?>
 							<div class="b-center b-form-title">
 								<h3><b>Введите ваши данные</b></h3>
 								<p>куда мы отправим вам рецепты</p>
@@ -1086,7 +1025,7 @@ if( !$mobile ){
 		<div class="b-block-wide">
 			<div class="b-block">
 				<div class="b-footer-top">
-					<a href="index.html" class="b-footer-logo"></a>
+					<a href="/m/" class="b-footer-logo"></a>
 					<div class="b-footer-contacts">
 						<ul class="b-header-social">
 							<li class="b-soc-call">
@@ -1302,6 +1241,7 @@ if( !$mobile ){
 						<div class="b-checkbox b-center">
 							<input id="b-popup-accept-1" type="checkbox" name="accept" required checked>
 							<label for="b-popup-accept-1">Я принимаю <a href="policy.pdf" target="_blank">условия передачи информации</a></label>
+							<input type="hidden" name="pdf" value="send">
 						</div>
 					</form>
 				</div>
@@ -1356,7 +1296,6 @@ if( !$mobile ){
 	</div>
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-	<!--<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyD6Sy5r7sWQAelSn-4mu2JtVptFkEQ03YI"></script>-->
 	<script type="text/javascript" src="js/jquery.touch.min.js"></script>
 	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>

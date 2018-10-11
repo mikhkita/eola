@@ -2,11 +2,13 @@
 	require_once("PHPMailer.php");
 	require_once("SMTP.php");
 
-	$email_admin = "dima@redder.pro";
-	// $email_admin = "soc.taxi.35@gmail.com";
+	// $email_admin = "mike@kitaev.pro";
+	$email_admin = "sok-aloe@yandex.ru";
 
 	$from = "“Сок Алоэ”";
-	$email_from = "robot@taxi-chita.ru";
+	$email_from = "robot@sok-aloe.ru";
+	$email_client = $_POST["email"];
+	$send_pdf = $_POST["pdf"];
 
 	$deafult = array(
 		"name"=>"Имя",
@@ -44,14 +46,26 @@
 			
 		$message .= "</div>";
 		
+		if (isset($send_pdf)) {
+			$mail2 = new PHPMailer();
+			$mail2->From = $email_from;
+			$mail2->FromName = $from;
+			$mail2->Subject = "Бесплатное руководство";
+			$mail2->AddAddress($email_client);
+			$mail2->IsHTML(true);
+			$mail2->addAttachment("Instruktsia-Sok-Aloe.pdf", "Instruktsia-Sok-Aloe.pdf");
+			$mail2->Body = "Бесплатное руководство по оздоровлению с помощью сока алоэ";	
+			$mail2->Send();
+		}
+
+		
 		$mail = new PHPMailer();
 		$mail->From = $email_from;
 		$mail->FromName = $from;
 		$mail->AddAddress($email_admin);
 		$mail->IsHTML(true);
 		$mail->Subject = $subject;
-		$mail->Body = $message;
-		$mail->addAttachment("policy.pdf", "policy.pdf");
+		$mail->Body = $message;	
 
 		if ($mail->Send()){
 			header("Location: thanks.html");
