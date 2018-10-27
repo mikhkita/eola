@@ -3198,15 +3198,60 @@ input[type="checkbox"].error + span + label:before{
 /*------------------------------*/
 
 .b-review-page,
-.b-thanks-popup-page{
+.b-thanks-popup-page,
+.b-popup-page{
 	padding: 90px 0;
 	background-color: #85b30b;
 	opacity: 0.98;
 }
 	.b-review-page .b-review-block,
-	.b-thanks-popup-page .b-thanks-block {
+	.b-thanks-popup-page .b-thanks-block{
 		margin: 0 auto;
 	}
+
+.html-popup, .html-popup body, .b-popup-page{
+	min-height: 100vh;
+}
+.b-popup-page .b-popup-block{
+	margin: 0 auto;
+	width: 1140px;
+	background-color: #f7f5f4;
+	padding: 20px 20px 0 20px;
+	border-radius: 10px;
+}
+	.b-popup-page .b-18{
+		padding-bottom: 0;
+		overflow: hidden;
+	}
+		.b-popup-page .b-18 .b-form-left{
+			width: 600px;
+			padding: 33px 0;
+		}
+		.b-popup-page .b-18 .b-form{
+			margin-bottom: 20px;
+		}
+			.b-popup-page .b-18 .b-form-left img{
+				width: 740px;
+		   		display: block;
+		    	margin-top: 50px;
+			}
+	.b-popup-page .b-forms .b-discover{
+	    top: 234px;
+	    left: 305px;
+	}
+.b-popup-page-more{
+
+}
+	.b-popup-page-more h2{
+		margin-bottom: 12px;
+	}
+		.b-popup-page.b-popup-page-more .b-18 .b-form-left img{
+	    	margin-top: 10px;
+		}
+		.b-popup-page.b-popup-page-more .b-forms .b-discover {
+		    top: 350px;
+		    left: 305px;
+		}
 
 .b-thanks-popup-page{
 	padding: 50px 0 90px 0;
